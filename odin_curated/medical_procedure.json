@@ -1,0 +1,828 @@
+{
+  "@id": "odin:Schemas/medical procedure",
+  "sdfVersion": "3.0",
+  "version": "odin:Phase2b",
+  "events": [
+    {
+      "@id": "odin:Events/10000",
+      "name": "Medical Procedure",
+      "description": "medical procedure",
+      "wd_node": "Q41689629",
+      "wd_label": "procedure",
+      "wd_description": "standardised method of carrying out a task",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20000",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20001",
+          "roleName": "A1_ppt_process_or_operation",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20002",
+          "roleName": "A2_gol_benefactive",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20003",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10001",
+        "odin:Events/10002",
+        "odin:Events/10003"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "odin:Events/10001",
+      "name": "Propaedeutic procedures",
+      "description": "Basic medical inspections and measurements of the patient.",
+      "wd_node": "Q1355298",
+      "wd_label": "examination",
+      "wd_description": "process to determine knowledge or skills",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20010",
+          "roleName": "A0_pag_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20011",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20012",
+          "roleName": "A2_ppt_subject",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20013",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10004",
+        "odin:Events/10005",
+        "odin:Events/10006",
+        "odin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10002",
+      "name": "Diagnostic procedures",
+      "description": "Procedures that can be used to help diagnose the illness of the patient.",
+      "wd_node": "Q16644043",
+      "wd_label": "diagnosis",
+      "wd_description": "identification of the nature and cause of a certain phenomenon, which is used in many different disciplines to determine causality",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20020",
+          "roleName": "A0_pag_doctor",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20021",
+          "roleName": "A1_ppt_patient",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20022",
+          "roleName": "A2_prd_illness",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10008",
+        "odin:Events/10009",
+        "odin:Events/10010",
+        "odin:Events/10011"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10003",
+      "name": "Therapeutic procedures",
+      "description": "Procedures that are used to treat the illness.",
+      "wd_node": "Q179661",
+      "wd_label": "treatment",
+      "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20030",
+          "roleName": "A0_pag__doctor",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20031",
+          "roleName": "A1_ppt__patient",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20032",
+          "roleName": "A2_ppt__illness_or_injury",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20033",
+          "roleName": "A3_mnr__instrument",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20034",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10012",
+        "odin:Events/10013",
+        "odin:Events/10015",
+        "odin:Events/10016",
+        "odin:Events/10018"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10004",
+      "name": "Arrival",
+      "description": "The patient arrives at the medical facility and is greeted by staff",
+      "wd_node": "Q45594",
+      "wd_label": "greeting",
+      "wd_description": "expression to acknowledge another person",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20040",
+          "roleName": "A0_pag_greeter",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20041",
+          "roleName": "A1_ppt_thing_greeted",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20042",
+          "roleName": "A2_cau_secondary_attribute",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20043",
+          "roleName": "A3_mnr_specific_reaction",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20044",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10005",
+      "name": "Check-in",
+      "description": "The patient is asked to provide basic information, such as their name and reason for visit.",
+      "wd_node": "Q1068755",
+      "wd_label": "check-in",
+      "wd_description": "process whereby a person announces their arrival at a hotel, hospital, event, airport or sea port",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10006"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20050",
+          "roleName": "A0_pag_staff_member_or_other_entity_enabling_the_checking_in",
+          "entity": "odin:Entities/00004"
+        },
+        {
+          "@id": "odin:Participants/20051",
+          "roleName": "A1_ppt_entity_being_checked_in",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20052",
+          "roleName": "A2_gol_place_checked_into",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20053",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10006",
+      "name": "Measurement",
+      "description": "The medical professional measures the vital signs of the patient, such as body temperature, pulse rate, respiration rate  and blood pressure.",
+      "wd_node": "Q1355298",
+      "wd_label": "examination",
+      "wd_description": "process to determine knowledge or skills",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20060",
+          "roleName": "A0_pag_examiner",
+          "entity": "odin:Entities/00002"
+        },
+        {
+          "@id": "odin:Participants/20061",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20062",
+          "roleName": "A2_ppt_subject",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20063",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10007",
+      "name": "Preparation",
+      "description": "The medical staff prepares the patient for the procedure.",
+      "wd_node": "Q19833559",
+      "wd_label": "preparation",
+      "wd_description": "activity of achieving readiness for some event or activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20070",
+          "roleName": "A0_pag_preparer",
+          "entity": "odin:Entities/00002"
+        },
+        {
+          "@id": "odin:Participants/20071",
+          "roleName": "A1_ppt_thing_made_ready",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20072",
+          "roleName": "A2_prp_ready_for",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20073",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10008",
+      "name": "Collection",
+      "description": "The medical professional obtains a medical history from the patient.",
+      "wd_node": "Q178651",
+      "wd_label": "interview",
+      "wd_description": "structured series of questions and answers",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20080",
+          "roleName": "A0_pag_interviewer",
+          "entity": "odin:Entities/00005"
+        },
+        {
+          "@id": "odin:Participants/20081",
+          "roleName": "A1_gol_interviewee",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20082",
+          "roleName": "A2_ppt_purpose_or_subject_matter_of_interview",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20083",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10009",
+      "name": "Testing",
+      "description": "The medical professional orders diagnostic tests.",
+      "wd_node": "Q106171319",
+      "wd_label": "testing",
+      "wd_description": "the collective event of testing whole or parts of the population of a place in a period of time for a disesase. NOT the single event of testing a person, but the collective event of testing multiple people.",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20090",
+          "roleName": "A0_pag_examiner",
+          "entity": "odin:Entities/00005"
+        },
+        {
+          "@id": "odin:Participants/20091",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20092",
+          "roleName": "A2_ppt_in_search_of",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20093",
+          "roleName": "A3_prd_test_result",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20094",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10010",
+      "name": "Assessment",
+      "description": "The doctor will assess the patient",
+      "wd_node": "Q1355298",
+      "wd_label": "examination",
+      "wd_description": "process to determine knowledge or skills",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20100",
+          "roleName": "A0_pag_examiner",
+          "entity": "odin:Entities/00005"
+        },
+        {
+          "@id": "odin:Participants/20101",
+          "roleName": "A1_loc_examined",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20102",
+          "roleName": "A2_ppt_subject",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20103",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10011",
+      "name": "Diagnose",
+      "description": "The diagnostic tests are performed.",
+      "wd_node": "Q16644043",
+      "wd_label": "diagnosis",
+      "wd_description": "identification of the nature and cause of a certain phenomenon, which is used in many different disciplines to determine causality",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20110",
+          "roleName": "A0_pag_doctor",
+          "entity": "odin:Entities/00005"
+        },
+        {
+          "@id": "odin:Participants/20111",
+          "roleName": "A1_ppt_patient",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20112",
+          "roleName": "A2_prd_illness",
+          "entity": "odin:Entities/00006"
+        },
+        {
+          "@id": "odin:Participants/20113",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10012",
+      "name": "Medication",
+      "description": "The patient is given any necessary medication as part of treatment.",
+      "wd_node": "Q12140",
+      "wd_label": "medication",
+      "wd_description": "substance used to diagnose, cure, treat, or prevent disease",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20120",
+          "roleName": "A0_pag_agent",
+          "entity": "odin:Entities/00005"
+        },
+        {
+          "@id": "odin:Participants/20121",
+          "roleName": "A1_ppt_process_or_operation",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20122",
+          "roleName": "A2_gol_benefactive",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10013",
+      "name": "Preparation",
+      "description": "The medical staff prepares the patient for the surgery.",
+      "wd_node": "Q19833559",
+      "wd_label": "preparation",
+      "wd_description": "activity of achieving readiness for some event or activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10015"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20160",
+          "roleName": "A0_pag_preparer",
+          "entity": "odin:Entities/00002"
+        },
+        {
+          "@id": "odin:Participants/20161",
+          "roleName": "A1_ppt_thing_made_ready",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20162",
+          "roleName": "A2_prp_ready_for",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "children": [
+        "odin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10014",
+      "name": "Anesthesia",
+      "description": "The patient is given anesthesia to prevent pain during the surgery",
+      "wd_node": "Q131130",
+      "wd_label": "anesthesia",
+      "wd_description": "state of medically controlled temporary loss of sensation or awareness",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20170",
+          "roleName": "A0_pag_surgeon",
+          "entity": "odin:Entities/00001"
+        },
+        {
+          "@id": "odin:Participants/20171",
+          "roleName": "A1_ppt_patient",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20172",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20173",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10015",
+      "name": "Surgery",
+      "description": "The surgeon uses incisive instruments on the patient to investigate or treat a medical condition",
+      "wd_node": "Q40821",
+      "wd_label": "surgery",
+      "wd_description": "medical specialty",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20190",
+          "roleName": "A0_pag_surgeon",
+          "entity": "odin:Entities/00001"
+        },
+        {
+          "@id": "odin:Participants/20191",
+          "roleName": "A1_ppt_patient",
+          "entity": "odin:Entities/00000"
+        },
+        {
+          "@id": "odin:Participants/20192",
+          "roleName": "A2_vsp_type_of_surgery",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10016",
+      "name": "Monitoring",
+      "description": "The patient is monitored for any complications after the therapy.",
+      "wd_node": "Q2143522",
+      "wd_label": "monitoring",
+      "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10018"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20150",
+          "roleName": "A0_pag_observer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20151",
+          "roleName": "A1_loc_thing_looked_at",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20152",
+          "roleName": "A2_ppt_looking_for_what?",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20153",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "children": [
+        "odin:Events/10017"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10017",
+      "name": "Side Effects",
+      "description": "The patient may experience side effects from the surgery, such as dizziness, nausea, or vomiting.",
+      "wd_node": "Q127076",
+      "wd_label": "vomiting",
+      "wd_description": "forcible expulsion of the contents of the stomach through the mouth",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20180",
+          "roleName": "A0_pag_person_vomiting",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20181",
+          "roleName": "A1_ppt_vomit",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20182",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10018",
+      "name": "Result",
+      "description": "Therapy result.",
+      "wd_node": "Q2995644",
+      "wd_label": "result",
+      "wd_description": "final consequence or product of a sequence of actions or events",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20182",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "children": [
+        "odin:Events/10019",
+        "odin:Events/10020"
+      ],
+      "children_gate": "xor",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10019",
+      "name": "Recovery",
+      "description": "The patient recovers from the therapy",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "optional":true,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20142",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10020",
+      "name": "Failure",
+      "description": "The treatment fails",
+      "wd_node": "Q1121708",
+      "wd_label": "failure",
+      "wd_description": "state or event of not meeting a desired or intended objective",
+      "isSchema": false,
+      "repeatable": false,
+      "optional":true,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20142",
+          "roleName": "AM_loc",
+          "entity": "odin:Entities/00003"
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ],
+  "entities": [
+    {
+      "@id": "odin:Entities/00000",
+      "name": "patient",
+      "wd_node": "wd:Q181600",
+      "wd_label": "petient",
+      "wd_description": "person who takes a medical treatment or is subject of a case study"
+    },
+    {
+      "@id": "odin:Entities/00001",
+      "name": "surgeon",
+      "wd_node": "wd:Q774306",
+      "wd_label": "surgeon",
+      "wd_description": "physician with surgical specialty"
+    },
+    {
+      "@id": "odin:Entities/00002",
+      "name": "nurse",
+      "wd_node": "wd:Q186360",
+      "wd_label": "nurse",
+      "wd_description": "type of health care provider"
+    },    
+    {
+      "@id": "odin:Entities/00003",
+      "name": "medical facility",
+      "wd_node": "wd:Q4260475",
+      "wd_label": "medical facility",
+      "wd_description": "any location at which medicine is practiced regularly"
+    },      
+    {
+      "@id": "odin:Entities/00004",
+      "name": "receptionist",
+      "wd_node": "wd:Q1722406",
+      "wd_label": "receptionist",
+      "wd_description": "profession"
+    },    
+    {
+      "@id": "odin:Entities/00005",
+      "name": "physician",
+      "wd_node": "wd:Q39631",
+      "wd_label": "physician",
+      "wd_description": "professional who practices medicine"
+    }, 
+    {
+      "@id": "odin:Entities/00006",
+      "name": "illness",
+      "wd_node": "wd:Q814207",
+      "wd_label": "illness",
+      "wd_description": "the state of being unwell"
+    } 
+  ],
+  "relations": []
+}

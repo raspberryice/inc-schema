@@ -1,0 +1,1016 @@
+{
+    "@id": "odin:Schemas/recession",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Recession",
+            "description": "recession news story.",
+            "wd_node": "Q176494",
+            "wd_label": "recession",
+            "wd_description": "business cycle contraction; general slowdown in economic activity",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10004",
+                "odin:Events/10005"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "Background",
+            "description": "Cause of the recession.",
+            "wd_node": "Q621695",
+            "wd_label": "blame",
+            "wd_description": "act of censuring, holding responsible, making negative statements about an individual or group",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_pag_blamer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_ppt_entity_blamed",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "A2_prd_blame_for_what",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20013",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10008",
+                "odin:Events/10007"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "Market Crash",
+            "description": "A sudden stock market drop which is the major sign of the recession.",
+            "wd_node": "Q176494",
+            "wd_label": "recession",
+            "wd_description": "business cycle contraction; general slowdown in economic activity",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10009",
+                "odin:Events/10010",
+                "odin:Events/10011",
+                "odin:Events/10012",
+                "odin:Events/10014"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "Business Decline",
+            "description": "Businesses shutdown and job loss increases in the impact of the recession.",
+            "wd_node": "Q176494",
+            "wd_label": "recession",
+            "wd_description": "business cycle contraction; general slowdown in economic activity",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10016",
+                "odin:Events/10015",
+                "odin:Events/10013"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "Government Response",
+            "description": "Governments announce stimulus plans to counter the recession.",
+            "wd_node": "Q3771842",
+            "wd_label": "stimulus",
+            "wd_description": "in psychology, an object or event that elicits a sensory or behavioral response in an organism",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10005"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_cause_of_increase",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A1_ppt_thing_increasing",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20043",
+                    "roleName": "A3_prd_end_state_of_arg1",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20044",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10019",
+                "odin:Events/10020",
+                "odin:Events/10021"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "Recovery",
+            "description": "The market gradually recovers from the recession.",
+            "wd_node": "Q38127868",
+            "wd_label": "recovery",
+            "wd_description": "process by which something is returned to its former status or position",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_repairer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_entity_repaired",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10025",
+                "odin:Events/10026",
+                "odin:Events/10031",
+                "odin:Events/10037",
+                "odin:Events/10051",
+                "odin:Events/10055"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Financial:Increase",
+            "description": "Increase in interest rates",
+            "wd_node": "Q4876897",
+            "wd_label": "monetary_inflation",
+            "wd_description": "sustained increase in a nation's money supply",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10008"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A0_pag_causer_of_expansion",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "A1_ppt_thing_grown",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "A2_ext_amount_increased_by",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "A3_dir_start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20074",
+                    "roleName": "A4_gol_end_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20075",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Financial:Decrease",
+            "description": "Decrease in consumer spending",
+            "wd_node": "Q1971485",
+            "wd_label": "reduction",
+            "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag_Agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_ppt_Logical_subject",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "A2_ext_EXT",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "A3_dir_Start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20084",
+                    "roleName": "A4_gol_End_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20085",
+                    "roleName": "Am_loc_Medium",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20086",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Financial:Decrease",
+            "description": "Stock market crash. A sharp decrease in stock prices",
+            "wd_node": "Q11868838",
+            "wd_label": "fall",
+            "wd_description": "motion downwards from a higher position to a lower one, under the influence of gravity",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A1_ppt_Logical_subject",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20091",
+                    "roleName": "A2_ext_EXT",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "A3_dir_start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "A4_gol_end_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20094",
+                    "roleName": "Am_loc_medium",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20095",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Financial:Decrease",
+            "description": "A decrease in the value of the US dollar.",
+            "wd_node": "Q220788",
+            "wd_label": "devaluation",
+            "wd_description": "Reduction in value of a currency with respect to anything which it can be exchanged for",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_causer_of_lower_value",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_thing_with_lower_value",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_dir_original_state",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Financial:Increase",
+            "description": "An increase in the price of gold.",
+            "wd_node": "Q4876897",
+            "wd_label": "monetary_inflation",
+            "wd_description": "sustained increase in a nation's money supply",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_causer_of_expansion",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_ppt_thing_grown",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "A2_ext_amount_increased_by",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "A3_dir_start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20114",
+                    "roleName": "A4_gol_end_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20115",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Financial: Decrease",
+            "description": "A decrease in the price of oil.",
+            "wd_node": "Q1971485",
+            "wd_label": "reduction",
+            "wd_description": "process of thickening and intensifying the flavor of a liquid mixture such as a soup, sauce, wine, or juice by simmering or boiling",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A0_pag_Agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A1_ppt_Logical_subject",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ext_EXT",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20123",
+                    "roleName": "A3_dir_Start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20124",
+                    "roleName": "A4_gol_End_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20125",
+                    "roleName": "Am_loc_Medium",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20126",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Unemployment",
+            "description": "An increase in unemployment.",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10015",
+            "name": "Businesses:End",
+            "description": "Businesses close down",
+            "wd_node": "Q19862406",
+            "wd_label": "business",
+            "wd_description": "economic activity done by a businessperson",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_ppt_thing_being_traded",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_com_other_exchanger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "A3_ppt_other_item_in_exchange",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20154",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20155",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Businesses:Declare Bankruptcy",
+            "description": "Businesses declare bankruptcy",
+            "wd_node": "Q19862406",
+            "wd_label": "business",
+            "wd_description": "economic activity done by a businessperson",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_ppt_thing_being_traded",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_com_other_exchanger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "A3_ppt_other_item_in_exchange",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20154",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20155",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10016",
+            "name": "Unemployment",
+            "description": "Layoffs increase as businesses cut costs.",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10019",
+            "name": "Government Stimulus",
+            "description": "Government announces stimulus plans",
+            "wd_node": "Q3771842",
+            "wd_label": "stimulus",
+            "wd_description": "in psychology, an object or event that elicits a sensory or behavioral response in an organism",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10020"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20190",
+                    "roleName": "A0_pag_cause_of_increase",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20191",
+                    "roleName": "A1_ppt_thing_increasing",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20192",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20193",
+                    "roleName": "A3_prd_end_state_of_arg1",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20194",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10020",
+            "name": "Financial Assistance",
+            "description": "Government provides financial assistance to businesses and individuals",
+            "wd_node": "Q4372150",
+            "wd_label": "bounty",
+            "wd_description": "payment or reward",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10021"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20200",
+                    "roleName": "A0_pag_entity_giving_reward",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20201",
+                    "roleName": "A1_ppt_entity_being_given_to",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20202",
+                    "roleName": "A2_cau_because_of_what",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20203",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10021",
+            "name": "Government:Create",
+            "description": "Government creates new programs to boost employment",
+            "wd_node": "Q656365",
+            "wd_label": "employment",
+            "wd_description": "relationship between the employee and the employer",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20210",
+                    "roleName": "A0_pag_employer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20211",
+                    "roleName": "A1_ppt_employee",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20212",
+                    "roleName": "A2_prd_job",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20213",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10025",
+            "name": "Employment",
+            "description": "Unemployment starts to decline.",
+            "wd_node": "Q21255975",
+            "wd_label": "improvement",
+            "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10037"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20250",
+                    "roleName": "A0_pag_improver",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20251",
+                    "roleName": "A1_ppt_thing_improving",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20252",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10026",
+            "name": "Financial:Increase",
+            "description": "Increase in stock prices",
+            "wd_node": "Q1342838",
+            "wd_label": "growth",
+            "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20260",
+                    "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20261",
+                    "roleName": "A1_ppt_thing_grown",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20262",
+                    "roleName": "A2_ext_amount_increased_by",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20263",
+                    "roleName": "A3_dir_start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20264",
+                    "roleName": "A4_prd_end_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20265",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10031",
+            "name": "Business:Profit",
+            "description": "Corporate profits grow",
+            "wd_node": "Q1342838",
+            "wd_label": "growth",
+            "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10051",
+                "odin:Events/10026"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20310",
+                    "roleName": "A0_pag_causer_of_growth_-_should_be_possible",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20311",
+                    "roleName": "A1_ppt_thing_grown",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20312",
+                    "roleName": "A2_ext_amount_increased_by",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20313",
+                    "roleName": "A3_dir_start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20314",
+                    "roleName": "A4_prd_end_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20315",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10037",
+            "name": "Spending",
+            "description": "Increase in spending",
+            "wd_node": "Q587972",
+            "wd_label": "part-time_employment",
+            "wd_description": "form of employment that carries fewer hours per week than a full-time job",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10031"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20370",
+                    "roleName": "A0_pag_employer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20371",
+                    "roleName": "A1_ppt_employee",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20372",
+                    "roleName": "A2_prd_job",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20373",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10051",
+            "name": "Financial: Expansion",
+            "description": "Businesses expand their markets by selling their products and services to new customers",
+            "wd_node": "Q194189",
+            "wd_label": "sales",
+            "wd_description": "act of selling a product or service in return for money or other compensation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20510",
+                    "roleName": "A0_pag_Seller",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20511",
+                    "roleName": "A1_ppt_Thing_Sold",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20512",
+                    "roleName": "A2_gol_Buyer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20513",
+                    "roleName": "A3_vsp_Price_Paid",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20514",
+                    "roleName": "A4_gol_Benefactive",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20515",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10055",
+            "name": "Financial: Increase",
+            "description": "Incomes rise",
+            "wd_node": "Q4165229",
+            "wd_label": "gain",
+            "wd_description": "accounting term; financial benefit resulting from a non-typical or non-recurring transaction",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10037"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20550",
+                    "roleName": "A1_ppt_Logical_subject",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20551",
+                    "roleName": "A2_ext_EXT",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20552",
+                    "roleName": "A3_dir_start_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20553",
+                    "roleName": "A4_gol_end_point",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20554",
+                    "roleName": "A5_loc_specific_aspect_of_arg1_gaining",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20555",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}

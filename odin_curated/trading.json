@@ -1,0 +1,747 @@
+{
+    "@id": "odin:Schemas/trading",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Trading",
+            "description": "trading news story.",
+            "wd_node": "Q601401",
+            "wd_label": "trade",
+            "wd_description": "economic branch involving the exchange of goods and services",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag_agent",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_ppt_thing_being_traded",
+                    "entity": "odin:Entities/00013"
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "A2_com_other_exchanger",
+                    "entity": "odin:Entities/00002"
+                },
+                {
+                    "@id": "odin:Participants/20003",
+                    "roleName": "A3_ppt_other_item_in_exchange",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20005",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004"
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10004"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "odin:Entities/00001",
+                    "name": "first group of humans",
+                    "wd_label": "group of humans",
+                    "wd_node": "Q16334295"
+                },
+                {
+                    "@id": "odin:Entities/00002",
+                    "name": "second group of humans",
+                    "wd_label": "group of humans",
+                    "wd_node": "Q16334295"
+                },
+                {
+                    "@id": "odin:Entities/00003",
+                    "name": "negotiation location",
+                    "wd_label": "geographic location",
+                    "wd_node": "Q2221906"
+                },
+                {
+                    "@id": "odin:Entities/00004",
+                    "name": "trade location",
+                    "wd_label": "geographic location",
+                    "wd_node": "Q2221906"
+                },
+                {
+                    "@id": "odin:Entities/00005",
+                    "name": "negotiator 1",
+                    "wd_label": "person",
+                    "wd_node": "Q215627"
+                },
+                {
+                    "@id": "odin:Entities/00006",
+                    "name": "negotiator 2",
+                    "wd_label": "person",
+                    "wd_node": "Q215627"
+                },
+                {
+                    "@id": "odin:Entities/00007",
+                    "name": "agreement 1",
+                    "wd_label": "agreement",
+                    "wd_node": "Q2006324"
+                },
+                {
+                    "@id": "odin:Entities/00008",
+                    "name": "meeting 1",
+                    "wd_label": "meeting",
+                    "wd_node": "Q2761147"
+                },
+                {
+                    "@id": "odin:Entities/00009",
+                    "name": "proposal 1",
+                    "wd_label": "proposal",
+                    "wd_node": "Q6501319"
+                },
+                {
+                    "@id": "odin:Entities/00010",
+                    "name": "trade (action)",
+                    "wd_label": "trade",
+                    "wd_node": "Q601401"
+                },
+                {
+                    "@id": "odin:Entities/00011",
+                    "name": "legislative body",
+                    "wd_label": "legislature",
+                    "wd_node": "Q11204"
+                },
+                {
+                    "@id": "odin:Entities/00012",
+                    "name": "transport vehicle",
+                    "wd_label": "vehicle",
+                    "wd_node": "Q42889"
+                },
+                {
+                    "@id": "odin:Entities/00013",
+                    "name": "goods from group of people one",
+                    "wd_label": "product",
+                    "wd_node": "Q2424752"
+                },
+                {
+                    "@id": "odin:Entities/00014",
+                    "name": "goods from group of people two",
+                    "wd_label": "product",
+                    "wd_node": "Q2424752"
+                },
+                {
+                    "@id": "odin:Entities/00015",
+                    "name": "critics",
+                    "wd_label": "group of humans",
+                    "wd_node":"Q16334295"
+                },
+                {
+                    "@id": "odin:Entities/00016",
+                    "name": "critique location",
+                    "wd_label": "geographic location",
+                    "wd_node": "Q2221906"
+                },
+                {
+                    "@id": "odin:Entities/00017",
+                    "name": "agreement 2",
+                    "wd_label": "agreement",
+                    "wd_node": "Q2006324"
+                },
+                {
+                    "@id": "odin:Entities/00018",
+                    "name": "renegotiation location",
+                    "wd_label": "geographic location",
+                    "wd_node": "Q2221906"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "Negotiations",
+            "description": "negotiations about the trade agreement between countries.",
+            "wd_node": "Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003"
+                },
+                {
+                    "@id": "odin:Participants/20013",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20014",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00008"
+                }
+            ],
+            "children": [
+                "odin:Events/10033",
+                "odin:Events/10034"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10033",
+            "name": "Trade Agreement Proposal",
+            "description": "Nations propose different versions of trade agreements.",
+            "wd_node": "Q3918409",
+            "wd_label": "proposal",
+            "wd_description": "document or message proposing some course of action, or the process by which that action is considered",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10034"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20015",
+                    "roleName": "A0_pag_proposer",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20016",
+                    "roleName": "A1_ppt_proposition",
+                    "entity": "odin:Entities/00009"
+                },
+                {
+                    "@id": "odin:Participants/20017",
+                    "roleName": "A2_gol_who/what_arg1_applies_to",
+                    "entity": "odin:Entities/00010"
+                },
+                {
+                    "@id": "odin:Participants/20018",
+                    "roleName": "A3_gol_listener",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20019",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10034",
+            "name": "Trade Agreement Revision",
+            "description": "Nations revise a proposal for or an existing trade agreement.",
+            "wd_node": "Q11279204",
+            "wd_label": "revision",
+            "wd_description": "stage in the writing process where the author reviews, alters, and amends their message, according to what has been written in the draft",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "odin:Entities/00009"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "Signatures and ratifications",
+            "description": "Countries sign and ratify the trade agreement.",
+            "wd_node": "Q193170",
+            "wd_label": "ratification",
+            "wd_description": "process of giving effect to documentation in international law",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A0_pag_approver",
+                    "entity": "odin:Entities/00011"
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "A1_ppt_entity_ratified",
+                    "entity": "odin:Entities/00009"
+                }
+            ],
+            "children": [
+                "odin:Events/10035",
+                "odin:Events/10036",
+                "odin:Events/10008"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10035",
+            "name": "Transportation",
+            "description": "The transport of a person or object from one location to another via an unspecified medium.",
+            "wd_node": "Q12162227",
+            "wd_label": "transportation",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10008"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20024",
+                    "roleName": "A0_pag_transporter",
+                    "entity": "odin:Entities/00012"
+                },
+                {
+                    "@id": "odin:Participants/20025",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20026",
+                    "roleName": "A3_gol_destination",
+                    "entity": "odin:Entities/00003"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Sign the Agreement",
+            "description": "Once the terms are agreed upon, the countries sign the agreement.",
+            "wd_node": "Q50384157",
+            "wd_label": "signature",
+            "wd_description": "signing of a treaty, decree, law, etc.",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10036"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20027",
+                    "roleName": "A0_pag_agent_signer_agreer",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20028",
+                    "roleName": "A2_com__co-signer",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20029",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10036",
+            "name": "Treaty Ratification",
+            "description": "The treaty is ratified by the two countries",
+            "wd_node": "Q193170",
+            "wd_label": "ratification",
+            "wd_description": "process of giving effect to documentation in international law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A0_pag_approver",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A1_ppt_entity_ratified",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "A2_gol_beneficiary",
+                    "entity": "odin:Entities/00002"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "Treaty execution",
+            "description": "The trade agreement takes effect.",
+            "wd_node": "Q321839",
+            "wd_label": "agreement",
+            "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20033",
+                    "roleName": "A0_pag_agent_agreer",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20034",
+                    "roleName": "A2_com_co_agent_other_entity_agreeing",
+                    "entity": "odin:Entities/00002"
+                },
+                {
+                    "@id": "odin:Participants/20035",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004"
+                }
+            ],
+            "children": [
+                "odin:Events/10009",
+                "odin:Events/10037"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Go Into Effect",
+            "description": "Once the agreement is ratified, it goes into effect.",
+            "wd_node": "Q55893586",
+            "wd_label": "enactment",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10037"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20036",
+                    "roleName": "A0_pag_legislative_body",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20037",
+                    "roleName": "A1_ppt_thing_enacted",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20038",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10037",
+            "name": "Trade",
+            "description": "Trade commences between involved parties",
+            "wd_node": "Q178803",
+            "wd_label": "international trade",
+            "wd_description": "exchange of capital, goods, and services across international borders or territories",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20039",
+                    "roleName": "A0_pag_agent",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A1_ppt_thing_being_traded",
+                    "entity": "odin:Entities/00013"
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A2_com_other_exchanger",
+                    "entity": "odin:Entities/00002"
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "A2_com_other_item_in_exchange",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20043",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "Criticism",
+            "description": "Opponents criticize the creation of the treaty.",
+            "wd_node": "Q17955",
+            "wd_label": "criticism",
+            "wd_description": "practice of judging the merits and faults of something or someone",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10038"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20044",
+                    "roleName": "A0_pag_critiquer",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20045",
+                    "roleName": "A1_ppt_entity_being_critiqued",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20046",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00016"
+                }
+            ],
+            "children": [
+                "odin:Events/10011"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Criticism of Agreement",
+            "description": "The treaty is publicly criticised",
+            "wd_node": "Q17955",
+            "wd_label": "criticism",
+            "wd_description": "practice of judging the merits and faults of something or someone",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20047",
+                    "roleName": "A0_pag_critiquer",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20048",
+                    "roleName": "A1_ppt_entity_being_critiqued",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20049",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00016"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10038",
+            "name": "Agreement Revision",
+            "description": "Revisions and amendments of the trade agreement between countries.",
+            "wd_node": "Q11279204",
+            "wd_label": "revision",
+            "wd_description": "stage in the writing process where the author reviews, alters, and amends their message, according to what has been written in the draft",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003"
+                }
+            ],
+            "children": [
+                "odin:Events/10039",
+                "odin:Events/10040",
+                "odin:Events/10041",
+                "odin:Events/10042"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10039",
+            "name": "Renegotiations",
+            "description": "Renegotiations about the trade agreement between countries.",
+            "wd_node": "Q79085745",
+            "wd_label": "renegotiation",
+            "wd_description": "negotiation again about something earlier agreed",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10040"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20053",
+                    "roleName": "A0_pag_negotiator",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20054",
+                    "roleName": "A1_ppt_agreement",
+                    "entity": "odin:Entities/00017"
+                },
+                {
+                    "@id": "odin:Participants/20055",
+                    "roleName": "A2_com_explicit_other_party",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20017",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00018"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10040",
+            "name": "Treaty Revision",
+            "description": "Revisions are proposed to the trade agreement between countries.",
+            "wd_node": "Q11279204",
+            "wd_label": "revision",
+            "wd_description": "stage in the writing process where the author reviews, alters, and amends their message, according to what has been written in the draft",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10041"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20056",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "odin:Entities/00001"
+                },
+                {
+                    "@id": "odin:Participants/20057",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "odin:Entities/00007"
+                },
+                {
+                    "@id": "odin:Participants/20058",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10041",
+            "name": "Sign the Agreement",
+            "description": "Once the terms are agreed upon, the countries sign the agreement.",
+            "wd_node": "Q50384157",
+            "wd_label": "signature",
+            "wd_description": "signing of a treaty, decree, law, etc.",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10042"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20059",
+                    "roleName": "A0_pag_agent_signer_agreer",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "A2_com__co-signer",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00018"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10042",
+            "name": "Treaty Amendment",
+            "description": "Amendments to the trade agreement between countries are applied.",
+            "wd_node": "Q1269627",
+            "wd_label": "amendment",
+            "wd_description": "alteration made or proposed to be made in a bill or motion that adds, changes, substitutes or omits",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "A0_pag_amender",
+                    "entity": "odin:Entities/00011"
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "A1_ppt_thing_amended",
+                    "entity": "odin:Entities/00007"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}

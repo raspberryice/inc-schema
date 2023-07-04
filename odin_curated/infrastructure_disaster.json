@@ -1,0 +1,792 @@
+{
+  "@id": "odin:Schemas/infrastructure disaster",
+  "sdfVersion": "3.0",
+  "version": "odin:Phase2b",
+  "events": [
+    {
+      "@id": "odin:Events/10000",
+      "name": "Infrastructure Disaster",
+      "description": "infrastructure disaster news story.",
+      "wd_node": "Q3839081",
+      "wd_label": "disaster",
+      "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20000",
+          "roleName": "A1_ppt_nature_of_the_disaster",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20001",
+          "roleName": "A2_gol_experiencer_of_disaster",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20002",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10001",
+        "odin:Events/10002",
+        "odin:Events/10003",
+        "odin:Events/10004",
+        "odin:Events/10005"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": [],
+      "importance": [],
+      "likelihood": []
+    },
+    {
+      "@id": "odin:Events/10001",
+      "name": "Incident",
+      "description": "The infrastructure disaster occurs.",
+      "wd_node": "Q3839081",
+      "wd_label": "disaster",
+      "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20010",
+          "roleName": "A1_ppt_nature_of_the_disaster",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20011",
+          "roleName": "A2_gol_experiencer_of_disaster",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20012",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10008",
+        "odin:Events/10006",
+        "odin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10002",
+      "name": "Rescue",
+      "description": "Rescue efforts for the disaster.",
+      "wd_node": "Q1341429",
+      "wd_label": "rescue",
+      "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20020",
+          "roleName": "A0_pag_rescuer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20021",
+          "roleName": "A1_ppt_entity_rescued",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20022",
+          "roleName": "A2_dir_rescued_from",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10010",
+        "odin:Events/10011",
+        "odin:Events/10012"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10003",
+      "name": "Response",
+      "description": "Authorities and the public responds to the infrastructure disaster.",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10004",
+        "odin:Events/10005"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20030",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20031",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20032",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10009",
+        "odin:Events/10013",
+        "odin:Events/10022"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10004",
+      "name": "Recovery",
+      "description": "Reconstruction and rebuilding after the infrastructure disaster.",
+      "wd_node": "Q1370468",
+      "wd_label": "reconstruction",
+      "wd_description": "repair of an existing architecural object",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20040",
+          "roleName": "A0_pag_rebuilder",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20041",
+          "roleName": "A1_ppt_former_ruins",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20042",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20043",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10016",
+        "odin:Events/10017",
+        "odin:Events/10015",
+        "odin:Events/10014"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10005",
+      "name": "Investigation",
+      "description": "Investigation on why the incident happened.",
+      "wd_node": "Q21004260",
+      "wd_label": "inquiry",
+      "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20050",
+          "roleName": "A0_pag_agent_examiner",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20051",
+          "roleName": "A1_ppt_location_examined",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20052",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10018",
+        "odin:Events/10019",
+        "odin:Events/10020",
+        "odin:Events/10021"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10006",
+      "name": "The disaster occurs",
+      "description": "The disaster occurs",
+      "wd_node": "Q3839081",
+      "wd_label": "disaster",
+      "wd_description": "hazard resulting in an event causing significant physical damage, destruction or death",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10008",
+        "odin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20060",
+          "roleName": "A1_ppt_nature_of_the_disaster",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20061",
+          "roleName": "A2_gol_experiencer_of_disaster",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20062",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10007",
+      "name": "Evacuate",
+      "description": "People are displaced.",
+      "wd_node": "Q2918584",
+      "wd_label": "relocation",
+      "wd_description": "process of vacating a fixed location (such as a residence or business) and settling in a different one",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20070",
+          "roleName": "A0_pag_agent",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20071",
+          "roleName": "A1_ppt_entity_relocated",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20072",
+          "roleName": "A2_gol_destination",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20073",
+          "roleName": "A3_dir_source",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20074",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10008",
+      "name": "Service Disruption",
+      "description": "Services are disrupted.",
+      "wd_node": "Q55614571",
+      "wd_label": "interruption",
+      "wd_description": "speech event when one person breaks in to interject while another person is talking",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20080",
+          "roleName": "A0_pag_interrupter",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20081",
+          "roleName": "A1_ppt_thing_interrupted",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20082",
+          "roleName": "A2_vsp_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20083",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10010",
+      "name": "First Responders Arrive",
+      "description": "The first responders arrive on the scene",
+      "wd_node": "Q5070802",
+      "wd_label": "emergency",
+      "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10011"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20100",
+          "roleName": "A1_ppt_nature_of_the_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20101",
+          "roleName": "A2_gol_experiencer_of_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20102",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10011",
+      "name": "Assess the situation",
+      "description": "-   They assess the situation and begin to develop a plan.",
+      "wd_node": "Q16947618",
+      "wd_label": "strategizing",
+      "wd_description": "method of planning by preemptively defining actions and reactions to reach a goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10012"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20110",
+          "roleName": "A0_pag_planner",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20111",
+          "roleName": "A1_ppt_thing_planned",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20112",
+          "roleName": "A2_cau_grounds_for_planning",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20113",
+          "roleName": "A3_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20114",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10012",
+      "name": "Rescue Operation",
+      "description": "-   They implement the plan and begin to rescue people and/or property.",
+      "wd_node": "Q1341429",
+      "wd_label": "rescue",
+      "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20120",
+          "roleName": "A0_pag_rescuer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20121",
+          "roleName": "A1_ppt_entity_rescued",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20122",
+          "roleName": "A2_dir_rescued_from",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10013",
+      "name": "Public Comment",
+      "description": "Public opinion comments, supports or criticizes the cause, involved persons and results of the event.",
+      "wd_node": "Q58897583",
+      "wd_label": "comment",
+      "wd_description": "work consisting of a critical or explanatory note written to discuss, support, or dispute an article or other presentation previously published",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10009",
+      "name": "Damage Assessment",
+      "description": "The government assesses the damage caused by the disaster.",
+      "wd_node": "Q98523538",
+      "wd_label": "damage assessment",
+      "wd_description": "set of approaches to determine whether something has been damaged, and to quantify the extent",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10014",
+      "name": "Stand Down",
+      "description": "Once the repairs or rebuild are complete, the response team stands down and returns to their normal duties.",
+      "wd_node": "Q38127868",
+      "wd_label": "recovery",
+      "wd_description": "process by which something is returned to its former status or position",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20140",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20141",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20142",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10022",
+      "name": "Planning",
+      "description": "The government gives the future plan, including the recovery plan and investigation plan.",
+      "wd_node": "Q309100",
+      "wd_label": "planning",
+      "wd_description": "process of determining the activities required to achieve a desired goal",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10015",
+      "name": "Infrastructure Cleanup",
+      "description": "Cleanup and repair of damaged infrastructure",
+      "wd_node": "Q2144962",
+      "wd_label": "repair",
+      "wd_description": "activity to fix any broken or inoperable equipment",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10016"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20150",
+          "roleName": "A0_pag_repairer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20151",
+          "roleName": "A1_ppt_entity_repaired",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20152",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10016",
+      "name": "Essential Services",
+      "description": "Reestablishment of essential services",
+      "wd_node": "Q107036510",
+      "wd_label": "restoration",
+      "wd_description": "event of something being returned to a prior state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10017",
+        "odin:Events/10014"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20160",
+          "roleName": "A0_pag_restorer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20161",
+          "roleName": "A1_ppt_thing_restored",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20162",
+          "roleName": "A2_prd_end_state",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20163",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10017",
+      "name": "Economic Reopening",
+      "description": "Recovery of business and economic activity",
+      "wd_node": "Q21255975",
+      "wd_label": "improvement",
+      "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/20170",
+          "roleName": "A0_pag_improver",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20171",
+          "roleName": "A1_ppt_thing_improving",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20172",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10018",
+      "name": "Root Cause Investigation",
+      "description": "The infrastructure team investigates the root cause of the disaster",
+      "wd_node": "Q11540953",
+      "wd_label": "search",
+      "wd_description": "search for target data from a set of data",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10019"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20180",
+          "roleName": "A0_pag_searcher",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20181",
+          "roleName": "A1_loc_Area_searched",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20182",
+          "roleName": "A2_ppt_searched_for",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20183",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10019",
+      "name": "Create Report",
+      "description": "The team creates a report detailing the findings of the investigation.",
+      "wd_node": "Q10429085",
+      "wd_label": "report",
+      "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10020"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20190",
+          "roleName": "A0_pag_Reporter",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20191",
+          "roleName": "A1_ppt_thing_reported",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20192",
+          "roleName": "A2_gol_entity_reported_to",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20193",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10020",
+      "name": "Review Report",
+      "description": "The report is reviewed by the organization's senior management.",
+      "wd_node": "Q265158",
+      "wd_label": "review",
+      "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10021"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20200",
+          "roleName": "A0_pag_reviewer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20201",
+          "roleName": "A1_ppt_thing_reviewed",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20202",
+          "roleName": "A2_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20203",
+          "roleName": "A3_vsp_secondary-theme",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20204",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/10021",
+      "name": "Develop a Plan",
+      "description": "Based on the findings of the investigation, senior management decides on a course of action to prevent future disasters.",
+      "wd_node": "Q21010924",
+      "wd_label": "safety_precaution",
+      "wd_description": "preventative measure taken to ensure someone's health",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20210",
+          "roleName": "A0_pag_Entity_giving_warning",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20211",
+          "roleName": "A1_ppt_Topic_of_precaution",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20212",
+          "roleName": "A2_gol_Precautioned_entity",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20213",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    }
+  ]
+}

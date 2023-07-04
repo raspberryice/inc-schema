@@ -1,0 +1,1178 @@
+{
+    "@id": "odin:Schemas/cyber attack",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Cyber Attack",
+            "description": "cyber attack news story.",
+            "wd_node": "Q29137",
+            "wd_label": "cybercrime",
+            "wd_description": "any crime that involves a computer and a network",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag_criminal",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_ppt_act",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "A2_gol_crime_against",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20003",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10004"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "odin:Entities/00001/", 
+                    "name": "cyber attack", 
+                    "wd_node": "Q2144405", 
+                    "wd_label": "hacking", 
+                    "wd_description": "solving of technical work that requires deep understanding, especially of a computer system"
+                }, 
+                {
+                    "@id": "odin:Entities/00002/", 
+                    "name": "hacker or hacker group", 
+                    "wd_node": "Q327245", 
+                    "wd_label": "team", 
+                    "wd_description": "group linked in a common purpose"
+                }, 
+                {
+                    "@id": "odin:Entities/00003/", 
+                    "name": "cyber attack target", 
+                    "wd_node": "Q43229", 
+                    "wd_label": "organization", 
+                    "wd_description": "social entity (not necessarily commercial) uniting people into a structured group"
+                }, 
+                {
+                    "@id": "odin:Entities/00004/", 
+                    "name": "cyber attack location", 
+                    "wd_node": "Q17334923", 
+                    "wd_label": "location", 
+                    "wd_description": "location of physical or non-physical object in space"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "attack",
+            "description": "the attacker performs the cyber attack.",
+            "wd_node": "Q29137",
+            "wd_label": "cybercrime",
+            "wd_description": "any crime that involves a computer and a network",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_pag_criminal",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_ppt_act",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "A2_gol_crime_against",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20013",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "children": [
+                "odin:Events/10008",
+                "odin:Events/10105", 
+                "odin:Events/10005",
+                "odin:Events/10006",
+                "odin:Events/10007"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "impact",
+            "description": "the attack impacts organizations, services, and personal devices.",
+            "wd_node": "Q481609",
+            "wd_label": "damage",
+            "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "children": [
+                "odin:Events/10009",
+                "odin:Events/10010",
+                "odin:Events/10110",
+                "odin:Events/10111",
+                "odin:Events/10112",
+                "odin:Events/10113"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "odin:Entities/00005/", 
+                    "name": "computer system", 
+                    "wd_node": "Q4406616", 
+                    "wd_label": "concrete_object", 
+                    "wd_description": "concrete object"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "response",
+            "description": "authorities and the public respond to the attack.",
+            "wd_node": "Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "A2_prd_reaction",
+                    "entity": "odin:Entities/00006/"
+                },
+                {
+                    "@id": "odin:Participants/20033",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "children": [
+                "odin:Events/10011",
+                "odin:Events/10131", 
+                "odin:Events/10132", 
+                "odin:Events/10012", 
+                "odin:Events/10013"
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "odin:Entities/00006/", 
+                    "name": "reaction", 
+                    "wd_node": "Q31983622", 
+                    "wd_label": "reaction", 
+                    "wd_description": "action or statement in response to a stimulus or other event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "investigation and justice",
+            "description": "investigation on the source of the attack and possible criminal justice event.",
+            "wd_node": "Q1964968",
+            "wd_label": "criminal_investigation",
+            "wd_description": "process that attempts to determine the facts of a crime and circumstances",
+            "isSchema": true,
+            "repeatable": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A1_ppt_location_examined",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "A2_ppt_theme_examined_for",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20043",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "children": [
+                "odin:Events/10014", 
+                "odin:Events/10015", 
+                "odin:Events/10016", 
+                "odin:Events/10017", 
+                "odin:Events/10018", 
+                "odin:Events/10019" 
+            ],
+            "children_gate": "or",
+            "entities": [
+                {
+                    "@id": "odin:Entities/00007/", 
+                    "name": "law enforcement agency", 
+                    "wd_node": "Q732717", 
+                    "wd_label": "law_enforcement_agency", 
+                    "wd_description": "government agency responsible for the enforcement of the laws"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "Identify Target",
+            "description": "The attacker identifies a target (person/organization/system) for the cyber attack.",
+            "wd_node": "Q3265221",
+            "wd_label": "identification",
+            "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10105"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_agent_caller",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_theme_item_being_labelled",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "A2_prd_attribute_attribute",
+                    "entity": "odin:Entities/00008/"
+                },
+                {
+                    "@id": "odin:Participants/20053",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00008/", 
+                    "name": "target", 
+                    "wd_node": "Q7685924", 
+                    "wd_label": "targeting", 
+                    "wd_description": "process of selecting objects or installations to be attacked, taken, or destroyed in warfare"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10105",
+            "name": "Find Vulnerability",
+            "description": "The attacker looks for a vulnerability in the target's system to exploit.",
+            "wd_node": "Q3265221",
+            "wd_label": "identification",
+            "wd_description": "mapping of a known quantity to an unknown entity so as to make it known",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10007"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_agent_caller",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_theme_item_being_labelled",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "A2_prd_attribute_attribute",
+                    "entity": "odin:Entities/00009/"
+                },
+                {
+                    "@id": "odin:Participants/20053",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00009/", 
+                    "name": "system vulnerability", 
+                    "wd_node": "Q104493", 
+                    "wd_label": "risk", 
+                    "wd_description": "potential for uncontrolled loss due to underlying vulnerability or uncertainties"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10006",
+            "name": "Breach",
+            "description": "The attacker breaches the security of the target's system.",
+            "wd_node": "Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10008"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Execute Attack",
+            "description": "The attacker executes the attack using the vulnerability.",
+            "wd_node": "Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Compromise System",
+            "description": "The target system is compromised.",
+            "wd_node": "Q1174599",
+            "wd_label": "attack",
+            "wd_description": "action to injure another organism",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag_agent_assaulter",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_ppt_theme_entity_assaulted",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Steal",
+            "description": "The attacker exfiltrates data from the target system.",
+            "wd_node": "Q2727213",
+            "wd_label": "theft",
+            "wd_description": "act of taking another's property without permission or consent",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20201",
+                    "roleName": "A0_pag_agent_thief",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20202",
+                    "roleName": "A2_dir_source_strolen_from",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20203",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20204",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20205",
+                    "roleName": "A1_ppt_theme_thing_stolen",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00010/", 
+                    "name": "data", 
+                    "wd_node": "Q42848", 
+                    "wd_label": "data", 
+                    "wd_description": "data"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Deny Service",
+            "description": "The attacker causes a denial of service of the target's service (website/database/etc.).",
+            "wd_node": "Q1191925",
+            "wd_label": "deprivation",
+            "wd_description": "the lack or denial of something considered to be a necessity",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_entity_removing",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_thing_being_removed",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_dir_removed_from",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10110",
+            "name": "Ransom",
+            "description": "The attack is a ransomware attack and data/access is held for ransom.",
+            "wd_node": "Q1414572",
+            "wd_label": "ransom",
+            "wd_description": "practice of holding a prisoner or item to extort money or property",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/21100",
+                    "roleName": "A0_pag_entity_paying_for_the_release_of_the_captive",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/21101",
+                    "roleName": "A1_ppt_the_captive",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/21102",
+                    "roleName": "A2_vsp_money_demanded/paid",
+                    "entity": "odin:Entities/00011/"
+                },
+                {
+                    "@id": "odin:Participants/21103",
+                    "roleName": "A3_dir_kidnapper",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/21104",
+                    "roleName": "A4_vsp_terrible_fate_arg1_avoids_via_ransom",
+                    "entity": "odin:Entities/00012/"
+                },
+                {
+                    "@id": "odin:Participants/21105",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00011/", 
+                    "name": "ransom payment", 
+                    "wd_node": "Q1148747", 
+                    "wd_label": "payment", 
+                    "wd_description": "transfer of an item of value from one party (such as a person or company) to another in exchange for the provision of goods, services or both, or to fulfill a legal obligation"
+                }, 
+                {
+                    "@id": "odin:Entities/00012/", 
+                    "name": "deletion", 
+                    "wd_node": "Q18411409", 
+                    "wd_label": "deletion", 
+                    "wd_description": "generic term for deletion (computer science)"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10111",
+            "name": "Destroy",
+            "description": "The attack destroys data.",
+            "wd_node": "Q17781833",
+            "wd_label": "destruction",
+            "wd_description": "concept of damage to an object, system or an idea",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/21110",
+                    "roleName": "A0_pag_causer_of_disintegration",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/21111",
+                    "roleName": "A1_ppt_thing_disintegating",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "odin:Participants/21112",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10112",
+            "name": "Create Backdoor",
+            "description": "The attacker creates a backdoor in the system for future access.",
+            "wd_node": "Q57699905",
+            "wd_label": "access",
+            "wd_description": "right, permission, or ability to approach, enter, or interact with something",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/21120",
+                    "roleName": "AM_cau__cause",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/21121",
+                    "roleName": "A1_ppt_theme_enterer",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/21122",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/21123",
+                    "roleName": "A0_pag_agent_allower",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/21124",
+                    "roleName": "AM_dir__directional",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/21125",
+                    "roleName": "A2_loc_location_place_entered",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/21126",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10113",
+            "name": "Infect with Malware",
+            "description": "The attack infects the system with malware.",
+            "wd_node": "Q166231",
+            "wd_label": "infection",
+            "wd_description": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/21130",
+                    "roleName": "A1_gol_destination_thing_becoming_infected",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/21131",
+                    "roleName": "A2_ppt_theme_infectant",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/21132",
+                    "roleName": "A0_pag_agent_causer_of_infection",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/21133",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Prevent Future Attacks",
+            "description": "The service owner takes steps to prevent future attacks such as patching security holes, hardening operational security, etc.",
+            "wd_node": "Q1717246",
+            "wd_label": "prevention",
+            "wd_description": "causing an event or condition that would otherwise occur to not occur",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_ppt_theme_theme",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "A2_ppt_secondary_predication_or_action",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "A3_mnr__instrument",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20114",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10131",
+            "name": "Mitigate Impact",
+            "description": "The service owner takes steps to ensure the impact of the attack is as low as possible.",
+            "wd_node": "Q1458711",
+            "wd_label": "harm_reduction",
+            "wd_description": "range of public health policies designed to lessen the negative social and/or physical consequences associated with various human behaviors, both legal and illegal",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10132"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/21140",
+                    "roleName": "A0_pag_reducer",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/21141",
+                    "roleName": "A1_ppt_thing_reduced",
+                    "entity": "odin:Entities/00009/"
+                },
+                {
+                    "@id": "odin:Participants/21142",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10132",
+            "name": "Document the Event",
+            "description": "The service owner takes steps to notify the affected people about the attack.",
+            "wd_node": "Q788790",
+            "wd_label": "documentation",
+            "wd_description": "set of documents providing knowledge",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/21150",
+                    "roleName": "A0_pag_provider_of_evidence",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/21151",
+                    "roleName": "A1_ppt_thing_documented",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/21152",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Notify Three-letter Agency",
+            "description": "The target notifies one of the three-letter agencies about the cyber attack",
+            "wd_node": "Q10423562",
+            "wd_label": "notification",
+            "wd_description": "note that a postal operator sends to the recipient",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A0_pag_notifier",
+                    "entity": "odin:Entities/00003/"
+                }, 
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A1_gol_entity_notified",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_utterance",
+                    "entity": "odin:Entities/00001/"
+                }, 
+                {
+                    "@id": "odin:Participants/20123",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Inspect",
+            "description": "The service owner inspects the logs related to the cyber attack.",
+            "wd_node": "Q1137655",
+            "wd_label": "inspection",
+            "wd_description": "organized examination or formal evaluation exercise, often involving the measurements, tests, and gauges applied to certain quality characteristics in comparison with specified requirements or standards",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20130",
+                    "roleName": "A0_pag_examiner",
+                    "entity": "odin:Entities/00003/"
+                }, 
+                {
+                    "@id": "odin:Participants/20131",
+                    "roleName": "A1_ppt_entity_inspected",
+                    "entity": "odin:Entities/00016/"
+                }, 
+                {
+                    "@id": "odin:Participants/20132",
+                    "roleName": "A2_ppt_inspected_for_what",
+                    "entity": "odin:Entities/00001/"
+                }, 
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00016/", 
+                    "name": "logs", 
+                    "wd_node": "Q29649691", 
+                    "wd_label": "logging", 
+                    "wd_description": "automatic creation of a log of a software process"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Investigate Suspects",
+            "description": "Investigate online forums, previous intelligence, etc. to figure out source of attack.",
+            "wd_node": "Q4929239",
+            "wd_label": "data_collection",
+            "wd_description": "process of gathering and measuring information",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10015"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A0_pag_agent",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20141",
+                    "roleName": "A1_ppt_thing_acquired",
+                    "entity": "odin:Entities/00013/"
+                }, 
+                {
+                    "@id": "odin:Participants/20142",
+                    "roleName": "A2_dir_source",
+                    "entity": "odin:Entities/00005/"
+                }, 
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "A3_vsp_more_specific_attribute_of_arg1_being_collected",
+                    "entity": "odin:Entities/00001/"
+                }, 
+                {
+                    "@id": "odin:Participants/20144",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": "odin:Entities/00003/"
+                }, 
+                {
+                    "@id": "odin:Participants/20145",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00013/", 
+                    "name": "evidence", 
+                    "wd_node": "Q788790", 
+                    "wd_label": "documentation", 
+                    "wd_description": "set of documents providing knowledge"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10015",
+            "name": "Surveil Suspects",
+            "description": "Surveil suspects to tie them to the attack.",
+            "wd_node": "Q334401",
+            "wd_label": "surveillance",
+            "wd_description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag_observer",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "odin:Entities/00002/"
+                }, 
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_ppt_looking_for_what",
+                    "entity": "odin:Entities/00013/"
+                }, 
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00013/", 
+                    "name": "evidence", 
+                    "wd_node": "Q788790", 
+                    "wd_label": "documentation", 
+                    "wd_description": "set of documents providing knowledge"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10016",
+            "name": "Validate Suspect Involvement",
+            "description": "Find evidence that suggests the suspect was involved in the attack.",
+            "wd_node": "Q359176",
+            "wd_label": "validation",
+            "wd_description": "process of establishing documentary evidence demonstrating that a procedure, process, or activity carried out in testing and then production maintains the desired level of compliance at all stages",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10017"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20160",
+                    "roleName": "A0_pag_causer",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20161",
+                    "roleName": "A1_ppt_entity_validated",
+                    "entity": "odin:Entities/00002/"
+                }, 
+                {
+                    "@id": "odin:Participants/20162",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10017",
+            "name": "Obtain Warrant",
+            "description": "Obtain a warrant to arrest the suspect and seize digital devices.",
+            "wd_node": "Q2477326",
+            "wd_label": "warrant",
+            "wd_description": "an order that serves as a specific type of authorization",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10018"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20170",
+                    "roleName": "A0_pag_requirer",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20171",
+                    "roleName": "A1_ppt_thing_required",
+                    "entity": "odin:Entities/00015/"
+                }, 
+                {
+                    "@id": "odin:Participants/20172",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00015/", 
+                    "name": "warrant", 
+                    "wd_node": "Q2477326", 
+                    "wd_label": "warrant", 
+                    "wd_description": "an order that serves as a specific type of authorization"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10018",
+            "name": "Arrest",
+            "description": "Arrest the suspect and confiscate digital devices.",
+            "wd_node": "Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10019"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A0_pag__police",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20181",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "odin:Entities/00002/"
+                }, 
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "A2_cau__crime",
+                    "entity": "odin:Entities/00001/"
+                }, 
+                {
+                    "@id": "odin:Participants/20183",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10019",
+            "name": "Bring to Justice",
+            "description": "Bring the suspect to justice for their crimes.",
+            "wd_node": "Q1301203",
+            "wd_label": "legal_proceeding",
+            "wd_description": "proceedings in any civil lawsuit or criminal prosecution",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20190",
+                    "roleName": "A0_pag_litigant",
+                    "entity": "odin:Entities/00007/"
+                }, 
+                {
+                    "@id": "odin:Participants/20191",
+                    "roleName": "A1_ppt_entity_tried",
+                    "entity": "odin:Entities/00002/"
+                }, 
+                {
+                    "@id": "odin:Participants/20192",
+                    "roleName": "A2_gol_adjudicator",
+                    "entity": "odin:Entities/00014/"
+                }, 
+                {
+                    "@id": "odin:Participants/20193",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "odin:Entities/00001/"
+                }, 
+                {
+                    "@id": "odin:Participants/20194",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00004/"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00014/", 
+                    "name": "court", 
+                    "wd_node": "Q41487", 
+                    "wd_label": "court", 
+                    "wd_description": "judicial institution with the authority to resolve legal disputes"
+                }
+            ],
+            "relations": []
+        }
+    ]
+}

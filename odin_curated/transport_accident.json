@@ -1,0 +1,1038 @@
+{
+    "@id": "odin:Schemas/transport accident",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Transport Accident",
+            "description": "transport accident news story.",
+            "wd_node": "Q11822042",
+            "wd_label": "transport_accident",
+            "wd_description": "accident in transportation",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag__agent_causer_of_damage",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_ppt_patient_entity_crashed",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "AM_gol__goal",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20003",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10004",
+                "odin:Events/10005",
+                "odin:Events/10006"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "clash",
+            "description": "The transportation accident happened.",
+            "wd_node": "Q11822042",
+            "wd_label": "transport_accident",
+            "wd_description": "accident in transportation",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_pag__agent_causer_of_damage",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_ppt_patient_entity_crashed",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "AM_gol__goal",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20013",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10007"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "rescue",
+            "description": "People are being rescued from the site of the accident.",
+            "wd_node": "Q1341429",
+            "wd_label": "rescue",
+            "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10005",
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A0_pag_rescuer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A1_ppt_entity_rescued",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_dir_rescued_from",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10008",
+                "odin:Events/10009",
+                "odin:Events/10049"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "damage",
+            "description": "The accident caused damage.",
+            "wd_node": "Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004",
+                "odin:Events/10005",
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20033",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10010",
+                "odin:Events/10046",
+                "odin:Events/10047",
+                "odin:Events/10048"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "investigation",
+            "description": "The cause of the accident is investigated.",
+            "wd_node": "Q21004260",
+            "wd_label": "inquiry",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A1_ppt_location_examined",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10011",
+                "odin:Events/10051"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "public response",
+            "description": "The public reacts to reports of the accident.",
+            "wd_node": "Q51158748",
+            "wd_label": "outrage",
+            "wd_description": "serious insult in fact or in speech",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_Stimulus_of_outrage",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_enraged_entity",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10012",
+                "odin:Events/10013"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10006",
+            "name": "aftermath",
+            "description": "Lawsuits related to the accident and new legislations made to prevent the accident from happening again.",
+            "wd_node": "Q1717246",
+            "wd_label": "prevention",
+            "wd_description": "causing an event or condition that would otherwise occur to not occur",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "A0_pag_agent_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "A1_ppt_theme_theme",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "A2_ppt_secondary_predication_or_action",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "A3_mnr__instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20064",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10014",
+                "odin:Events/10028",
+                "odin:Events/10032",
+                "odin:Events/10033",
+                "odin:Events/10039",
+                "odin:Events/10043",
+                "odin:Events/10023"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Transport Accident",
+            "description": "accident in transportation",
+            "wd_node": "Q11822042",
+            "wd_label": "transport_accident",
+            "wd_description": "accident in transportation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A0_ppt_theme",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "A1_ppt_thing_hit",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "A2_ppt_Topic_collided_over_in_metaphorical_case",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Trap",
+            "description": "People are trapped in the wreckage of the accident",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10009",
+                "odin:Events/10049"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag_rescuer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_ppt_entity_rescued",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "A2_dir_rescued_from",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Emergency Evacuation",
+            "description": "Urgent movement of people away from the threat or actual occurrence of a hazard",
+            "wd_node": "Q606332",
+            "wd_label": "emergency_evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A0_pag_rescuer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20091",
+                    "roleName": "A1_ppt_entity_rescued",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "A2_dir_rescued_from",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10049",
+            "name": "Treatment",
+            "description": "People are brought to safety and medical attention is given to those who need it.",
+            "wd_node": "Q1341429",
+            "wd_label": "rescue",
+            "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A0_pag_rescuer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20091",
+                    "roleName": "A1_ppt_entity_rescued",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "A2_dir_rescued_from",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Environmental Damage",
+            "description": "The accident causes damage to the environment.",
+            "wd_node": "Q481609",
+            "wd_label": "damage",
+            "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+            "isSchema": false,
+            "optional": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10046",
+            "name": "Injury",
+            "description": "The physical injuring of a person or animal",
+            "wd_node": "Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "optional": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10047"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10047",
+            "name": "Death",
+            "description": "The death of a person or animal.",
+            "wd_node": "Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "isSchema": false,
+            "optional": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10048",
+            "name": "Destruction",
+            "description": "The destruction of a thing",
+            "wd_node": "Q481609",
+            "wd_label": "damage",
+            "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10046",
+                "odin:Events/10010"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_agent_agent_causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_patient_entity_damaged",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_mnr_instrument_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Report",
+            "description": "A report is issued.",
+            "wd_node": "Q10429085",
+            "wd_label": "report",
+            "wd_description": "report from a committee to the Swedish riksdag with a well grounded proposal for decision",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "A2_gol_entity_reported_to",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10051",
+            "name": "Investigation",
+            "description": "Investigate the reason of the accident.",
+            "wd_node": "Q1964968",
+            "wd_label": "criminal_investigation",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10011"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "A2_gol_entity_reported_to",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Donation",
+            "description": "The public offers help or assistance to those involved in the accident",
+            "wd_node": "Q102358908",
+            "wd_label": "support",
+            "wd_description": "help for a person in a difficult situation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A0_pag_helper",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A1_ppt_person",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Public Concern",
+            "description": "The public expresses concern or worry about the accident",
+            "wd_node": "Q44619",
+            "wd_label": "fear",
+            "wd_description": "emotion induced by perceived danger or threat",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20130",
+                    "roleName": "A0_ppt_scaredy_cat",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20131",
+                    "roleName": "A1_ppt_afraid_of",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20132",
+                    "roleName": "A2_gol_afraid_for",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Justice",
+            "description": "Lawsuits are filed against the company responsible for the accident",
+            "wd_node": "Q697327",
+            "wd_label": "lawsuit",
+            "wd_description": "civil action brought in a court of law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10039",
+                "odin:Events/10043"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A0_pag_prosecutor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20141",
+                    "roleName": "A1_ppt_defendant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20142",
+                    "roleName": "A2_vsp_type/grounds/accusation",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10023",
+            "name": "Company Shutdown",
+            "description": "The company may be forced to shut down its operations",
+            "wd_node": "Q5135520",
+            "wd_label": "closure",
+            "wd_description": "actions taken when it is no longer necessary or possible for a business or other organization to continue to operate",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20230",
+                    "roleName": "A0_pag_person_doing_the_closing",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20231",
+                    "roleName": "A1_ppt_thing_closing",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20232",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "optional": true
+        },
+        {
+            "@id": "odin:Events/10028",
+            "name": "Legislation",
+            "description": "The new legislation requires states to use traffic modeling to prioritize speed and vehicle throughput over peoples' lives.",
+            "wd_node": "Q12162227",
+            "wd_label": "transportation",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20280",
+                    "roleName": "A0_pag_transporter",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20281",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20282",
+                    "roleName": "A2_dir_source",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20283",
+                    "roleName": "A3_gol_destination",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20284",
+                    "roleName": "A4_loc_path",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20285",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "optional": true
+        },
+        {
+            "@id": "odin:Events/10032",
+            "name": "Incentivize Safety",
+            "description": "The government provides financial incentives for companies to adopt new safety technologies",
+            "wd_node": "Q10566551",
+            "wd_label": "safety",
+            "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20320",
+                    "roleName": "A0_pag_agent/causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20321",
+                    "roleName": "A1_ppt_entity_who_is_protected",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20322",
+                    "roleName": "A2_vsp_specific_domain_in_which_arg1_is_safe",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20323",
+                    "roleName": "A3_gol_potential_danger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20324",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "optional": true
+        },
+        {
+            "@id": "odin:Events/10033",
+            "name": "Create Agency",
+            "description": "The government creates a new agency to oversee energy safety",
+            "wd_node": "Q10566551",
+            "wd_label": "safety",
+            "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20330",
+                    "roleName": "A0_pag_agent/causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20331",
+                    "roleName": "A1_ppt_entity_who_is_protected",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20332",
+                    "roleName": "A2_vsp_specific_domain_in_which_arg1_is_safe",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20333",
+                    "roleName": "A3_gol_potential_danger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20334",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "optional": true
+        },
+        {
+            "@id": "odin:Events/10039",
+            "name": "Company Pays Compensation",
+            "description": "The company may have to pay compensation to the families of those killed or injured in the accident",
+            "wd_node": "Q1498273",
+            "wd_label": "compensation",
+            "wd_description": "legal term",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20390",
+                    "roleName": "A0_pag_payer_or_buyer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20391",
+                    "roleName": "A1_ppt_thing_bought_or_paid_for",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20392",
+                    "roleName": "A2_gol_seller_or_person_being_paid",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20393",
+                    "roleName": "A3_ppt_price_paid",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20394",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10043",
+            "name": "Improve Safety",
+            "description": "The company may be required to improve safety measures to prevent similar accidents from happening in the future",
+            "wd_node": "Q10566551",
+            "wd_label": "safety",
+            "wd_description": "state of being secure from harm, injury, danger, or other non-desirable outcomes",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20430",
+                    "roleName": "A0_pag_agent/causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20431",
+                    "roleName": "A1_ppt_entity_who_is_protected",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20432",
+                    "roleName": "A2_vsp_specific_domain_in_which_arg1_is_safe",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20433",
+                    "roleName": "A3_gol_potential_danger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20434",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "Events/10046/",
+            "name": "Injury",
+            "description": "People are injured in the accident.",
+            "wd_node": [
+                "wd:Q1234567",
+                "wdt:P1234567"
+            ],
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/10047"
+            ],
+            "participants": [],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}

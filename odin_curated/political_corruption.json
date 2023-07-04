@@ -1,0 +1,1141 @@
+{
+    "@id": "odin:Schemas/political corruption",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Political Corruption",
+            "description": "political corruption news story.",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag_getter",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_ppt_thing_gotten",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10004",
+                "odin:Events/10005"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "corruption",
+            "description": "The political corruption took place.",
+            "wd_node": "Q10858400",
+            "wd_label": "political_corruption",
+            "wd_description": "use of power by government officials for illegitimate private gain",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_pag_agent/cause",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_ppt_entity_corrupted",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20013",
+                    "roleName": "A3_vsp_specific_aspect_of_arg1_being_corrupted",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20014",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10006",
+                "odin:Events/10007"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "exposure",
+            "description": "The political corruption was exposed to public.",
+            "wd_node": "Q1384726",
+            "wd_label": "exposure",
+            "wd_description": "in medical context, environmental influence on an object or living thing",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A0_pag_exposer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A1_ppt_exposed_entity",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_gol_exposed_to",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10008"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "public response",
+            "description": "The public responds to the political corruption.",
+            "wd_node": "Q31983622",
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "odin:Events/10001"
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "A2_prd_reaction",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20033",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "children": [
+                "odin:Events/10009",
+                "odin:Events/10010",
+                "odin:Events/10011",
+                "odin:Events/10012"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "investigation",
+            "description": "An investigation is ordered to uncover the details of the political corruption.",
+            "wd_node": "Q21004260",
+            "wd_label": "inquiry",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10005"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A1_ppt_location_examined",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10016",
+                "odin:Events/10013",
+                "odin:Events/10014",
+                "odin:Events/10015"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "resignation and punishment",
+            "description": "The officials involved in the corruption resign and receive punishment for their actions.",
+            "wd_node": "Q186361",
+            "wd_label": "punishment",
+            "wd_description": "imposition of an undesirable or unpleasant outcome as a response and deterrent to an action or behaviour that is deemed undesirable or unacceptable",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_punisher",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_punished",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "A2_cau_punished-for",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20053",
+                    "roleName": "A3_mnr_mention_of_punishment_itself",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20054",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10017",
+                "odin:Events/10018",
+                "odin:Events/10026",
+                "odin:Events/10021"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10006",
+            "name": "politician bribery",
+            "description": "The politician accepts a bribe",
+            "wd_node": "Q187436",
+            "wd_label": "bribery",
+            "wd_description": "illicit act of giving money or gifts that alters the behavior of the recipient",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10007"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "A0_pag_briber",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "A1_ppt_person_bribed",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "A2_prd_favor",
+                    "entity": "odin:Entities/00006/"
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "A3_vsp_amount_exchanged",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "odin:Participants/20064",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Politician Influences Decision",
+            "description": "The politician uses their power to influence a decision.",
+            "wd_node": "Q16513426",
+            "wd_label": "decision",
+            "wd_description": "result of deliberation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A0_pag_decider",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "A1_ppt_the_decision_itself",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "A2_gol_beneficiary",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "A3_vsp_subject-matter_of_decision",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20074",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Prosecution of Corruption",
+            "description": "The political corruption is prosecuted by the authorities.",
+            "wd_node": "Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag__police",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "A2_cau__crime",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Public Discontent",
+            "description": "The public may become outraged and protest the political corruption",
+            "wd_node": "Q273120",
+            "wd_label": "protest",
+            "wd_description": "expression of objection",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10010"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A0_pag_protester",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20091",
+                    "roleName": "A1_ppt_objectionable_thing",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Public Withdrawal",
+            "description": "-The public may withdraw their support for the corrupt politician.",
+            "wd_node": "Q796919",
+            "wd_label": "resignation",
+            "wd_description": "act of giving up or quitting an office or position",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10011"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_agent_quitter",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "AM_dir__directional",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "A1_ppt_source_job",
+                    "entity": "odin:Entities/00008/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Public Demands",
+            "description": "-The public may demand that the politician step down from their position.",
+            "wd_node": "Q796919",
+            "wd_label": "resignation",
+            "wd_description": "act of giving up or quitting an office or position",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10012"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_agent_quitter",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "AM_dir__directional",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "A1_ppt_source_job",
+                    "entity": "odin:Entities/00009/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Criminal Charges",
+            "description": "-The public may call for criminal charges to be brought against the politician.",
+            "wd_node": "Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A0_pag__litigant",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_gol__adjudicator",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "odin:Participants/20123",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "odin:Participants/20124",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Collecting Data",
+            "description": "Investigators interview witnesses and collect evidence",
+            "wd_node": "Q178651",
+            "wd_label": "interview",
+            "wd_description": "structured series of questions and answers",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10014"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20130",
+                    "roleName": "A0_pag_interviewer",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20131",
+                    "roleName": "A1_gol_interviewee",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20132",
+                    "roleName": "A2_ppt_purpose_or_subject_matter_of_interview",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Present Findings",
+            "description": "Investigators present their findings to prosecutors",
+            "wd_node": "Q604733",
+            "wd_label": "presentation",
+            "wd_description": "process of presenting a topic to an audience",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10015"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A0_pag_giver",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20141",
+                    "roleName": "A1_ppt_thing_given",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20142",
+                    "roleName": "A2_gol_given_to",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "A3_prd_secondary_attribute_of_thing_given",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20144",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10015",
+            "name": "Prosecution",
+            "description": "Prosecutors decide whether to bring charges against the individuals involved in the corruption",
+            "wd_node": "Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag__police",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_cau__crime",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10016",
+            "name": "Trial and Verdict",
+            "description": "If charges are brought, a trial is held and a verdict is reached",
+            "wd_node": "Q8016240",
+            "wd_label": "trial",
+            "wd_description": "coming together of parties to a dispute, to present information in a tribunal",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20160",
+                    "roleName": "A0_pag__litigant",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20161",
+                    "roleName": "A1_ppt__entity_tried",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20162",
+                    "roleName": "A2_gol__adjudicator",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20163",
+                    "roleName": "A3_cau_tried_for",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "odin:Participants/20164",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10017",
+            "name": "Enforcement",
+            "description": "This may include imprisonment, fines, or both.",
+            "wd_node": "Q32098",
+            "wd_label": "sanction",
+            "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10018",
+                "odin:Events/10021"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20170",
+                    "roleName": "A0_pag_entity_enforcing_sanctions",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20171",
+                    "roleName": "A1_ppt_entity_being_punished",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20172",
+                    "roleName": "A2_mnr_sanctions",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20173",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10019",
+                "odin:Events/10020"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10018",
+            "name": "Public Demand Further Action",
+            "description": "The public may demand further action, such as the resignation of other officials involved in the corruption or an investigation into the corruption.",
+            "wd_node": "Q796919",
+            "wd_label": "resignation",
+            "wd_description": "act of giving up or quitting an office or position",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10025"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A0_pag_agent_quitter",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20181",
+                    "roleName": "AM_dir__directional",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20183",
+                    "roleName": "A1_ppt_source_job",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10024",
+                "odin:Events/10025",
+                "odin:Events/10022",
+                "odin:Events/10023"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10019",
+            "name": "Sentencing",
+            "description": "The person committed an offense and was sentenced to imprisonment and/or fines.",
+            "wd_node": "Q83267",
+            "wd_label": "crime",
+            "wd_description": "unlawful act forbidden and punishable by criminal law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20190",
+                    "roleName": "A0_pag__perp",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20191",
+                    "roleName": "A2_gol__victim",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20192",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10020",
+            "name": "Severe Penalty",
+            "description": "The sentence under this section for such offense shall include imprisonment for not less than 20 years",
+            "wd_node": "Q1456832",
+            "wd_label": "offense",
+            "wd_description": "action against the law, subject to punishment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10025",
+                "odin:Events/10021"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20264",
+                    "roleName": "A3_cau__crime",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20265",
+                    "roleName": "A2_ppt_punishment",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20200",
+                    "roleName": "A0_pag_criminal",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20201",
+                    "roleName": "A1_ppt_crime",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "odin:Participants/20202",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "": {}
+        },
+        {
+            "@id": "odin:Events/10021",
+            "name": "Fine",
+            "description": "A person liable to imprisonment may be sentenced to pay a fine not exceeding $2,000 in addition to, or instead of, imprisonment.",
+            "wd_node": "Q1243001",
+            "wd_label": "fine",
+            "wd_description": "financial penalty",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20210",
+                    "roleName": "A0_pag_finer",
+                    "entity": "odin:Entities/00011/"
+                },
+                {
+                    "@id": "odin:Participants/20211",
+                    "roleName": "A1_vsp_fine",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20212",
+                    "roleName": "A2_gol_fined",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20213",
+                    "roleName": "A3_cau_cause",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "odin:Participants/20214",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00007/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10022",
+            "name": "Resignation",
+            "description": "2.The scandal led to the resignation of the transportation minister in 2006.",
+            "wd_node": "Q192909",
+            "wd_label": "scandal",
+            "wd_description": "widely publicized damaging allegations triggering the outrage of public opinion",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10026"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20220",
+                    "roleName": "A0_pag_entity_engaging_in_disgraceful_activity",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20221",
+                    "roleName": "A1_ppt_the_disgraceful_activity",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20222",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10023",
+            "name": "Recommend Action",
+            "description": "3.The report singled out the actions of 17 officials for a closer look, recommending that most be reviewed for possible discipline or administrative action.",
+            "wd_node": "Q1315911",
+            "wd_label": "discipline",
+            "wd_description": "self control",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20230",
+                    "roleName": "A0_pag_recommender",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20231",
+                    "roleName": "A1_ppt_recommended_thing",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20232",
+                    "roleName": "A2_cau_cause",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20233",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10024",
+            "name": "Admonish",
+            "description": "4.Lanny A. Breuer, chief of the department’s criminal division, was admonished by Mr. Holder.",
+            "wd_node": "Q17955",
+            "wd_label": "criticism",
+            "wd_description": "practice of judging the merits and faults of something or someone",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10017",
+                "odin:Events/10019"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20240",
+                    "roleName": "A0_pag_critiquer",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "odin:Participants/20241",
+                    "roleName": "A1_ppt_entity_being_critiqued",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20242",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10025",
+            "name": "Officials Resign",
+            "description": "2.The officials involved in the corruption resign.",
+            "wd_node": "Q366",
+            "wd_label": "corruption",
+            "wd_description": "form of dishonesty or criminal offense undertaken by a person or organization entrusted with a position of authority, to acquire illicit benefit or abuse power for one's private gain",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10026"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20250",
+                    "roleName": "A0_pag_agent/cause",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20251",
+                    "roleName": "A1_ppt_entity_corrupted",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20252",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "odin:Participants/20253",
+                    "roleName": "A3_vsp_specific_aspect_of_arg1_being_corrupted",
+                    "entity": "odin:Entities/00007/"
+                },
+                {
+                    "@id": "odin:Participants/20254",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00003/"
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10026",
+            "name": "Remove Officials",
+            "description": "3.The officials involved in the corruption may be disciplined or removed from their positions.",
+            "wd_node": "Q23009442",
+            "wd_label": "removal",
+            "wd_description": "dissociation of the original object with its old part; moving an object on distance of disconnect; process of moving, or the fact of being removed",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20260",
+                    "roleName": "A0_pag_entity_removing",
+                    "entity": "odin:Entities/00011/"
+                },
+                {
+                    "@id": "odin:Participants/20261",
+                    "roleName": "A1_ppt_thing_being_removed",
+                    "entity": "odin:Entities/00001/"
+                },
+                {
+                    "@id": "odin:Participants/20262",
+                    "roleName": "A2_dir_removed_from",
+                    "entity": "odin:Entities/00011/"
+                },
+                {
+                    "@id": "odin:Participants/20263",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        }
+    ],
+    "entities": [
+        {
+            "@id": "odin:Entities/00001/",
+            "name": "person",
+            "wd_node": "wd:Q215627",
+            "wd_label": "person",
+            "wd_description": "being that has certain capacities or attributes constituting personhood"
+        },
+        {
+            "@id": "odin:Entities/00002/",
+            "name": "money",
+            "wd_node": "wd:Q1368",
+            "wd_label": "money",
+            "wd_description": "physical or virtual object or record accepted as payment"
+        },
+        {
+            "@id": "odin:Entities/00003/",
+            "name": "georaphic location",
+            "wd_node": "wd:Q2221906",
+            "wd_label": "georaphic location",
+            "wd_description": "point or an area on something's surface or elsewhere"
+        },
+        {
+            "@id": "odin:Entities/00004/",
+            "name": "group of humans",
+            "wd_node": "wd:Q16334295",
+            "wd_label": "group_of_humans",
+            "wd_description": "any set of human beings"
+        },
+        {
+            "@id": "odin:Entities/00005/",
+            "name": "number",
+            "wd_node": "wd:Q11563",
+            "wd_label": "number",
+            "wd_description": "mathematical object used to count, label, and measure"
+        },
+        {
+            "@id": "odin:Entities/00006/",
+            "name": "event",
+            "wd_node": "wd:Q1656682",
+            "wd_label": "event",
+            "wd_description": "temporary and scheduled happening, like a conference, festival, competition or similar"
+        },
+        {
+            "@id": "odin:Entities/00007/",
+            "name": "object",
+            "wd_node": "wd:Q488383",
+            "wd_label": "object",
+            "wd_description": "anything that exists and may be acted upon by a subject"
+        },
+        {
+            "@id": "odin:Entities/00008/",
+            "name": "support",
+            "wd_node": "wd:Q1058733",
+            "wd_label": "support",
+            "wd_description": "structural element sustaining the weight of a building"
+        },
+        {
+            "@id": "odin:Entities/00009/",
+            "name": "politician",
+            "wd_node": "wd:Q82955",
+            "wd_label": "politician",
+            "wd_description": "person involved in politics; person who holds or seeks positions in government"
+        },
+        {
+            "@id": "odin:Entities/00010/",
+            "name": "crime",
+            "wd_node": "wd:Q83267",
+            "wd_label": "crime",
+            "wd_description": "unlawful act forbidden and punishable by criminal law"
+        },
+        {
+            "@id": "odin:Entities/00011/",
+            "name": "government organization",
+            "wd_node": "wd:Q2659904",
+            "wd_label": "government_organization",
+            "wd_description": "organization administrated by a government authority or agency"
+        }
+    ]
+}

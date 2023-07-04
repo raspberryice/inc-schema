@@ -1,0 +1,891 @@
+{
+    "@id": "odin:Schemas/health care",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Health Care",
+            "description": "health care news story.",
+            "wd_node": "Q31207",
+            "wd_label": "health care",
+            "wd_description": "prevention of disease and promotion of wellbeing",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20003",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10020",
+                "odin:Events/10003",
+                "odin:Events/10004",
+                "odin:Events/10005"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "Infection",
+            "description": "The initial infection that causes the need for health care.",
+            "wd_node": "Q166231",
+            "wd_label": "infection",
+            "wd_description": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_ppt_infectant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10009",
+                "odin:Events/10010",
+                "odin:Events/10011"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10020",
+            "name": "Affliction",
+            "description": "The initial affliction that causes the need for health care.",
+            "wd_node": "Q9586923",
+            "wd_label": "affliction",
+            "wd_description": "feeling of pain, worry and agony",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": ["odin:Events/10003"],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10002",
+                "odin:Events/10021"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "Medical Inspection",
+            "description": "The patient receives medical tests to help diagnose the disease.",
+            "wd_node": "Q106171319",
+            "wd_label": "testing",
+            "wd_description": "the collective event of testing whole or parts of the population of a place in a period of time for a disesase. NOT the single event of testing a person, but the collective event of testing multiple people.",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A0_pag_examiner",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A1_loc_examined",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "A2_ppt_in_search_of",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20033",
+                    "roleName": "A3_prd_test_result",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20034",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10006",
+                "odin:Events/10007",
+                "odin:Events/10016",
+                "odin:Events/10014",
+                "odin:Events/10015",
+                "odin:Events/10012"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "Medical Treatment",
+            "description": "The patient receives treatment for the disease, including medication, physical therapy and surgery.",
+            "wd_node": "Q179661",
+            "wd_label": "treatment",
+            "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10005",
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20043",
+                    "roleName": "A3_mnr__instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20044",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10022",
+                "odin:Events/10023",
+                "odin:Events/10018",
+				"odin:Events/10026",
+				"odin:Events/10013"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "Outcome",
+            "description": "The outcome of the health care.",
+            "wd_node": "Q2995644",
+            "wd_label": "result",
+            "wd_description": "final consequence or product of a sequence of actions or events",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10008",
+				"odin:Events/10024",
+				"odin:Events/10025"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10006",
+            "name": "Medical History",
+            "description": "The patient's medical history is taken",
+            "wd_node": "Q1355298",
+            "wd_label": "examination",
+            "wd_description": "process to determine knowledge or skills",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10007"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20160",
+                    "roleName": "A2_prd_value_or_attribute",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Physical Examination",
+            "description": "The patient is given a physical examination.",
+            "wd_node": "Q835153",
+            "wd_label": "physical examination",
+            "wd_description": "process by which a medical professional investigates the body of a patient for signs of disease",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10015"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Discharge",
+            "description": "The patient is discharged from the health care.",
+            "wd_node": "Q47328472",
+            "wd_label": "hospital discharge",
+            "wd_description": "release of a patient from clinical care",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Pathogen Ingress",
+            "description": "Pathogen enters the body",
+            "wd_node": "Q166231",
+            "wd_label": "infection",
+            "wd_description": "invasion of and multiplication in a host by disease-causing pathogens or organisms, and the reaction of host tissues",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10010"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_ppt_infectant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Pathogen Growth",
+            "description": "Pathogen begins to multiply",
+            "wd_node": "Q1342838",
+            "wd_label": "growth",
+            "wd_description": "the increase in size or mass of an entire organism, a part of an organism or a cell",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10011"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_ppt_infectant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_ext_amount_increased_by",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20105",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Transmission",
+            "description": "Pathogen is transmitted to others",
+            "wd_node": "Q50156634",
+            "wd_label": "pathogen_spread",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_ppt_infectant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag_causer_of_infection",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_gol_thing_becoming_infected",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Diagnosis",
+            "description": "Affliction is diagnosed",
+            "wd_node": "Q16644043",
+            "wd_label": "diagnosis",
+            "wd_description": "identification of the nature and cause of a certain phenomenon, which is used in many different disciplines to determine causality",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20123",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Treatment",
+            "description": "Affliction is treated",
+            "wd_node": "Q179661",
+            "wd_label": "treatment",
+            "wd_description": "attempted medical remediation of a health problem, usually following a diagnosis",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10026"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A2_vsp_substance",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "A3_mnr__instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20134",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Patient Arrival",
+            "description": "The patient arrives at the medical facility and is greeted by staff",
+            "wd_node": "Q1068755",
+            "wd_label": "check-in",
+            "wd_description": "process whereby a person announces their arrival at a hotel, hospital, event, airport or sea port",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A0_pag_staff_member_or_other_entity_enabling_the_checking_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10015",
+            "name": "Testing",
+            "description": "The patient may undergo additional tests, such as blood tests or X-rays.",
+            "wd_node": "Q2671652",
+            "wd_label": "medical test",
+            "wd_description": "medical procedure performed to detect, diagnose, or monitor diseases, disease processes, susceptibility, or to determine a course of treatment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10016",
+            "name": "Review Test Results",
+            "description": "The results of the tests are reviewed.",
+            "wd_node": "Q265158",
+            "wd_label": "review",
+            "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10012"
+			],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_provider",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20163",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10018",
+            "name": "Patient's Condition Improves",
+            "description": "The patient's condition improves.",
+            "wd_node": "Q21255975",
+            "wd_label": "improvement",
+            "wd_description": "process of a thing moving from one state to another that is considered to be better, usually through some action intended to bring about that better state",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+			],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A2_vsp_substance",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "children": [
+                "odin:Events/10019"
+            ],
+            "children_gate": "or"
+        },
+        {
+            "@id": "odin:Events/10019",
+            "name": "Normal Sleep Patterns",
+            "description": "The patient is able to sleep well and has normal sleep patterns.",
+            "wd_node": "Q1318283",
+            "wd_label": "sleep",
+            "wd_description": "sleep in non-human beings",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10021",
+            "name": "Injury",
+            "description": "The injury that causes the need for health care.",
+            "wd_node": "Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_injured_entity",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_illness_or_injury",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/21122",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10022",
+            "name": "Prescription",
+            "description": "The prescription given to fix the affliction.",
+            "wd_node": "Q193078",
+            "wd_label": "medical prescription",
+            "wd_description": "instructions governing the plan of care for an individual patient, often written authorization to obtain a drug from a pharmacist",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+				"odin:Events/10013"
+			],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10023",
+            "name": "Patient's Condition does not Improves",
+            "description": "The patient's condition does not improve.",
+            "wd_node": "Q4056799",
+            "wd_label": "worsening",
+            "wd_description": "aggravation of a symptom",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A2_vsp_substance",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10024",
+            "name": "Recovery",
+            "description": "The patient recovers and goes back to normal life.",
+            "wd_node": "Q38127868",
+            "wd_label": "recovery",
+            "wd_description": "process by which something is returned to its former status or position",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+				"odin:Events/10008"
+			],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A2_vsp_substance",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_ppt_affliction",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10025",
+            "name": "Death",
+            "description": "The patient dies.",
+            "wd_node": "Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A2_vsp_substance",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A1_ppt_patient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+		{
+		  "@id": "odin:Events/10026",
+		  "children": [
+			"odin:Events/10018",
+			"odin:Events/10023"
+		  ],
+		  "children_gate": "xor",
+		  "comment": "container node",
+		  "description": "Result of prescription",
+		  "name": "Result of prescription outlinks",
+		  "repeatable": false,
+		  "outlinks": [],
+		  "isSchema": true,
+		  "modality": []
+		}
+    ]
+}

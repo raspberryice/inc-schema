@@ -1,0 +1,953 @@
+{
+    "@id": "odin:Schemas/investment",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Investment",
+            "description": "investment news story.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20003",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10012",
+                "odin:Events/10004",
+                "odin:Events/10005"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "Research and Prepare",
+            "description": "Research on which industry and company to invest in.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20013",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10006"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "Invest",
+            "description": "Make the investment in some legal-binding process.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10008",
+                "odin:Events/10010",
+                "odin:Events/10007",
+                "odin:Events/10017",
+                "odin:Events/10021"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "Government Reaction",
+            "description": "The government will regulate or subsidy the investment.",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10012"
+            ],
+            "participants": [],
+            "children": [
+                "odin:Events/10009",
+                "odin:Events/10024"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "Withdraw Investment",
+            "description": "If the investment is unsuccessful, the investor will withdraw.",
+            "wd_node": "Q1760704",
+            "wd_label": "withdrawal",
+            "wd_description": "military operation",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_agent_thing_giving_way",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A2_gol_goal_recipient",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10011"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "Followup Investment",
+            "description": "If the investment is successful, the investor will continue to invest.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20053",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10023"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10006",
+            "name": "Research Industry/Research",
+            "description": "Research the chosen industries and companies.",
+            "wd_node": "Q42240",
+            "wd_label": "research",
+            "wd_description": "systematic study undertaken to increase knowledge",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "A0_pag_agent_student",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "A1_ppt_theme_subject",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "AM_mnr__manner",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Negotiate Investment",
+            "description": "The investor negotiates the terms of the investment.",
+            "wd_node": "Q79085745",
+            "wd_label": "renegotiation",
+            "wd_description": "negotiation again about something earlier agreed",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10010",
+                "odin:Events/10017"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A0_pag_negotiator",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "A1_ppt_agreement",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "A2_com_explicit_other_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Complete Investment",
+            "description": "The investment is made and the investment process is complete.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Protect Investors",
+            "description": "- The government imposes regulations to protect investors.",
+            "wd_node": "Q2251595",
+            "wd_label": "protection",
+            "wd_description": "action or precaution against a threat against an uncertainty or possible unpleasant events",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A0_pag_protector",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20091",
+                    "roleName": "A1_ppt_protected",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "A2_ppt_danger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "A3_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20094",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Make Investment",
+            "description": "The investor makes an investment into a company or project",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10008"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Return Investment",
+            "description": "The investor may receive some or all of their investment back, depending on the terms of the investment.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Evaluate Investment",
+            "description": "The investor evaluates the success of the initial investment",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004",
+                "odin:Events/10005"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20123",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10016",
+                "odin:Events/10019",
+                "odin:Events/10020",
+                "odin:Events/10015"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Performance Monitoring",
+            "description": "The investor monitors the performance of the investment.",
+            "wd_node": "Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20130",
+                    "roleName": "A0_pag_observer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20131",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20132",
+                    "roleName": "A2_ppt_looking_for_what?",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "children": [
+                "odin:Events/10019",
+                "odin:Events/10020"
+            ],
+            "children_gate": "or"
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Evaluation",
+            "description": "The investor assesses how much money the project will make",
+            "wd_node": "Q1379672",
+            "wd_label": "evaluation",
+            "wd_description": "systematic determination of a subject's merit, worth and significance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10018",
+                "odin:Events/10019"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A0_pag_evaluator",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20141",
+                    "roleName": "A1_ppt_thing_evaluated",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20142",
+                    "roleName": "A2_prd_the_assessment_itself",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10015",
+            "name": "Investor Decision",
+            "description": "The investor decides whether or not the project is worth continuing",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10016",
+            "name": "Potential Profit",
+            "description": "If the initial investment is successful, the investor will receive a higher rate of return",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10020"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20160",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20161",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20162",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20163",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10017",
+            "name": "Project Delay",
+            "description": "The project may be delayed",
+            "wd_node": "Q337690",
+            "wd_label": "postponement",
+            "wd_description": "business or legal strategy decision",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10021"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20170",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20171",
+                    "roleName": "A1_ppt_event_delayed",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20172",
+                    "roleName": "A2_ext_delay_itself",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20173",
+                    "roleName": "A3_dir_original_time",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20174",
+                    "roleName": "A4_gol_new_time",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20175",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10018",
+            "name": "Investment Decisions",
+            "description": "If the foreign investor decides to keep the investment, then he or she will continue to invest in the project.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20181",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20183",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10019",
+            "name": "Review Business Operations",
+            "description": "The investor reviews the company's business operations to see if it is on track to meet its financial goals",
+            "wd_node": "Q265158",
+            "wd_label": "review",
+            "wd_description": "evaluation of a publication, service, company, piece of hardware, event, exhibition, or performance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10016"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20190",
+                    "roleName": "A0_pag_reviewer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20191",
+                    "roleName": "A1_ppt_thing_reviewed",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20192",
+                    "roleName": "A2_gol_beneficiary",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20193",
+                    "roleName": "A3_vsp_secondary-theme",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20194",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10020",
+            "name": "Financial Analysis",
+            "description": "The investor analyzes the company's financial statements to identify any red flags that may indicate problems with the investment",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10015"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20200",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20201",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20202",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20203",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10021",
+            "name": "Check Progress",
+            "description": "To see if the investment is on track to meet its goals",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10010"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20210",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20211",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20212",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20213",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10022",
+            "name": "Investment Performance",
+            "description": "If the investment is performing well, the investor may choose to do nothing and let the investment continue to grow",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10012"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20220",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20221",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20222",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20223",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10023",
+            "name": "Re-invest",
+            "description": "If the investor is happy with the performance of the investment, they may choose to reinvest the money back into the same investment or into a different investment",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20230",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20231",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20232",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20233",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10024",
+            "name": "Attract Foreign Investment",
+            "description": "The state establishes a mechanism to promote foreign investment.",
+            "wd_node": "Q4290",
+            "wd_label": "investment",
+            "wd_description": "set of actions with the intent of earning profit",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20240",
+                    "roleName": "A0_pag_investor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20241",
+                    "roleName": "A1_ppt_thing_invested",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20242",
+                    "roleName": "A2_gol_invested_in",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20243",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}

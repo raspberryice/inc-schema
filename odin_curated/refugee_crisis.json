@@ -1,0 +1,683 @@
+{
+  "@id": "odin:Schemas/refugee crisis",
+  "sdfVersion": "3.0",
+  "version": "odin:Phase2b",
+  "events": [
+    {
+      "@id": "odin:Events/10000",
+      "name": "Refugee Crisis",
+      "description": "refugee crisis news story.",
+      "wd_node": "Q381072",
+      "wd_label": "crisis",
+      "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20000",
+          "roleName": "A1_ppt_nature_of_the_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20001",
+          "roleName": "A2_gol_experiencer_of_crisis",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20002",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10001",
+        "odin:Events/10002",
+        "odin:Events/10003",
+        "odin:Events/10004"
+      ],
+      "children_gate": "or",
+      "entities": [
+
+      ],
+      "relations": [
+
+      ],
+      "importance": [
+
+      ],
+      "likelihood": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10001",
+      "name": "Background",
+      "description": "Cause of the increased number of refugees.",
+      "wd_node": "Q11371169",
+      "wd_label": "incident",
+      "wd_description": "violent or disruptive occurrence that may precipitate a larger crisis",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10002"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20010",
+          "roleName": "A0_pag_cause",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20011",
+          "roleName": "A1_ppt_problem",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20012",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10005",
+        "odin:Events/10006",
+        "odin:Events/10007"
+      ],
+      "children_gate": "or",
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10002",
+      "name": "Refugee Movement",
+      "description": "Refugees move from their origin country to other countries.",
+      "wd_node": "Q1800545",
+      "wd_label": "migration",
+      "wd_description": "displacement of a human or animal population",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10003"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20020",
+          "roleName": "A0_pag_entity_in_motion",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20021",
+          "roleName": "A1_dir_path",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20022",
+          "roleName": "A2_gol_destination",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20023",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10008",
+        "odin:Events/10009",
+        "odin:Events/10010"
+      ],
+      "children_gate": "or",
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10003",
+      "name": "Government Action",
+      "description": "Governments take action to settle refugees and control borders.",
+      "wd_node": "Q4026292",
+      "wd_label": "action",
+      "wd_description": "something an agent can do or perform",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10004"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20030",
+          "roleName": "A0_pag_doer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20031",
+          "roleName": "A1_ppt_thing_done",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20032",
+          "roleName": "A2_vsp_type_of_act",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20033",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/10011"
+      ],
+      "children_gate": "or",
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10004",
+      "name": "Public Response",
+      "description": "Public opinion on the refugee crisis.",
+      "wd_node": "Q622645",
+      "wd_label": "attitude",
+      "wd_description": "expression of favor or disfavor toward a person, place, thing, or event",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20040",
+          "roleName": "A0_pag_speaker",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20041",
+          "roleName": "A1_ppt_utterance",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20042",
+          "roleName": "A2_gol_hearer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20043",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ],
+      "children": [
+        "odin:Events/10012",
+        "odin:Events/10013",
+        "odin:Events/10014",
+        "odin:Events/10015",
+        "odin:Events/10016",
+        "odin:Events/10017"
+      ],
+      "children_gate": "or"
+    },
+    {
+      "@id": "odin:Events/10005",
+      "name": "Economic Decline",
+      "description": "Economic decline",
+      "wd_node": "Q176494",
+      "wd_label": "recession",
+      "wd_description": "business cycle contraction; general slowdown in economic activity",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20050",
+          "roleName": "A1_ppt_entity_suffering_a_recession",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20051",
+          "roleName": "A2_vsp_mention_of_'economic'_or_similar",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20052",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10006",
+      "name": "Natural Disasters",
+      "description": "Natural disasters",
+      "wd_node": "Q950713",
+      "wd_label": "foreshock",
+      "wd_description": "earthquake that occurs before the larger mainshock, and is related to the latter in both time and space",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10007"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20060",
+          "roleName": "A1_ppt_thing_trembling",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20061",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10007",
+      "name": "Civil unrest",
+      "description": "Civil unrest",
+      "wd_node": "Q686984",
+      "wd_label": "civil_disorder",
+      "wd_description": "forms of unrest arising from a mass act of civil disobedience in which the participants become hostile toward authority, and authorities incur difficulties in maintaining public safety and order, over the disorderly crowd",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20070",
+          "roleName": "A0_pag_protester",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20071",
+          "roleName": "A1_ppt_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20072",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10008",
+      "name": "Cross Border",
+      "description": "The refugees journey to another country, often crossing dangerous borders",
+      "wd_node": "Q1800545",
+      "wd_label": "migration",
+      "wd_description": "displacement of a human or animal population",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10009"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20080",
+          "roleName": "A0_pag_entity_in_motion",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20081",
+          "roleName": "A1_dir_path",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20082",
+          "roleName": "A2_gol_destination",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20083",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10009",
+      "name": "New Arrivals",
+      "description": "The refugees arrive in the new country and must find shelter and basic necessities",
+      "wd_node": "Q131288",
+      "wd_label": "immigration",
+      "wd_description": "movement of people into another country or region to which they are not native",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10010"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20090",
+          "roleName": "A0_pag_population",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20091",
+          "roleName": "A1_ppt_destination",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20092",
+          "roleName": "A2_dir_source",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20093",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10010",
+      "name": "Resettlement",
+      "description": "The refugees may eventually be resettled in a third country or return home",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10011",
+      "name": "Border Control",
+      "description": "Border controls are put in place to manage the flow of refugees",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10012",
+      "name": "Public Awareness",
+      "description": "The public becomes aware of the crisis",
+      "wd_node": "Q44619",
+      "wd_label": "fear",
+      "wd_description": "emotion induced by perceived danger or threat",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10013"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20120",
+          "roleName": "A0_ppt_scaredy_cat",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20121",
+          "roleName": "A1_ppt_afraid_of",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20122",
+          "roleName": "A2_gol_afraid_for",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20123",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10013",
+      "name": "Public Compassion",
+      "description": "- The public begins to feel compassion for the refugees",
+      "wd_node": "Q1412160",
+      "wd_label": "compassion",
+      "wd_description": "feeling of kindness and care for another",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10015",
+        "odin:Events/10016",
+        "odin:Events/10017"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20130",
+          "roleName": "A0_pag_tender",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20131",
+          "roleName": "A1_ppt_thing_tended",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20132",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10014",
+      "name": "Media Attention",
+      "description": "The media reports on the crisis",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/10012"
+      ],
+      "participants": [
+
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10015",
+      "name": "Donation",
+      "description": "People began to donate money to the cause.",
+      "wd_node": "Q1161355",
+      "wd_label": "fundraising",
+      "wd_description": "process of gathering voluntary contributions of money or other resources",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20270",
+          "roleName": "A0_pag_raiser_of_funds",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20271",
+          "roleName": "A1_ppt_amount_raised",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20272",
+          "roleName": "A2_gol_beneficiary",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20273",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10016",
+      "name": "Public Aid",
+      "description": "The public begins to take action to help the refugees",
+      "wd_node": "Q102358908",
+      "wd_label": "support",
+      "wd_description": "help for a person in a difficult situation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20280",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20281",
+          "roleName": "A1_ppt_person",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20282",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    },
+    {
+      "@id": "odin:Events/10017",
+      "name": "Public Support",
+      "description": "More volunteers may be willing to help with the relief effort if they know there is public support for the refugees",
+      "wd_node": "Q102358908",
+      "wd_label": "support",
+      "wd_description": "help for a person in a difficult situation",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/20350",
+          "roleName": "A0_pag_helper",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20351",
+          "roleName": "A1_ppt_person",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/20352",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [
+
+      ],
+      "relations": [
+
+      ]
+    }
+  ]
+}

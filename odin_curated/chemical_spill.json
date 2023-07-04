@@ -1,0 +1,1429 @@
+{
+    "@id": "odin:Schemas/chemical leak",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000",
+            "name": "Chemical Leak",
+            "description": "chemical spills news story.",
+            "wd_node": "Q1349983",
+            "wd_label": "leak",
+            "wd_description": "process of fluid escaping containment",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_dir_thing_leaking",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_ppt_substance_leaked",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10001",
+                "odin:Events/10002",
+                "odin:Events/10003",
+                "odin:Events/10004",
+                "odin:Events/10005",
+                "odin:Events/10006",
+                "odin:Events/10007"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10001",
+            "name": "Chemical Accumulation",
+            "description": "The accumulation of the chemical that is leaked later.",
+            "wd_node": "Q1349983",
+            "wd_label": "leak",
+            "wd_description": "process of fluid escaping containment",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10002"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20010",
+                    "roleName": "A0_dir_thing_leaking",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20011",
+                    "roleName": "A1_ppt_substance_leaked",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20012",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10008",
+                "odin:Events/10009"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10002",
+            "name": "Chemical Spill",
+            "description": "Chemicals are spilled into the environment.",
+            "wd_node": "Q60528603",
+            "wd_label": "contamination",
+            "wd_description": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20020",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20021",
+                    "roleName": "A1_gol_destination_thing_becoming_contaminated",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20022",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20023",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10010",
+                "odin:Events/10011"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "Immediate Hazards",
+            "description": "The spill causes other hazards such as fire.",
+            "wd_node": "Q1132455",
+            "wd_label": "hazard",
+            "wd_description": "situation that poses a potential threat to life, health, property, or environment",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10004",
+                "odin:Events/10005",
+                "odin:Events/10007"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20030",
+                    "roleName": "A0_pag_entity_risking",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20031",
+                    "roleName": "A1_ppt_thing_risked",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20032",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10021",
+                "odin:Events/10012",
+                "odin:Events/10020",
+                "odin:Events/10022"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10004",
+            "name": "Investigation",
+            "description": "The cause of the spill is investigated.",
+            "wd_node": "Q21004260",
+            "wd_label": "inquiry",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20040",
+                    "roleName": "A0_pag_agent_examiner",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20041",
+                    "roleName": "A1_ppt_location_examined",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10024",
+                "odin:Events/10013",
+                "odin:Events/10028"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10005",
+            "name": "Recovery",
+            "description": "The area of the spill recovers to normal.",
+            "wd_node": "Q38127868",
+            "wd_label": "recovery",
+            "wd_description": "process by which something is returned to its former status or position",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "A0_pag_repairer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A1_ppt_entity_repaired",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10014",
+                "odin:Events/10023",
+                "odin:Events/10032",
+                "odin:Events/10034"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10006",
+            "name": "Post Settlement",
+            "description": "The chemical spill leds to changes in regulations and legislation.",
+            "wd_node": "Q49371",
+            "wd_label": "legislation",
+            "wd_description": "law enacted by a legislature or other governing body",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "A0_pag_law-giving_body",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "A1_ppt_thing_controlled",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10016",
+                "odin:Events/10031",
+                "odin:Events/10017",
+                "odin:Events/10015",
+                "odin:Events/10029",
+                "odin:Events/10030"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10007",
+            "name": "Public Response",
+            "description": "The public responds to reports of the chemical spill.",
+            "wd_node": "Q51158748",
+            "wd_label": "outrage",
+            "wd_description": "serious insult in fact or in speech",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10006"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A0_pag_Stimulus_of_outrage",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "A1_ppt_enraged_entity",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "children": [
+                "odin:Events/10042",
+                "odin:Events/10018",
+                "odin:Events/10019",
+                "odin:Events/10027",
+                "odin:Events/10041"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10008",
+            "name": "Chemical Production",
+            "description": "The chemicals are produced by a factory or company.",
+            "wd_node": "Q739302",
+            "wd_label": "production",
+            "wd_description": "act of creating goods or services",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10009"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag_causer_of_accident",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_producer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "AM_amount",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10009",
+            "name": "Chemical Storage",
+            "description": "Accumulation of stores of chemicals.",
+            "wd_node": "Q9158768",
+            "wd_label": "storage",
+            "wd_description": "place or device for storing material or immaterial objects",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A0_pag_agent_causer_of_contamination",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "A2_ppt_theme_contaminant",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10010",
+            "name": "Container Cracking",
+            "description": "The containers containing chemicals burst due to pressure.",
+            "wd_node": "Q987767",
+            "wd_label": "container",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10011"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A0_pag_container",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A1_ppt_reason",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "name": "Chemical Escape",
+            "description": "The chemicals escape from the container.",
+            "wd_node": "Q60528603",
+            "wd_label": "contamination",
+            "wd_description": "presence of an unwanted constituent, harmful substance or impurity in a material, physical body, or environment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A0_pag_emitting_container",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A1_ppt_thing_emitted",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10012",
+            "name": "Contamination",
+            "description": "The chemicals can pollute the environment like air and land.",
+            "wd_node": "Q10711575",
+            "wd_label": "contamination",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10020",
+                "odin:Events/10021",
+                "odin:Events/10022"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A0_dir_thing_leaking",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A1_ppt_substance_leaked",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10013",
+            "name": "Environmental Monitoring",
+            "description": "The affected area is monitored for environmental impact.",
+            "wd_node": "Q2143522",
+            "wd_label": "monitoring",
+            "wd_description": "systematic recording, measurement, observation or surveillance of a process using technical tools or other observation systems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10028"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20130",
+                    "roleName": "A0_pag_observer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20131",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20132",
+                    "roleName": "A2_ppt_looking_for_what?",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10014",
+            "name": "Cleanup",
+            "description": "The area is cleaned up and any contaminated materials are removed",
+            "wd_node": "Q17008689",
+            "wd_label": "decontamination",
+            "wd_description": "instrument processing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10023",
+                "odin:Events/10032",
+                "odin:Events/10034"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20141",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20142",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10015",
+            "name": "Increase Safety",
+            "description": "Increase safety",
+            "wd_node": "Q2251595",
+            "wd_label": "protection",
+            "wd_description": "action or precaution against a threat against an uncertainty or possible unpleasant events",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag_protector",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_ppt_protected",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "A2_ppt_danger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "A3_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20154",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10016",
+            "name": "Administrative Leave",
+            "description": "Initially, the officers involved were placed on paid administrative leave pending investigation, which is standard procedure for the department",
+            "wd_node": "Q105387498",
+            "wd_label": "suspension",
+            "wd_description": "halt of implementation of a legal action",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20160",
+                    "roleName": "A0_pag_restorer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20161",
+                    "roleName": "A1_ppt_thing_restored",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20162",
+                    "roleName": "A2_prd_end_state",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20163",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10017",
+            "name": "Compensation",
+            "description": "-Compensation for victims",
+            "wd_node": "Q1498273",
+            "wd_label": "compensation",
+            "wd_description": "legal term",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20170",
+                    "roleName": "A0_pag_payer_or_buyer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20171",
+                    "roleName": "A1_ppt_thing_bought_or_paid_for",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20172",
+                    "roleName": "A2_gol_seller_or_person_being_paid",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20173",
+                    "roleName": "A3_ppt_price_paid",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20174",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10018",
+            "name": "Alarm",
+            "description": "People become aware of the spill",
+            "wd_node": "Q1349983",
+            "wd_label": "leak",
+            "wd_description": "process of fluid escaping containment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10027",
+                "odin:Events/10019",
+                "odin:Events/10041"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A0_dir_thing_leaking",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20181",
+                    "roleName": "A1_ppt_substance_leaked",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10019",
+            "name": "Evacuate",
+            "description": "People evacuate the area",
+            "wd_node": "Q5070802",
+            "wd_label": "emergency",
+            "wd_description": "situation such as a natural or man-made disaster requiring urgent assistance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10042"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20190",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20191",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20192",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10020",
+            "name": "Death",
+            "description": "The spilled chemicals can kill humans and animals",
+            "wd_node": "Q12147",
+            "wd_label": "health",
+            "wd_description": "desirable level of functional or metabolic efficiency of a living being",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20200",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20201",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20202",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10021",
+            "name": "Injury",
+            "description": "The spilled chemicals can injure humans and animals",
+            "wd_node": "Q193078",
+            "wd_label": "Injury",
+            "wd_description": "injury",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20210",
+                    "roleName": "A0_pag_causer_of_improvement",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20211",
+                    "roleName": "A1_ppt_thing_getting_better",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20212",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20213",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10022",
+            "name": "Habitat Change",
+            "description": "Officials said the total amount of oil spilled was still being calculated",
+            "wd_node": "Q13065634",
+            "wd_label": "environmental_pollution",
+            "wd_description": "contamination of the natural environment with pollutants",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20220",
+                    "roleName": "A0_pag_causer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20221",
+                    "roleName": "A1_gol_entity_polluted",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20222",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10023",
+            "name": "Rehabilitation",
+            "description": "return a person to their formerly existing mental and health condition",
+            "wd_node": "Q2795791",
+            "wd_label": "rehabilitation",
+            "wd_description": "process to return a person to their formerly existing mental and health condition",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20230",
+                    "roleName": "A0_pag_restorer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20231",
+                    "roleName": "A1_ppt_thing_restored",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20232",
+                    "roleName": "A2_prd_end_state",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20233",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10024",
+            "name": "Damage Assessment",
+            "description": "This only happens after a spill has made it through the damage assessment pipeline.",
+            "wd_node": "Q851176",
+            "wd_label": "assessment",
+            "wd_description": "value judgement about a fact, an object or a person",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20240",
+                    "roleName": "A0_pag_assessor",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20241",
+                    "roleName": "A1_ppt_entity_assessed",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20242",
+                    "roleName": "A2_prd_value_or_attribute",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20243",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10027",
+            "name": "Rescue",
+            "description": "Save the victim from the polluted environment",
+            "wd_node": "Q1341429",
+            "wd_label": "rescue",
+            "wd_description": "comprises responsive operations that usually involve the saving of life, or prevention of injury",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10042",
+                "odin:Events/10041"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20270",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20271",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20272",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20273",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20274",
+                    "roleName": "AM_mnr__manner",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10028",
+            "name": "Cause Analysis",
+            "description": "Analyse the cause of this spill",
+            "wd_node": "Q21004260",
+            "wd_label": "inquiry",
+            "wd_description": "process that has the aim of augmenting knowledge, resolving doubt, or solving a problem",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10024"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20280",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20281",
+                    "roleName": "A1_ppt_entity_relocated",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20282",
+                    "roleName": "A2_gol_destination",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20283",
+                    "roleName": "A3_dir_source",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20284",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10029",
+            "name": "Resettlement",
+            "description": "Resettle people in a different place",
+            "wd_node": "Q15589476",
+            "wd_label": "population transfer",
+            "wd_description": "movement of a large group of people from one region to another",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20290",
+                    "roleName": "A0_pag_mover",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20291",
+                    "roleName": "A1_ppt_moved",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20292",
+                    "roleName": "A2_loc_place",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20293",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10030",
+            "name": "Legislation",
+            "description": "promulgate law by a legislature",
+            "wd_node": "Q49371",
+            "wd_label": "legislation",
+            "wd_description": "the process or product of enrolling, enacting, or promulgating law by a legislature, parliament, or analogous governing body",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20300",
+                    "roleName": "A0_pag_transporter",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20301",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20302",
+                    "roleName": "A2_dir_source",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20303",
+                    "roleName": "A3_gol_destination",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20304",
+                    "roleName": "A4_loc_path",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20305",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10031",
+            "name": "Company Shutdown",
+            "description": "Related companies are closed",
+            "wd_node": "Q331902",
+            "wd_label": "shutdown",
+            "wd_description": "shutdown state of a nuclear reactor ",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20310",
+                    "roleName": "A1_ppt_experiencer_injured_party",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20311",
+                    "roleName": "A0_pag_stimulus_stimulus_of_injury",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20312",
+                    "roleName": "A2_mnr__instrument",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20313",
+                    "roleName": "AM_loc__location",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10032",
+            "name": "Reconstruction",
+            "description": "rebuild the damaged buildings",
+            "wd_node": "Q1370468",
+            "wd_label": "reconstruction",
+            "wd_description": "repair of an existing architectural object",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20320",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20321",
+                    "roleName": "A1_ppt_aircraft",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20322",
+                    "roleName": "A2_gol_passanger",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20323",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10034",
+            "name": "Ecosystem Restoration",
+            "description": "renew and restore ecosystems",
+            "wd_node": "Q2428433",
+            "wd_label": "restoration ecology",
+            "wd_description": "scientific study of renewing and restoring ecosystems",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20340",
+                    "roleName": "A0_pag_protester",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20341",
+                    "roleName": "A1_ppt_objectionable_thing",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20342",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": [],
+            "children_gate": "or"
+        },
+        {
+            "@id": "odin:Events/10035",
+            "name": "Call for Help",
+            "description": "Protesters in Kherson called for outside help",
+            "wd_node": "Q273120",
+            "wd_label": "protest",
+            "wd_description": "expression of objection",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10029"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20350",
+                    "roleName": "A0_pag_protester",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20351",
+                    "roleName": "A1_ppt_objectionable_thing",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20352",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10036",
+            "name": "Respond to Death",
+            "description": "Minneapolis Mayor Jacob Frey and Police Chief Medaria Arradondo held a press conference responding to Floyd",
+            "wd_node": "",
+            "wd_label": "",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10037",
+            "name": "Frey condemns police officers",
+            "description": "Frey condemned the police officers",
+            "wd_node": "Q17955",
+            "wd_label": "criticism",
+            "wd_description": "practice of judging the merits and faults of something or someone",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10024"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20370",
+                    "roleName": "A0_pag_critiquer",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20371",
+                    "roleName": "A1_ppt_entity_being_critiqued",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20372",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10038",
+            "name": "Administrative Leave",
+            "description": "Initially, the officers involved were placed on paid administrative leave pending investigation, which is standard procedure for the department",
+            "wd_node": "Q105387498",
+            "wd_label": "suspension",
+            "wd_description": "halt of implementation of a legal action",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10037"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20380",
+                    "roleName": "A0_pag_agent",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20381",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20382",
+                    "roleName": "A2_prd_attribute/function_of_arg1",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20383",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10039",
+            "name": "Notice Symptomps",
+            "description": "Someone notices that help is needed",
+            "wd_node": "Q1643184",
+            "wd_label": "help",
+            "wd_description": "cooperation between living things",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10041",
+                "odin:Events/10037",
+                "odin:Events/10023"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20390",
+                    "roleName": "A0_pag_helper",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20391",
+                    "roleName": "A1_ppt_project",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20392",
+                    "roleName": "A2_gol_benefactive",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20393",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10040",
+            "name": "Seek Help",
+            "description": "They contact someone who can provide help",
+            "wd_node": "Q102358908",
+            "wd_label": "support",
+            "wd_description": "help for a person in a difficult situation",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10023"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20400",
+                    "roleName": "A0_pag_helper",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20401",
+                    "roleName": "A1_ppt_person",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20402",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10041",
+            "name": "Medical Treatment",
+            "description": "They provide the necessary assistance",
+            "wd_node": "Q102358908",
+            "wd_label": "support",
+            "wd_description": "help for a person in a difficult situation ",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "odin:Events/10042"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20410",
+                    "roleName": "A0_pag_helper",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20411",
+                    "roleName": "A1_ppt_person",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20412",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        },
+        {
+            "@id": "odin:Events/10042",
+            "name": "Public Statement",
+            "description": "The mayor and police chief hold make a public statement in a press conference",
+            "wd_node": "Q2045234",
+            "wd_label": "briefing",
+            "wd_description": "None",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20420",
+                    "roleName": "A0_pag_giver",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20421",
+                    "roleName": "A1_gol_receiver_of_information",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20422",
+                    "roleName": "A2_ppt_topic",
+                    "entity": ""
+                },
+                {
+                    "@id": "odin:Participants/20423",
+                    "roleName": "AM_loc",
+                    "entity": ""
+                }
+            ],
+            "entities": [],
+            "relations": []
+        }
+    ]
+}

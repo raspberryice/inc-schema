@@ -1,0 +1,3752 @@
+{
+    "@id": "odin:Submissions/TA1/",
+    "sdfVersion": "3.0.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/00000/",
+            "name": "Coup d'état",
+            "description": "A coup-related news story.",
+            "wd_node": "wd:Q45382",
+            "wd_label": "Coup d'état",
+            "wd_description": "sudden deposition of a government; illegal and overt seizure of a state by the military or other elites within the state apparatus",
+            "isSchema": true,
+            "repeatable": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "odin:Events/00001/",
+                "odin:Events/00014/",
+                "odin:Events/00025/",
+                "odin:Events/00037/",
+                "odin:Events/00042/",
+                "odin:Events/00054/"
+            ],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00001/",
+            "name": "Background Conflict",
+            "description": "political, social, or economic conflict that leads to the coup.",
+            "wd_node": [
+                "wd:Q2141565"
+            ],
+            "wd_label": "situation",
+            "wd_description": "position with respect to conditions, circumstances and contexts",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "odin:Events/00014/"
+            ],
+            "participants": [],
+            "children": [
+                "odin:Events/00002/",
+                "odin:Events/00003/",
+                "odin:Events/00004/",
+                "odin:Events/00005/",
+                "odin:Events/00006/",
+                "odin:Events/00007/",
+                "odin:Events/00008/",
+                "odin:Events/00009/",
+                "odin:Events/00010/",
+                "odin:Events/00011/",
+                "odin:Events/00012/",
+                "odin:Events/00013/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00002/",
+            "name": "Election Announcement",
+            "description": "announcement is broadcast regarding election",
+            "wd_node": [
+                "wd:Q26398"
+            ],
+            "wd_label": "public_broadcasting",
+            "wd_description": "electronic media outlets whose primary mission is public service",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20000/",
+                    "roleName": "A0_pag_transmitter",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20001/",
+                    "roleName": "A1_ppt_message",
+                    "entity": "odin:Entities/00001/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00001/",
+                    "name": "General Election",
+                    "wd_node": "wd:Q1076105",
+                    "wd_label": "general_election",
+                    "wd_description": "election in which all or most members of a given political body are chosen"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "Relations/30000/",
+                    "name": "announcement",
+                    "relationSubject": "odin:Entities/00000/",
+                    "relationObject": "odin:Entities/00001/",
+                    "wd_node": "wdt:P3301",
+                    "wd_label": "broadcast_by",
+                    "wd_description": "channel, network, website or service that broadcast this item over radio, TV or the Internet"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00003/",
+            "name": "Legislative Action",
+            "description": "Legislation is passed",
+            "wd_node": [
+                "wd:Q3406566"
+            ],
+            "wd_label": "legislative_process",
+            "wd_description": "formal process leading to the approval of a law",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20002/",
+                    "roleName": "A0_pag_agent_legislative_body",
+                    "entity": "odin:Entities/00002/"
+                },
+                {
+                    "@id": "Participants/20003/",
+                    "roleName": "A1_ppt_thing_enacted",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "Participants/20004/",
+                    "roleName": "A2_gol_benefactive",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00002/",
+                    "name": "Legislature",
+                    "wd_node": "wd:Q10553309",
+                    "wd_label": "legislative_house",
+                    "wd_description": "deliberative assembly acting as part of a legislature"
+                },
+                {
+                    "@id": "odin:Entities/00003/",
+                    "name": "Legislation",
+                    "wd_node": "wd:Q14440634",
+                    "wd_label": "legislative_enactment",
+                    "wd_description": "act, law, edict or proclamation defining with authority the law in a given jurisdiction"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30001/",
+                    "name": "approved by",
+                    "relationSubject": "odin:Entities/00002/",
+                    "relationObject": "odin:Entities/00003/",
+                    "wd_node": "wdt:P790",
+                    "wd_label": "approved_by",
+                    "wd_description": "item is approved by other item(s)"
+                },
+                {
+                    "@id": "odin:Relations/30002/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00002/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00004/",
+            "name": "Judicial Action",
+            "description": "Judicial verdict is passed",
+            "wd_node": [
+                "wd:Q545861"
+            ],
+            "wd_label": "Judicial Action",
+            "wd_description": "a legal hearing",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20005/",
+                    "roleName": "A1_ppt_theme_judged",
+                    "entity": "odin:Entities/00004/"
+                },
+                {
+                    "@id": "Participants/20006/",
+                    "roleName": "A0_pag_agent_judge",
+                    "entity": "odin:Entities/00005/"
+                },
+                {
+                    "@id": "Participants/20007/",
+                    "roleName": "A2_gol_benefactive",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00004/",
+                    "name": "Verdict",
+                    "wd_node": "wd:Q327000",
+                    "wd_label": "court_decision",
+                    "wd_description": "formal decision made by a court"
+                },
+                {
+                    "@id": "odin:Entities/00005/",
+                    "name": "Judge",
+                    "wd_node": "wd:Q215627",
+                    "wd_label": "person",
+                    "wd_description": "being that has certain capacities or attributes constituting personhood (avoid use with P31; use Q5 for humans)"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "Relations/30003/",
+                    "name": "approved by",
+                    "relationSubject": "odin:Entities/00004/",
+                    "relationObject": "odin:Entities/00005/",
+                    "wd_node": "wdt:P790",
+                    "wd_label": "approved_by",
+                    "wd_description": "item is approved by other item(s)"
+                },
+                {
+                    "@id": "odin:Relations/30004/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00005/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00005/",
+            "name": "Constitutional Amendment",
+            "description": "Constitutional revision is made",
+            "wd_node": [
+                "wd:Q11279204"
+            ],
+            "wd_label": "revision",
+            "wd_description": "stage in the writing process where the author reviews, alters, and amends their message, according to what has been written in the draft",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20008/",
+                    "roleName": "A1_ppt_thing_changing",
+                    "entity": "odin:Entities/00006/"
+                },
+                {
+                    "@id": "Participants/20009/",
+                    "roleName": "A0_pag_causer_of_transformation",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00006/",
+                    "name": "Constitution",
+                    "wd_node": "wd:Q3695759",
+                    "wd_label": "constitution",
+                    "wd_description": "set of fundamental principles or established precedents according to which a state or other organization is governed"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30005/",
+                    "name": "ammended",
+                    "relationSubject": "odin:Entities/00000/",
+                    "relationObject": "odin:Entities/00006/",
+                    "wd_node": "wdt:P2567",
+                    "wd_label": "amended_by",
+                    "wd_description": "document is amended by specified other document"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00006/",
+            "name": "Leader Inexperience",
+            "description": "Leader defaults on leadership",
+            "wd_node": [
+                "wd:Q13422045"
+            ],
+            "wd_label": "default",
+            "wd_description": "failure to do something required by law (e.g. pay a debt or appear in legal proceedings",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20010/",
+                    "roleName": "A1_pag_group/entity_unable_to_pay",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20011/",
+                    "roleName": "A2_ppt_what_they_can't_pay_for",
+                    "entity": "odin:Entities/00007/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00007/",
+                    "name": "Leadership",
+                    "wd_node": "wd:Q484275",
+                    "wd_label": "leadership",
+                    "wd_description": "ability of an individual or organization to guide other individuals, teams, or entire organizations"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30007/",
+                    "name": "maintained by",
+                    "relationSubject": "odin:Entities/00007/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P126",
+                    "wd_label": "maintained_by",
+                    "wd_description": "person or organization in charge of keeping the subject (for instance an infrastructure) in functioning order"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00007/",
+            "name": "Government Response",
+            "description": "Government responds to political crisis",
+            "wd_node": [
+                "wd:Q31983622"
+            ],
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/00008/",
+                "odin:Events/00009/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20012/",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20013/",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "odin:Entities/00008/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00008/",
+                    "name": "Domestic Political Crisis",
+                    "wd_node": "wd:Q381072",
+                    "wd_label": "crisis",
+                    "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30008/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00000/",
+                    "relationObject": "odin:Entities/00008/",
+                    "wd_node": "wdt:P1234567",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00008/",
+            "name": "Military Opposition",
+            "description": "Military opposes government reaction to crisis",
+            "wd_node": [
+                "wd:Q19509099"
+            ],
+            "wd_label": "dissidence",
+            "wd_description": "actively challenging an established doctrine, policy, or institution",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20014/",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20015/",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "odin:Events/00007/"
+                },
+                {
+                    "@id": "Participants/20016/",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Events/00007/",
+                    "name": "Government Response",
+                    "wd_node": "wd:Q31983622",
+                    "wd_label": "reaction",
+                    "wd_description": "action or statement in response to a stimulus or other event"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30009/",
+                    "name": "reply to",
+                    "relationSubject": "odin:Events/00007/",
+                    "relationObject": "odin:Entities/00010/",
+                    "wd_node": "wdt:P2675",
+                    "wd_label": "reply_to",
+                    "wd_description": "the intellectual work to which the subsequent work is a direct reply"
+                },
+                {
+                    "@id": "odin:Relations/30010/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00009/",
+            "name": "Political Faction Opposition",
+            "description": "Military opposes government reaction to crisis",
+            "wd_node": [
+                "wd:Q19509099"
+            ],
+            "wd_label": "dissidence",
+            "wd_description": "actively challenging an established doctrine, policy, or institution",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20017/",
+                    "roleName": "A0_ppt_reactor",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20018/",
+                    "roleName": "A1_pag_reacted-to",
+                    "entity": "odin:Events/00007/"
+                },
+                {
+                    "@id": "Participants/20019/",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Events/00007/",
+                    "name": "Government Response",
+                    "wd_node": "wd:Q31983622",
+                    "wd_label": "reaction",
+                    "wd_description": "action or statement in response to a stimulus or other event"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30011/",
+                    "name": "reply to",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Events/00007/",
+                    "wd_node": "wdt:P2675",
+                    "wd_label": "reply_to",
+                    "wd_description": "the intellectual work to which the subsequent work is a direct reply"
+                },
+                {
+                    "@id": "odin:Relations/30012/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00010/",
+            "name": "Domestic Political Crisis",
+            "description": "Government faces a political crisis",
+            "wd_node": [
+                "wd:Q381072"
+            ],
+            "wd_label": "crisis",
+            "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/00007/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20020/",
+                    "roleName": "A1_gol_experiencer_of_crisis",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20021/",
+                    "roleName": "A0_crisis",
+                    "entity": "odin:Entities/00009/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00009/",
+                    "name": "Domestic Political Crisis",
+                    "wd_node": "wd:Q381072",
+                    "wd_label": "crisis",
+                    "wd_description": "type of event that is a unstable and dangerous situation affecting an individual, group, community, or whole society"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30013/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00000/",
+                    "relationObject": "odin:Entities/00009/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00011/",
+            "name": "Territorial Disputes",
+            "description": "Government states claim on some territory",
+            "wd_node": [
+                "wd:Q29933858"
+            ],
+            "wd_label": "territorial_claim",
+            "wd_description": "a state's claim on some territory, not necessarily recognized by others",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20022/",
+                    "roleName": "A1_ppt_claimed_by",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20023/",
+                    "roleName": "A0_loc",
+                    "entity": "odin:Entities/00011/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00011/",
+                    "name": "Geographic Location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "geographic_location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30014/",
+                    "name": "territory claimed by",
+                    "relationSubject": "odin:Entities/00000/",
+                    "relationObject": "odin:Entities/00011/",
+                    "wd_node": "wdt:P1336",
+                    "wd_label": "territory claimed_by",
+                    "wd_description": "administrative divisions that claim control of a given area"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00012/",
+            "name": "Ethnic Factionalism",
+            "description": "Government loses control over civil society",
+            "wd_node": [
+                "wd:Q13634374"
+            ],
+            "wd_label": "ethnic_violence",
+            "wd_description": "violence expressly motivated by ethnic hatred and ethnic conflict",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20024/",
+                    "roleName": "A0_pag_agent_of_violent_behavior",
+                    "entity": "odin:Entities/00012/"
+                },
+                {
+                    "@id": "Participants/20025/",
+                    "roleName": "A2_gol_target_of_violent_behavior",
+                    "entity": "odin:Entities/00013/"
+                },
+                {
+                    "@id": "Participants/20026/",
+                    "roleName": "A1",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00012/",
+                    "name": "Group Of Humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00013/",
+                    "name": "Group Of Humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30015/",
+                    "name": "perpetrator ",
+                    "relationSubject": "odin:Entities/00012/",
+                    "relationObject": "odin:Entities/00013/",
+                    "wd_node": "wdt:P8031",
+                    "wd_label": "perpetrator ",
+                    "wd_description": "person or organization who carried out a harmful, illegal, or immoral act"
+                },
+                {
+                    "@id": "odin:Relations/30016/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00012/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "odin:Relations/30017/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00013/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00013/",
+            "name": "Economic Decline",
+            "description": "Economy suffers major loss",
+            "wd_node": [
+                "wd:Q290178"
+            ],
+            "wd_label": "economic_crisis",
+            "wd_description": "sharp deterioration in economic situation and perspectives",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00010/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20027/",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": "odin:Entities/00014/"
+                },
+                {
+                    "@id": "Participants/20028/",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00014/",
+                    "name": "Economic Loss",
+                    "wd_node": "wd:Q11896502",
+                    "wd_label": "economic_loss",
+                    "wd_description": "negative difference between revenues and costs"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30018/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00000/",
+                    "relationObject": "odin:Entities/00014/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00014/",
+            "name": "Conflict Escalation",
+            "description": "The conflict between the government and the military escalates.",
+            "wd_node": [
+                "wd:Q5160184"
+            ],
+            "wd_label": "conflict_escalation",
+            "wd_description": "process by which conflicts grow in severity over time",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "odin:Events/00025/"
+            ],
+            "participants": [],
+            "children": [
+                "odin:Events/00015/",
+                "odin:Events/00016/",
+                "odin:Events/00017/",
+                "odin:Events/00018/",
+                "odin:Events/00019/",
+                "odin:Events/00020/",
+                "odin:Events/00021/",
+                "odin:Events/00022/",
+                "odin:Events/00023/",
+                "odin:Events/00024/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00015/",
+            "name": "Internal Conflicts",
+            "description": "Conflicts arise internally from the government.",
+            "wd_node": [
+                "wd:Q12055674"
+            ],
+            "wd_label": "dispute",
+            "wd_description": "communication",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/00020/",
+                "odin:Events/00024/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20029/",
+                    "roleName": "A0_pag_first",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20030/",
+                    "roleName": "A1_com_second_arguer",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30019/",
+                    "name": "member of",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00016/",
+            "name": "Riots",
+            "description": "Conflict is escalated through public outcry",
+            "wd_node": [
+                "wd:Q124757"
+            ],
+            "wd_label": "riot",
+            "wd_description": "form of civil disorder",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20031/",
+                    "roleName": "A0_pag__rioter",
+                    "entity": "odin:Entities/00015/"
+                },
+                {
+                    "@id": "Participants/20032/",
+                    "roleName": "A1_cau__who/what_the_riot_is_against",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00015/",
+                    "name": "Rioters",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30020/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00015/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00017/",
+            "name": "External Threat",
+            "description": "Foreign entity poses external threat to government",
+            "wd_node": [
+                "wd:Q707125"
+            ],
+            "wd_label": "threat",
+            "wd_description": "one person's statement that they intend to harm another, or another's property",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00020/",
+                "odin:Events/00024/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20033/",
+                    "roleName": "A0_pag_agent_persuasive_entity",
+                    "entity": "odin:Entities/00017/"
+                },
+                {
+                    "@id": "Participants/20034/",
+                    "roleName": "A1_ppt_patient_impelled_entity",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00017/",
+                    "name": "External Entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_label": "political_territorial_entity",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30021/",
+                    "name": "interested in",
+                    "relationSubject": "odin:Entities/00017/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P2650",
+                    "wd_label": "interested_in",
+                    "wd_description": "item of special or vested interest to this person or organisation"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00018/",
+            "name": "Officers' Personal Grievances",
+            "description": "Military leadership expresses opposition",
+            "wd_node": [
+                "wd:Q19509099"
+            ],
+            "wd_label": "dissidence",
+            "wd_description": "actively challenging an established doctrine, policy, or institution",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00020/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20035/",
+                    "roleName": "A0_pag_disagreer",
+                    "entity": "odin:Entities/00018/"
+                },
+                {
+                    "@id": "Participants/20036/",
+                    "roleName": "A1_ppt_disagreement",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00018/",
+                    "name": "Military Officer",
+                    "wd_node": "wd:Q189290",
+                    "wd_label": "military_officer",
+                    "wd_description": "member of an armed force or uniformed service who holds a position of authority"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30022/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00018/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00019/",
+            "name": "Military Popularity",
+            "description": "Military popularity rises, surpassing sympathy for the government",
+            "wd_node": [
+                "wd:Q840407"
+            ],
+            "wd_label": "enthusiasm",
+            "wd_description": "intense enjoyment, interest, or approval",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00020/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20037/",
+                    "roleName": "A1_ppt_Enthusiastic_entity",
+                    "entity": "odin:Entities/00019/"
+                },
+                {
+                    "@id": "Participants/20038/",
+                    "roleName": "A0_pag_Inspiration_of_enthusiasm",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30023/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00019/",
+                    "relationObject": "odin:Entities/00010/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00020/",
+            "name": "Military Consensus",
+            "description": "Consensus is reached for a regime change by the military",
+            "wd_node": [
+                "wd:Q202722"
+            ],
+            "wd_label": "consensus",
+            "wd_description": "general agreement on a subject",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00023/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20039/",
+                    "roleName": "A1_ppt_proposition",
+                    "entity": "odin:Entities/00020/"
+                },
+                {
+                    "@id": "Participants/20040/",
+                    "roleName": "A0_pag_agreer",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00020/",
+                    "name": "Regime Change",
+                    "wd_node": "wd:Q1673271",
+                    "wd_label": "regime_change",
+                    "wd_description": "replacement of one political regime (system) with another"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30024/",
+                    "name": "perpetrator ",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00020/",
+                    "wd_node": "wdt:P8031",
+                    "wd_label": "perpetrator ",
+                    "wd_description": "person or organization who carried out a harmful, illegal, or immoral act"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00021/",
+            "name": "Military Growth",
+            "description": "Military resources and size increase",
+            "wd_node": [
+                "wd:Q9073584"
+            ],
+            "wd_label": "increase",
+            "wd_description": "enlargement or increase of an entity; increase in size, number, value, or strength; an amount by which a quantity is increased",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00020/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20041/",
+                    "roleName": "A0_pag_causer_of_increase",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20042/",
+                    "roleName": "A1_ppt_thing_increasing",
+                    "entity": "odin:Entities/00021/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00021/",
+                    "name": "Capital",
+                    "wd_node": "wd:Q6055890",
+                    "wd_label": "funding",
+                    "wd_description": "act of providing resources"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30025/",
+                    "name": "budget change",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00021/",
+                    "wd_node": "wdt:P2769",
+                    "wd_label": "budget",
+                    "wd_description": "assigned monetary amount for a project"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00022/",
+            "name": "Collusion With A Foreign Military Power",
+            "description": "Military colludes against own government with foreign military power",
+            "wd_node": [
+                "wd:Q701521"
+            ],
+            "wd_label": "collusion",
+            "wd_description": "secretive cooperation or deceitful agreement in order to deceive others, which may involve unions, wage fixing, kickbacks, or misrepresenting the independence of the relationship between the colluding parties",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00020/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20043/",
+                    "roleName": "A0_pag_focussed_party",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20044/",
+                    "roleName": "A1_com_second_party",
+                    "entity": "odin:Entities/00022/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00022/",
+                    "name": "External Military Power",
+                    "wd_node": "wd:Q1048835",
+                    "wd_label": "political_territorial_entity",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30026/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00022/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00023/",
+            "name": "Coup Planning",
+            "description": "Military/Political faction plot regime change via coup",
+            "wd_node": [
+                "wd:Q309100"
+            ],
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20045/",
+                    "roleName": "A0_pag_planner",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20046/",
+                    "roleName": "A0_pag_planner",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20047/",
+                    "roleName": "A1_ppt_thing_planned",
+                    "entity": "odin:Entities/00020/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Entities/00020/",
+                    "name": "Regime Change",
+                    "wd_node": "wd:Q1673271",
+                    "wd_label": "regime_change",
+                    "wd_description": "replacement of one political regime (system) with another"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30027/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00020/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "odin:Relations/30028/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00020/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00024/",
+            "name": "Political Faction Consensus",
+            "description": "Consensus is reached for a regime change by a political faction",
+            "wd_node": [
+                "wd:Q202722"
+            ],
+            "wd_label": "consensus",
+            "wd_description": "general agreement on a subject",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/00023/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20048/",
+                    "roleName": "A1_ppt_proposition",
+                    "entity": "odin:Entities/00020/"
+                },
+                {
+                    "@id": "Participants/20049/",
+                    "roleName": "A0_pag_agreer",
+                    "entity": "odin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00020/",
+                    "name": "Regime Change",
+                    "wd_node": "wd:Q1673271",
+                    "wd_label": "regime_change",
+                    "wd_description": "replacement of one political regime (system) with another"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30029/",
+                    "name": "perpetrator ",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00020/",
+                    "wd_node": "wdt:P8031",
+                    "wd_label": "perpetrator ",
+                    "wd_description": "person or organization who carried out a harmful, illegal, or immoral act"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00025/",
+            "name": "Government Overthrow",
+            "description": "involuntary removal from a position",
+            "wd_node": [
+                "wd:Q104215654"
+            ],
+            "wd_label": "deposition",
+            "wd_description": "involuntary removal from a position",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+                "odin:Events/00037/",
+                "odin:Events/00042/",
+                "odin:Events/00054/"
+            ],
+            "participants": [],
+            "children": [
+                "odin:Events/00032/",
+                "odin:Events/00034/",
+                "odin:Events/00026/",
+                "odin:Events/00027/",
+                "odin:Events/00028/",
+                "odin:Events/00029/",
+                "odin:Events/00030/",
+                "odin:Events/00031/",
+                "odin:Events/00032/",
+                "odin:Events/00033/",
+                "odin:Events/00034/",
+                "odin:Events/00035/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00026/",
+            "name": "Coup Attempt",
+            "description": "An attempted coup is made",
+            "wd_node": [
+                "wd:Q12897867"
+            ],
+            "wd_label": "attempt",
+            "wd_description": "action whose success is not guaranteed",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/00027/",
+                "odin:Events/00028/",
+                "odin:Events/00029/",
+                "odin:Events/00030/",
+                "odin:Events/00031/",
+                "odin:Events/00032/",
+                "odin:Events/00034/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20050/",
+                    "roleName": "A0_pag_Agent/Entity_Trying",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20051/",
+                    "roleName": "A0_pag_Agent/Entity_Trying",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20052/",
+                    "roleName": "A1_ppt_thing_tried",
+                    "entity": "odin:Entities/00020/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00020/",
+                    "name": "Regime Change",
+                    "wd_node": "wd:Q1673271",
+                    "wd_label": "regime_change",
+                    "wd_description": "replacement of one political regime (system) with another"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30030/",
+                    "name": "objective of project or action",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00020/",
+                    "wd_node": "wdt:P3712",
+                    "wd_label": "objective_of_project_or_action",
+                    "wd_description": "desired result or outcome"
+                },
+                {
+                    "@id": "odin:Relations/30031/",
+                    "name": "objective of project or action",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00020/",
+                    "wd_node": "wdt:P3712",
+                    "wd_label": "objective_of_project_or_action",
+                    "wd_description": "desired result or outcome"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00027/",
+            "name": "Dissolve Legislation",
+            "description": "Legislation is dissolved, giving new regime power",
+            "wd_node": [
+                "wd:Q759734"
+            ],
+            "wd_label": "annulment",
+            "wd_description": "act of annulling something; declaring or making legally invalid or void",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00032/",
+                "odin:Events/00034/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20053/",
+                    "roleName": "A1_ppt_thing_done_to",
+                    "entity": "odin:Entities/00003/"
+                },
+                {
+                    "@id": "Participants/20054/",
+                    "roleName": "A0_pag_doer",
+                    "entity": "odin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00003/",
+                    "name": "Legislation",
+                    "wd_node": "wd:Q14440634",
+                    "wd_label": "legislative_enactment",
+                    "wd_description": "act, law, edict or proclamation defining with authority the law in a given jurisdiction"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30032/",
+                    "name": "dissolve",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00003/",
+                    "wd_node": "wdt:P576",
+                    "wd_label": "dissolved_abolished",
+                    "wd_description": "point in time at which the subject (organisation, building) ceased to exist"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00028/",
+            "name": "Annull Constitution",
+            "description": "Constitution is dissolved, giving new regime power",
+            "wd_node": [
+                "wd:Q759734"
+            ],
+            "wd_label": "annulment",
+            "wd_description": "act of annulling something; declaring or making legally invalid or void",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00032/",
+                "odin:Events/00034/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20055/",
+                    "roleName": "A1_ppt_thing_done_to",
+                    "entity": "odin:Entities/00006/"
+                },
+                {
+                    "@id": "Participants/20056/",
+                    "roleName": "A0_pag_doer",
+                    "entity": "odin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00006/",
+                    "name": "Constitution",
+                    "wd_node": "wd:Q7755",
+                    "wd_label": "constitution",
+                    "wd_description": "set of fundamental principles or established precedents according to which a state or other organization is governed"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30033/",
+                    "name": "annul",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00006/",
+                    "wd_node": "wdt:P576",
+                    "wd_label": "dissolved_abolished",
+                    "wd_description": "point in time at which the subject (organisation, building) ceased to exist"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00029/",
+            "name": "Suspend Civil Courts",
+            "description": "Civil courts are suspended, giving new regime power",
+            "wd_node": [
+                "wd:Q55653430"
+            ],
+            "wd_label": "temporarily_closed",
+            "wd_description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00032/",
+                "odin:Events/00034/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20057/",
+                    "roleName": "A1_ppt_thing_regulated",
+                    "entity": "odin:Entities/00023/"
+                },
+                {
+                    "@id": "Participants/20058/",
+                    "roleName": "A0_pag_regulator",
+                    "entity": "odin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00023/",
+                    "name": "Courts",
+                    "wd_node": "wd:Q41487",
+                    "wd_label": "court",
+                    "wd_description": "judicial institution with the authority to resolve legal disputes"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30034/",
+                    "name": "regulated by",
+                    "relationSubject": "odin:Entities/00023/",
+                    "relationObject": "odin:Entities/00016/",
+                    "wd_node": "wdt:P3719",
+                    "wd_label": "regulated_by",
+                    "wd_description": "organization that acts as regulator of an activity, financial market, or stock exchange"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00030/",
+            "name": "Assume Dictatorship",
+            "description": "New regime declares dictatorship",
+            "wd_node": [
+                "wd:Q2620826"
+            ],
+            "wd_label": "declaration",
+            "wd_description": "authoritative establishment of fact",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00032/",
+                "odin:Events/00034/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20059/",
+                    "roleName": "A1_ppt_thing_claimed",
+                    "entity": "odin:Entities/00024/"
+                },
+                {
+                    "@id": "Participants/20060/",
+                    "roleName": "A0_pag_announcer",
+                    "entity": "odin:Entities/00016/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00024/",
+                    "name": "Dictator",
+                    "wd_node": "wd:Q183318",
+                    "wd_label": "dictator",
+                    "wd_description": "absolutist or autocratic ruler who assumes sole power over the state"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30035/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00024/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00031/",
+            "name": "Violence",
+            "description": "violent overthrow of government, forceful removal",
+            "wd_node": [
+                "wd:Q124490"
+            ],
+            "wd_label": "violence",
+            "wd_description": "use of physical force or power with the intent to inflict harm",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00032/",
+                "odin:Events/00034/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20061/",
+                    "roleName": "A0_pag_agent_of_violent_behavior",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20062/",
+                    "roleName": "A2_gol_target_of_violent_behavior",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30036/",
+                    "name": "Member of",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00032/",
+            "name": "Government Overthrown",
+            "description": "government is overthrown in a successful coup",
+            "wd_node": [
+                "wd:Q1673271"
+            ],
+            "wd_label": "regime_change",
+            "wd_description": "replacement of one political regime (system) with another",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [
+                "odin:Events/00033/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20063/",
+                    "roleName": "A1_ppt_theme_overthrown_government",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20064/",
+                    "roleName": "A0_pag_revolting_entity",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20065/",
+                    "roleName": "A0_pag_revolting_entity",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30037/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "odin:Relations/30038/",
+                    "name": "member of",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00033/",
+            "name": "Leader Replaced",
+            "description": "leader is replaced with new head of government",
+            "wd_node": [
+                "wd:Q23009439"
+            ],
+            "wd_label": "replacement",
+            "wd_description": "process of removing one thing and adding another appropriate one in its place",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20066/",
+                    "roleName": "A1_ppt_old_thing",
+                    "entity": "odin:Entities/00025/"
+                },
+                {
+                    "@id": "Participants/20067/",
+                    "roleName": "A0_pag_replacer",
+                    "entity": "odin:Entities/00026/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00025/",
+                    "name": "Overthrown Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30039/",
+                    "name": "replaced by",
+                    "relationSubject": "odin:Entities/00025/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wdt:P1234567",
+                    "wd_label": "replaced_by",
+                    "wd_description": "other person or item which continues the item by replacing it in its role."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00034/",
+            "name": "Coup Fails",
+            "description": "coup results in a failed attempt",
+            "wd_node": [
+                "wd:Q25906438"
+            ],
+            "wd_label": "attempted coup d'état",
+            "wd_description": "unsuccessful attempt to depose a government",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00035/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20068/",
+                    "roleName": "A0_pag_agent_coup_stager",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20069/",
+                    "roleName": "A0_pag_agent_coup_stager",
+                    "entity": "odin:Entities/00010/"
+                },
+                {
+                    "@id": "Participants/20070/",
+                    "roleName": "A1_ppt_patient_victim",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30040/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "odin:Relations/30041/",
+                    "name": "member of",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00035/",
+            "name": "Arrests",
+            "description": "perpetrators of coup are taken into government custody",
+            "wd_node": [
+                "wd:Q1403016"
+            ],
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20071/",
+                    "roleName": "A0_pag__police",
+                    "entity": "odin:Entities/00000/"
+                },
+                {
+                    "@id": "Participants/20072/",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20073/",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30042/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00016/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                },
+                {
+                    "@id": "odin:Relations/30043/",
+                    "name": "member of",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00037/",
+            "name": "Civilian Reaction",
+            "description": "reaction of the general population",
+            "wd_node": [
+                "wd:Q31983622"
+            ],
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "odin:Events/00038/",
+                "odin:Events/00039/",
+                "odin:Events/00040/",
+                "odin:Events/00041/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00038/",
+            "name": "Militia Reaction",
+            "description": "general population forms militia to counter coup",
+            "wd_node": [
+                "wd:Q1365756"
+            ],
+            "wd_label": "reprisal",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00039/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20074/",
+                    "roleName": "A0_pag_violent_entity",
+                    "entity": "odin:Entities/00027/"
+                },
+                {
+                    "@id": "Participants/20075/",
+                    "roleName": "A1_ppt_instigating_entity_or_act",
+                    "entity": "odin:Events/00032/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00027/",
+                    "name": "Militia",
+                    "wd_node": "wd:Q153936",
+                    "wd_label": "militia",
+                    "wd_description": "generally refers to an army or other fighting force that is composed of non-professional fighters"
+                },
+                {
+                    "@id": "odin:Events/00032/",
+                    "name": "Government Overthrown",
+                    "wd_node": "wd:Q1673271",
+                    "wd_label": "regime_change",
+                    "wd_description": "replacement of one political regime (system) with another"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30044/",
+                    "name": "disent",
+                    "relationSubject": "odin:Entities/00027/",
+                    "relationObject": "odin:Events/00032/",
+                    "wd_node": "wd:Q19509099",
+                    "wd_label": "dissidence",
+                    "wd_description": "actively challenging an established doctrine, policy, or institution"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00039/",
+            "name": "Armed Conflicts",
+            "description": "militia takes to armed conflict with new leader",
+            "wd_node": [
+                "wd:Q350604"
+            ],
+            "wd_label": "armed_conflict",
+            "wd_description": "conflict including violence where at least one of the acting groups is a state",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20076/",
+                    "roleName": "A0_pag_agentive_clasher",
+                    "entity": "odin:Entities/00027/"
+                },
+                {
+                    "@id": "Participants/20077/",
+                    "roleName": "A1_com_entity_clashed_with",
+                    "entity": "odin:Entities/00026/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00027/",
+                    "name": "Militia",
+                    "wd_node": "wd:Q153936",
+                    "wd_label": "militia",
+                    "wd_description": "generally refers to an army or other fighting force that is composed of non-professional fighters"
+                },
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30045/",
+                    "name": "disent",
+                    "relationSubject": "odin:Entities/00027/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wd:Q19509099",
+                    "wd_label": "dissidence",
+                    "wd_description": "actively challenging an established doctrine, policy, or institution"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00040/",
+            "name": "Riots",
+            "description": "general population riots as result of coup",
+            "wd_node": [
+                "wd:Q124757"
+            ],
+            "wd_label": "riot",
+            "wd_description": "form of civil disorder",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20078/",
+                    "roleName": "A0_pag__rioter",
+                    "entity": "odin:Entities/00019/"
+                },
+                {
+                    "@id": "Participants/20079/",
+                    "roleName": "A1_cau__who/what_the_riot_is_against",
+                    "entity": "odin:Entities/00026/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30046/",
+                    "name": "disent",
+                    "relationSubject": "odin:Entities/00019/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wd:Q19509099",
+                    "wd_label": "dissidence",
+                    "wd_description": "actively challenging an established doctrine, policy, or institution"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00041/",
+            "name": "Civil Society Strengthens",
+            "description": "society benefits as result of coup, modernization ensues",
+            "wd_node": [
+                "wd:Q878526"
+            ],
+            "wd_label": "modernization",
+            "wd_description": "transformation of a society or culture from a traditional to a modern form (e.g. via democratisation, industrialisation, urbanisation, individualisation, globalisation or bureaucracy)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20080/",
+                    "roleName": "A0_pag_modernizer",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20081/",
+                    "roleName": "A1_ppt_thing_being_modernized",
+                    "entity": "odin:Entities/00019/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30047/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00019/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00042/",
+            "name": "New Government Action",
+            "description": "First actions of new leader",
+            "wd_node": [
+                "wd:Q4026292"
+            ],
+            "wd_label": "action",
+            "wd_description": "something an agent can do or perform",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "odin:Events/00043/",
+                "odin:Events/00044/",
+                "odin:Events/00045/",
+                "odin:Events/00046/",
+                "odin:Events/00047/",
+                "odin:Events/00048/",
+                "odin:Events/00049/",
+                "odin:Events/00050/",
+                "odin:Events/00051/",
+                "odin:Events/00052/",
+                "odin:Events/00053/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00043/",
+            "name": "Democratization",
+            "description": "democracy is brought to nation by new leader",
+            "wd_node": [
+                "wd:Q1064441"
+            ],
+            "wd_label": "democratization",
+            "wd_description": "trend towards democratic norms in a society",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20082/",
+                    "roleName": "A0_pag_modernizer",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20083/",
+                    "roleName": "A1_ppt_thing_being_modernized",
+                    "entity": "odin:Entities/00000/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00000/",
+                    "name": "Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30048/",
+                    "name": "head of government",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00000/",
+                    "wd_node": "wdt:P6",
+                    "wd_label": "head_of_government",
+                    "wd_description": "head of the executive power of this town, city, municipality, state, country, or other governmental body"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00044/",
+            "name": "Justice",
+            "description": "justice is brought to overthrown leader by new leader",
+            "wd_node": [
+                "wd:Q545861"
+            ],
+            "wd_label": "legal_hearing",
+            "wd_description": "A legal hearing",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20084/",
+                    "roleName": "A1_ppt__person_on_trial",
+                    "entity": "odin:Entities/00025/"
+                },
+                {
+                    "@id": "Participants/20085/",
+                    "roleName": "A0_pag__judge",
+                    "entity": "odin:Entities/00026/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00025/",
+                    "name": "Overthrown Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30049/",
+                    "name": "replaced by",
+                    "relationSubject": "odin:Entities/00025/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wdt:P1366",
+                    "wd_label": "replaced_by",
+                    "wd_description": "other person or item which continues the item by replacing it in its role."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00045/",
+            "name": "Territorial Disputes",
+            "description": "New leader states claim to new territory",
+            "wd_node": [
+                "wd:Q29933858"
+            ],
+            "wd_label": "territorial_claim",
+            "wd_description": "a state's claim on some territory, not necessarily recognized by others",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20086/",
+                    "roleName": "A1_ppt_claimed_by",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20087/",
+                    "roleName": "A0_loc",
+                    "entity": "odin:Entities/00028/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00028/",
+                    "name": "Geographic Location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_label": "geographic_location",
+                    "wd_description": "point or an area on something's surface or elsewhere"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30050/",
+                    "name": "territory claimed by",
+                    "relationSubject": "odin:Entities/00028/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wdt:P1336",
+                    "wd_label": "territory claimed_by",
+                    "wd_description": "administrative divisions that claim control of a given area"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00046/",
+            "name": "Internal Conflicts",
+            "description": "Internal conflicts arise within new government leadership or military",
+            "wd_node": [
+                "wd:Q12055674"
+            ],
+            "wd_label": "dispute",
+            "wd_description": "communication",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20088/",
+                    "roleName": "A1_com_second_arguer",
+                    "entity": "odin:Entities/00016/"
+                },
+                {
+                    "@id": "Participants/20089/",
+                    "roleName": "A0_pag_first",
+                    "entity": "odin:Entities/00010/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00016/",
+                    "name": "Political Faction",
+                    "wd_node": "wd:Q1393724",
+                    "wd_label": "political_faction",
+                    "wd_description": "group of individuals within a larger entity, united by a particular common political purpose"
+                },
+                {
+                    "@id": "odin:Entities/00010/",
+                    "name": "Military",
+                    "wd_node": "wd:Q8473",
+                    "wd_label": "military",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30051/",
+                    "name": "member of",
+                    "relationSubject": "odin:Entities/00010/",
+                    "relationObject": "odin:Entities/00016/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00047/",
+            "name": "Government Repression",
+            "description": "members of the general public are persecuted or repressed",
+            "wd_node": [
+                "wd:Q1899269"
+            ],
+            "wd_label": "political_repression",
+            "wd_description": "persecution of an individual or group within society for political reasons, for the purpose of restricting or preventing their ability to take part in the political life of a society",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20090/",
+                    "roleName": "A0_pag_represser",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20091/",
+                    "roleName": "A1_ppt_repressed",
+                    "entity": "odin:Entities/00019/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30052/",
+                    "name": "head of government",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00019/",
+                    "wd_node": "wdt:P6",
+                    "wd_label": "head_of_government",
+                    "wd_description": "head of the executive power of this town, city, municipality, state, country, or other governmental body"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00048/",
+            "name": "Participates In War",
+            "description": "New leader declares or enters a war",
+            "wd_node": [
+                "wd:Q198"
+            ],
+            "wd_label": "war",
+            "wd_description": "organised and prolonged violent conflict between states",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20092/",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20093/",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "odin:Entities/00029/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00029/",
+                    "name": "External Military Power",
+                    "wd_node": "wd:Q1048835",
+                    "wd_label": "political_territorial_entity",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30053/",
+                    "name": "affiliation",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00029/",
+                    "wd_node": "wdt:P1416",
+                    "wd_label": "affiliation",
+                    "wd_description": "organization that a person or organization is affiliated with"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00049/",
+            "name": "Human Rights Abuse",
+            "description": "new leader commits human rights abuse",
+            "wd_node": [
+                "wd:Q65969379"
+            ],
+            "wd_label": "inhumane_treatment",
+            "wd_description": "none available.",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20094/",
+                    "roleName": "A0_pag_abuser",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20095/",
+                    "roleName": "A1_ppt_entity_abused",
+                    "entity": "odin:Entities/00019/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30054/",
+                    "name": "head of government",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00019/",
+                    "wd_node": "wdt:P6",
+                    "wd_label": "head_of_government",
+                    "wd_description": "head of the executive power of this town, city, municipality, state, country, or other governmental body"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00050/",
+            "name": "Martial Law",
+            "description": "new leader enforces martial law",
+            "wd_node": [
+                "wd:Q4202277"
+            ],
+            "wd_label": "enforcement",
+            "wd_description": "process of ensuring compliance with laws, regulations, rules, standards, or social norms",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20096/",
+                    "roleName": "A0_pag_enforcer",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20097/",
+                    "roleName": "A1_ppt_rule",
+                    "entity": "odin:Entities/00030/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00030/",
+                    "name": "Martial Law",
+                    "wd_node": "wd:Q715625",
+                    "wd_label": "martial_law",
+                    "wd_description": "imposition of direct military control of a government"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30055/",
+                    "name": "maintained by",
+                    "relationSubject": "odin:Entities/00030/",
+                    "relationObject": "odin:Entities/00026/",
+                    "wd_node": "wdt:P126",
+                    "wd_label": "maintained_by",
+                    "wd_description": "person or organization in charge of keeping the subject (for instance an infrastructure) in functioning order"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00051/",
+            "name": "Soverign Default",
+            "description": "new leader is unable to pay back the principal and interest owed to creditors",
+            "wd_node": [
+                "wd:Q702362"
+            ],
+            "wd_label": "default",
+            "wd_description": "failure to meet the legal obligations of a loan (e.g. by suspending payments)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20098/",
+                    "roleName": "A1_pag_group/entity_unable_to_pay",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20099/",
+                    "roleName": "A3_gol_loaner_of_money",
+                    "entity": "odin:Entities/00031/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00031/",
+                    "name": "Foreign Interests",
+                    "wd_node": "wd:Q265939",
+                    "wd_label": "patronage",
+                    "wd_description": "support that one organization or individual bestows to another"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30056/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00031/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00052/",
+            "name": "Collusion With A Foreign Military Power",
+            "description": "new leader colludes with external military powers",
+            "wd_node": [
+                "wd:Q701521"
+            ],
+            "wd_label": "collusion",
+            "wd_description": "secretive cooperation or deceitful agreement in order to deceive others, which may involve unions, wage fixing, kickbacks, or misrepresenting the independence of the relationship between the colluding parties",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20100/",
+                    "roleName": "A0_pag_focussed_party",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20101/",
+                    "roleName": "A1_com_second_party",
+                    "entity": "odin:Entities/00032/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00032/",
+                    "name": "External Military Power",
+                    "wd_node": "wd:Q1048835",
+                    "wd_label": "political_territorial_entity",
+                    "wd_description": "region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30057/",
+                    "name": "partially coincident with",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00032/",
+                    "wd_node": "wdt:P1382",
+                    "wd_label": "partially_coincident_with",
+                    "wd_description": "object of which the subject is a part"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00053/",
+            "name": "Liberalization",
+            "description": "new leader relaxes government restrictions",
+            "wd_node": [
+                "wd:Q746418"
+            ],
+            "wd_label": "liberalization",
+            "wd_description": "in general, the relaxation of previous government restrictions",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20102/",
+                    "roleName": "A0_pag_agent_of_liberalization",
+                    "entity": "odin:Entities/00026/"
+                },
+                {
+                    "@id": "Participants/20103/",
+                    "roleName": "A1_ppt_thing_becoming_more_liberal",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00026/",
+                    "name": "New Leader",
+                    "wd_node": "wd:Q2285706",
+                    "wd_label": "head_of_government",
+                    "wd_description": "chief officer of the executive branch of a government"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30058/",
+                    "name": "head of government",
+                    "relationSubject": "odin:Entities/00026/",
+                    "relationObject": "odin:Entities/00033/",
+                    "wd_node": "wdt:P6",
+                    "wd_label": "head_of_government",
+                    "wd_description": "head of the executive power of this town, city, municipality, state, country, or other governmental body"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00054/",
+            "name": "International Response",
+            "description": "the international community responds to result of coup",
+            "wd_node": [
+                "wd:Q31983622"
+            ],
+            "wd_label": "reaction",
+            "wd_description": "action or statement in response to a stimulus or other event",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "odin:Events/00055/",
+                "odin:Events/00056/",
+                "odin:Events/00057/",
+                "odin:Events/00058/",
+                "odin:Events/00059/",
+                "odin:Events/00060/",
+                "odin:Events/00061/",
+                "odin:Events/00062/",
+                "odin:Events/00063/",
+                "odin:Events/00064/",
+                "odin:Events/00060/",
+                "odin:Events/00057/"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/00055/",
+            "name": "Internationally Recognized",
+            "description": "diplomatic recognition in international law is a unilateral declarative political act of a state ",
+            "wd_node": [
+                "wd:Q705899"
+            ],
+            "wd_label": "accreditation",
+            "wd_description": "procedure by which an authoritative body gives formal recognition that an organization is competent to carry out specific tasks (def: ISO 15189:2012)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00060/",
+                "odin:Events/00057/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20104/",
+                    "roleName": "A0_pag_entity_furnishing_credentials",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20105/",
+                    "roleName": "A1_ppt_entity_credited",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30059/",
+                    "name": "member of",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P463",
+                    "wd_label": "member_of",
+                    "wd_description": "organization, club or musical group to which the subject belongs"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00056/",
+            "name": "Denouncement",
+            "description": "new government is denounced by international community",
+            "wd_node": [
+                "wd:Q1189956"
+            ],
+            "wd_label": "denunciation",
+            "wd_description": "accusation or complaint against a person or group",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00060/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20106/",
+                    "roleName": "A0_pag_speaker",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20107/",
+                    "roleName": "A1_ppt_subject",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30060/",
+                    "name": "disent",
+                    "relationSubject": "odin:Entities/00034/",
+                    "relationObject": "odin:Entities/00033/",
+                    "wd_node": "wd:Q19509099",
+                    "wd_label": "dissidence",
+                    "wd_description": "actively challenging an established doctrine, policy, or institution"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00057/",
+            "name": "Foreign Assistance",
+            "description": "new government receives humanitarian assistance",
+            "wd_node": [
+                "wd:Q107280686"
+            ],
+            "wd_label": "humanitarian_activity",
+            "wd_description": "human activity involving assistance to others and improvement of conditions for humanity",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00058/",
+                "odin:Events/00059/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20108/",
+                    "roleName": "A0_pag_assistant",
+                    "entity": "odin:Entities/00036/"
+                },
+                {
+                    "@id": "Participants/20109/",
+                    "roleName": "A1_gol_assisted",
+                    "entity": "odin:Entities/00019/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00036/",
+                    "name": "Humanitarians",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00019/",
+                    "name": "General Public",
+                    "wd_node": "wd:Q16334295",
+                    "wd_label": "group_of_humans",
+                    "wd_description": "any set of human beings"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30061/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00019/",
+                    "relationObject": "odin:Entities/00036/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00058/",
+            "name": "Aid To The Country",
+            "description": "new government receives material aid from international community",
+            "wd_node": [
+                "wd:Q2827815"
+            ],
+            "wd_label": "international aid",
+            "wd_description": "voluntary transfer of resources from one country to another",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20110/",
+                    "roleName": "A0_pag_agent_giver",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20111/",
+                    "roleName": "A1_ppt_theme_thing_given",
+                    "entity": "odin:Entities/00035/"
+                },
+                {
+                    "@id": "Participants/20112/",
+                    "roleName": "A2_gol_recipient_entity_given_to",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00035/",
+                    "name": "Aid",
+                    "wd_node": "wd:Q69016679",
+                    "wd_label": "hospital equipment and supplies",
+                    "wd_description": "materials used for providing care in hospital"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30062/",
+                    "name": "approved by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00035/",
+                    "wd_node": "wdt:P790",
+                    "wd_label": "approved_by",
+                    "wd_description": "item is approved by other item(s)"
+                },
+                {
+                    "@id": "odin:Relations/30063/",
+                    "name": "donated by",
+                    "relationSubject": "odin:Entities/00034/",
+                    "relationObject": "odin:Entities/00035/",
+                    "wd_node": "wdt:P1028",
+                    "wd_label": "donated_by",
+                    "wd_description": "person or organization who donated the object"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00059/",
+            "name": "Call For Democracy",
+            "description": "international community requests new government to install democracy",
+            "wd_node": [
+                "wd:Q22445448"
+            ],
+            "wd_label": "request",
+            "wd_description": "act of asking politely or formally for something",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20113/",
+                    "roleName": "A0_pag_agent_asker",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20114/",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30064/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00060/",
+            "name": "Foreign Sanction",
+            "description": "international community enforces sanctions on new government",
+            "wd_node": [
+                "wd:Q32098"
+            ],
+            "wd_label": "sanction",
+            "wd_description": "penalty or other mean of enforcement used to provide incentives for obedience with the law",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "odin:Events/00061/",
+                "odin:Events/00062/",
+                "odin:Events/00063/",
+                "odin:Events/00064/"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20115/",
+                    "roleName": "A0_pag_entity_enforcing_sanctions",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20116/",
+                    "roleName": "A1_ppt_entity_being_punished",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30065/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00061/",
+            "name": "Diplomatic Isolation",
+            "description": "new government is internationally isolated, e.g., forced embargos",
+            "wd_node": [
+                "wd:Q989265"
+            ],
+            "wd_label": "embargo",
+            "wd_description": "prohibition of commerce and trade with a particular country or group of countries",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20117/",
+                    "roleName": "A0_pag_blocker",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20118/",
+                    "roleName": "A1_ppt_foiled",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30066/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00062/",
+            "name": "Aid Reduction Or End",
+            "description": "international community divests in new government",
+            "wd_node": [
+                "wd:Q1200733"
+            ],
+            "wd_label": "divestment",
+            "wd_description": "reduction of some kind of asset for financial, ethical, or political objectives or sale of an existing business by a firm",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20119/",
+                    "roleName": "A0_pag_entity_removing",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20120/",
+                    "roleName": "A2_dir_removed_from",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30067/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00063/",
+            "name": "Increased Cost Of Borrowing",
+            "description": "credit is offered to new country at unreasonably high interest rate ",
+            "wd_node": [
+                "wd:Q157188"
+            ],
+            "wd_label": "usury",
+            "wd_description": "unethical practice of originating a loan with an unreasonably high interest rate",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20121/",
+                    "roleName": "A0_pag_seller",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20122/",
+                    "roleName": "A2_gol_buyer",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30068/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/00064/",
+            "name": "Targeted Sanctions",
+            "description": "economic sanctions are enforced on new government to affect political change",
+            "wd_node": [
+                "wd:Q1248258"
+            ],
+            "wd_label": "economic_sanctions",
+            "wd_description": "financial penalties applied by nations to persons, nations or companies to affect political change",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20123/",
+                    "roleName": "A0_pag_applier_of_penalty",
+                    "entity": "odin:Entities/00034/"
+                },
+                {
+                    "@id": "Participants/20124/",
+                    "roleName": "A1_ppt_entity_penalized",
+                    "entity": "odin:Entities/00033/"
+                }
+            ],
+            "modality": [],
+            "importance": [],
+            "likelihood": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00034/",
+                    "name": "International Organization",
+                    "wd_node": "wd:Q245065",
+                    "wd_label": "intergovernmental_organization",
+                    "wd_description": "organization composed primarily of sovereign states"
+                },
+                {
+                    "@id": "odin:Entities/00033/",
+                    "name": "New Government",
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "odin:Relations/30069/",
+                    "name": "influenced by",
+                    "relationSubject": "odin:Entities/00033/",
+                    "relationObject": "odin:Entities/00034/",
+                    "wd_node": "wdt:P737",
+                    "wd_label": "influenced_by",
+                    "wd_description": "this person, idea, etc. is informed by that other person, idea, etc."
+                }
+            ]
+        }
+    ]
+}

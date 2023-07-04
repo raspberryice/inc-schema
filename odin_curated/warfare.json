@@ -1,0 +1,3394 @@
+{
+    "@id": "odin:Schemas/warfare",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10002",
+            "name": "warfare",
+            "description": "Warfare news story.",
+            "wd_node": "wd:Q198",
+            "wd_label": "war",
+            "wd_description": "organised and prolonged violent conflict between states",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20000",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20001",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20002",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20003",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00002"
+                }
+            ],
+            "children": [
+                "odin:Events/10011",
+                "odin:Events/10012",
+                "odin:Events/10013",
+                "odin:Events/10014",
+                "odin:Events/10015",
+                "odin:Events/12004",
+                "odin:Events/12009",
+                "odin:Events/10003"
+            ],
+            "modality": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00000",
+                    "name": "group of people",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00001",
+                    "name": "concrete object",
+                    "wd_label": "concrete_object",
+                    "wd_node": "wd:Q4406616",
+                    "wd_description": "object with a physical referent"
+                },
+                {
+                    "@id": "odin:Entities/00002",
+                    "name": "war site",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "odin:Entities/00003",
+                    "name": "vehicle",
+                    "wd_label": "vehicle",
+                    "wd_node": "wd:Q42889",
+                    "wd_description": "mobile machine that transports people, animals or cargo"
+                },
+                {
+                    "@id": "odin:Entities/00004",
+                    "name": "abstract object",
+                    "wd_label": "abstract_object",
+                    "wd_node": "wd:Q7184903",
+                    "wd_description": "object with no physical referents"
+                },
+                {
+                    "@id": "odin:Entities/00005",
+                    "name": "person",
+                    "wd_label": "person",
+                    "wd_node": "wd:Q5",
+                    "wd_description": "common name of Homo sapiens, unique extant species of the genus Homo"
+                },
+                {
+                    "@id": "odin:Entities/00006",
+                    "name": "media",
+                    "wd_label": "communication_medium",
+                    "wd_node": "wd:Q340169",
+                    "wd_description": "storage and delivering agent of information or data"
+                },
+                {
+                    "@id": "odin:Entities/00008",
+                    "name": "warmonger",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "odin:Entities/00010",
+                    "name": "government",
+                    "wd_label": "government",
+                    "wd_node": "wd:Q7188",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "odin:Entities/00013",
+                    "name": "objection",
+                    "wd_label": "objection",
+                    "wd_node": "wd:Q2090618",
+                    "wd_description": "reason arguing against a premise, argument, or conclusion"
+                },
+                {
+                    "@id": "odin:Entities/00014",
+                    "name": "invaded country",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q2090618",
+                    "wd_description": "reason arguing against a premise, argument, or conclusion"
+                },
+                {
+                    "@id": "odin:Entities/00015",
+                    "name": "trigger/topic",
+                    "wd_label": "cause",
+                    "wd_node": "wd:Q2574811",
+                    "wd_description": "entity which forms causality for an event"
+                },
+                {
+                    "@id": "odin:Entities/00016",
+                    "name": "trigger location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "odin:Entities/00017",
+                    "name": "police",
+                    "wd_label": "police",
+                    "wd_node": "wd:Q35535",
+                    "wd_description": "constituted body of persons empowered by the state to enforce the law"
+                },
+                {
+                    "@id": "odin:Entities/00018",
+                    "name": "other location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "odin:Entities/00019",
+                    "name": "civilians",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00020",
+                    "name": "aid agency",
+                    "wd_label": "aid_agency",
+                    "wd_node": "wd:Q336473",
+                    "wd_description": "organization with the task to help humans or animals or to protect sensitive cultural goods"
+                },
+                {
+                    "@id": "odin:Entities/00021",
+                    "name": "refuge",
+                    "wd_label": "refuge",
+                    "wd_node": "wd:Q108147624",
+                    "wd_description": "location where a person seeks shelter from something"
+                },
+                {
+                    "@id": "odin:Entities/00022",
+                    "name": "humanitarian aid",
+                    "wd_label": "humanitarian_aid",
+                    "wd_node": "wd:Q826745",
+                    "wd_description": "material or logistical assistance for people in need"
+                },
+                {
+                    "@id": "odin:Entities/00024",
+                    "name": "some location",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                },
+                {
+                    "@id": "odin:Entities/00028",
+                    "name": "military",
+                    "wd_label": "military",
+                    "wd_node": "wd:Q8473",
+                    "wd_description": "organized body primarily tasked with preparing for and conducting war"
+                },
+                {
+                    "@id": "odin:Entities/00029",
+                    "name": "combatant",
+                    "wd_label": "combatant",
+                    "wd_node": "wd:Q1414937",
+                    "wd_description": "person who takes a direct part in the hostilities of an armed conflict"
+                },
+                {
+                    "@id": "odin:Entities/00030",
+                    "name": "armed conflict",
+                    "wd_label": "armed_conflict",
+                    "wd_node": "wd:Q350604",
+                    "wd_description": "conflict including violence where at least one of the acting groups is a state"
+                },
+                {
+                    "@id": "odin:Entities/00031",
+                    "name": "infrastructure",
+                    "wd_label": "infrastructure",
+                    "wd_node": "wd:Q121359",
+                    "wd_description": "fundamental facilities and systems serving a country, city, or other areas"
+                },
+                {
+                    "@id": "odin:Entities/00038",
+                    "name": "country in war",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "odin:Entities/00040",
+                    "name": "business",
+                    "wd_label": "business",
+                    "wd_node": "wd:Q4830453",
+                    "wd_description": "organization involved in commercial, industrial, or professional activity"
+                },
+                {
+                    "@id": "odin:Entities/00043",
+                    "name": "head of state",
+                    "wd_label": "head_of_state",
+                    "wd_node": "wd:Q48352",
+                    "wd_description": "official who holds the highest-ranked executive position in a sovereign state"
+                },
+                {
+                    "@id": "odin:Entities/00044",
+                    "name": "general audience",
+                    "wd_label": "group_of_humans",
+                    "wd_node": "wd:Q16334295",
+                    "wd_description": "any set of human beings"
+                },
+                {
+                    "@id": "odin:Entities/00046",
+                    "name": "ceasefire",
+                    "wd_label": "ceasefire",
+                    "wd_node": "wd:Q208383",
+                    "wd_description": "temporary stoppage of war"
+                },
+                {
+                    "@id": "odin:Entities/00047",
+                    "name": "intervening country",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                },
+                {
+                    "@id": "odin:Entities/00048",
+                    "name": "weapon",
+                    "wd_label": "weapon",
+                    "wd_node": "wd:Q728",
+                    "wd_description": "tool used to inflict damage or harm"
+                },
+                {
+                    "@id": "odin:Entities/00050",
+                    "name": "war crime",
+                    "wd_label": "war_crime",
+                    "wd_node": "wd:Q135010",
+                    "wd_description": "serious violation of the laws of war"
+                },
+                {
+                    "@id": "odin:Entities/00051",
+                    "name": "communication device",
+                    "wd_label": "communication_device",
+                    "wd_node": "wd:Q1780509",
+                    "wd_description": "technology for conveying meaning, usually across distance"
+                },
+                {
+                    "@id": "odin:Entities/00055",
+                    "name": "human-made geographic feature",
+                    "wd_label": "human-made_geographic_feature",
+                    "wd_node": "wd:Q811430",
+                    "wd_description": "artificial construction meant to remain at a fixed geographic location"
+                }
+            ],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "odin:Events/10011",
+            "children": [
+                "odin:Events/10024",
+                "odin:Events/10025",
+                "odin:Events/10026",
+                "odin:Events/10027",
+                "odin:Events/10028",
+                "odin:Events/10029",
+                "odin:Events/10030",
+                "odin:Events/10031"
+            ],
+            "children_gate": "or",
+            "description": "the government participates in war.",
+            "name": "government_action",
+            "outlinks": [
+                "odin:Events/10012"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10012",
+            "children": [
+                "odin:Events/10032",
+                "odin:Events/10034",
+                "odin:Events/10035",
+                "odin:Events/10036",
+                "odin:Events/10037",
+                "odin:Events/10038",
+                "odin:Events/10033",
+                "odin:Events/10039",
+                "odin:Events/10040"
+            ],
+            "children_gate": "or",
+            "description": "two nations engage in battle.",
+            "name": "battle",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20042",
+                    "roleName": "A0_pag_agent_combatant",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20043",
+                    "roleName": "A1_com_co_agent_fight_or_other_combatant",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20044",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20045",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00000"
+                }
+            ],
+            "repeatable": true,
+            "wd_node": "wd:Q178561",
+            "wd_label": "battle",
+            "wd_description": "part of a war which is well defined in duration, area and force commitment",
+            "outlinks": [
+                "odin:Events/10013",
+                "odin:Events/10014",
+                "odin:Events/10015",
+                "odin:Events/12004"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10013",
+            "children": [
+                "odin:Events/10041",
+                "odin:Events/10042",
+                "odin:Events/10043",
+                "odin:Events/10044",
+                "odin:Events/10045",
+                "odin:Events/10047",
+                "odin:Events/10046",
+                "odin:Events/10095",
+                "odin:Events/12028"
+            ],
+            "children_gate": "or",
+            "description": "civilians of the war-torn countries react to the war.",
+            "name": "civilian_reaction",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10014",
+            "children": [
+                "odin:Events/10049",
+                "odin:Events/10050",
+                "odin:Events/10051",
+                "odin:Events/10052",
+                "odin:Events/10053",
+                "odin:Events/10054",
+                "odin:Events/10055",
+                "odin:Events/12029",
+                "odin:Events/12031",
+                "odin:Events/12032"
+            ],
+            "children_gate": "or",
+            "description": "the war impacts the global economy.",
+            "name": "economic_impact",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10015",
+            "children": [
+                "odin:Events/10056",
+                "odin:Events/10059",
+                "odin:Events/10057",
+                "odin:Events/10060",
+                "odin:Events/10058",
+                "odin:Events/10061",
+                "odin:Events/10062",
+                "odin:Events/10063",
+                "odin:Events/10064",
+                "odin:Events/10065",
+                "odin:Events/10066",
+                "odin:Events/10067",
+                "odin:Events/10068",
+                "odin:Events/10069",
+                "odin:Events/10070",
+                "odin:Events/10071",
+                "odin:Events/10072"
+            ],
+            "children_gate": "or",
+            "description": "people from other countries react to the ongoing war.",
+            "name": "international_response",
+            "outlinks": [
+                "odin:Events/10003"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10056",
+            "description": "Government leader gives speech",
+            "name": "speech",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20080",
+                    "roleName": "A0_pag_lecturer",
+                    "entity": "odin:Entities/00043"
+                },
+                {
+                    "@id": "odin:Participants/20081",
+                    "roleName": "A1_gol",
+                    "entity": "odin:Entities/00044"
+                },
+                {
+                    "@id": "odin:Participants/20082",
+                    "roleName": "A2_ppt",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20083",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q861911",
+            "wd_label": "speech",
+            "wd_description": "address delivered to an audience",
+            "outlinks": [
+                "odin:Events/10057",
+                "odin:Events/10058"
+            ]
+        },
+        {
+            "@id": "odin:Events/10059",
+            "description": "condemn at social media",
+            "name": "censure",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20084",
+                    "roleName": "A0_pag_condemner",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20085",
+                    "roleName": "A1_ppt_entity_censured",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20086",
+                    "roleName": "A2_prd_for_what",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20087",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00006"
+                }
+            ],
+            "wd_node": "wd:Q5058947",
+            "wd_label": "censure",
+            "wd_description": "expression of strong disapproval or harsh criticism",
+            "outlinks": [
+                "odin:Events/10057"
+            ]
+        },
+        {
+            "@id": "odin:Events/10057",
+            "description": "Media coverage",
+            "name": "journalism",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20088",
+                    "roleName": "A0_pag_media",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20089",
+                    "roleName": "A1_ppt_event",
+                    "entity": "odin:Entities/00030"
+                }
+            ],
+            "wd_node": "wd:Q11030",
+            "wd_label": "journalism",
+            "wd_description": "investigation and reporting of events, issues and trends to a broad audience",
+            "outlinks": [
+                "odin:Events/10056",
+                "odin:Events/10059"
+            ]
+        },
+        {
+            "@id": "odin:Events/10060",
+            "description": "Demonstration against war",
+            "name": "demonstration",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20090",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20091",
+                    "roleName": "A1_ppt_theme_objectionable_thing",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20092",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "outlinks": [
+                "odin:Events/10057"
+            ]
+        },
+        {
+            "@id": "odin:Events/10058",
+            "description": "Call for ceasefire",
+            "name": "advocacy",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20093",
+                    "roleName": "A0_pag_advocate",
+                    "entity": "odin:Entities/00045"
+                },
+                {
+                    "@id": "odin:Participants/20094",
+                    "roleName": "A1_ppt_suggestion",
+                    "entity": "odin:Entities/00046"
+                },
+                {
+                    "@id": "odin:Participants/20095",
+                    "roleName": "A2_gol_recipient_of_advice",
+                    "entity": "odin:Entities/00008"
+                }
+            ],
+            "wd_node": "wd:Q2509280",
+            "wd_label": "advocacy",
+            "wd_description": "political process by an individual or group which aims to influence public-policy and resource allocation decisions",
+            "outlinks": [
+                "odin:Events/10057"
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00045",
+                    "name": "peace advocator",
+                    "wd_label": "political_territorial_entity",
+                    "wd_node": "wd:Q1048835",
+                    "wd_description": "a region accepted to be in the jurisdiction of a particular government entity"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10061",
+            "description": "economic benefit paid to persons who cannot support themselves",
+            "name": "economic_support",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20096",
+                    "roleName": "A0_pag_helper",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20097",
+                    "roleName": "A1_ppt_person",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20098",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00000"
+                }
+            ],
+            "wd_node": "wd:Q11497309",
+            "wd_label": "economic_support",
+            "wd_description": "economic benefit paid to persons who cannot support themselves",
+            "outlinks": [
+                "odin:Events/10057",
+                "odin:Events/10062",
+                "odin:Events/10063"
+            ]
+        },
+        {
+            "@id": "odin:Events/10062",
+            "description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+            "name": "donation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20099",
+                    "roleName": "A0_pag_giver",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20100",
+                    "roleName": "A1_ppt_thing_given",
+                    "entity": "odin:Entities/00022"
+                },
+                {
+                    "@id": "odin:Participants/20101",
+                    "roleName": "A2_gol_entity_given_to",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q1124860",
+            "wd_label": "donation",
+            "wd_description": "gift given by physical or legal persons, typically for charitable purposes and/or to benefit a cause",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10063",
+            "description": "economic activity aimed at covering the consumption needs of an economic unit",
+            "name": "supply",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20102",
+                    "roleName": "A0_pag_provider",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20103",
+                    "roleName": "A1_ppt_thing_provided",
+                    "entity": "odin:Entities/00022"
+                },
+                {
+                    "@id": "odin:Participants/20104",
+                    "roleName": "A2_gol_entity_provided_for",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q5409930",
+            "wd_label": "supply",
+            "wd_description": "economic activity aimed at covering the consumption needs of an economic unit",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10064",
+            "description": "Refugee migration",
+            "name": "human_migration",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20105",
+                    "roleName": "A0_pag_population",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20106",
+                    "roleName": "A1_ppt_destination",
+                    "entity": "odin:Entities/00021"
+                },
+                {
+                    "@id": "odin:Participants/20107",
+                    "roleName": "A2_dir_source",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q177626",
+            "wd_label": "human_migration",
+            "wd_description": "movement of people for resettlement",
+            "outlinks": [
+                "odin:Events/10057",
+                "odin:Events/10065"
+            ]
+        },
+        {
+            "@id": "odin:Events/10065",
+            "description": "Refugee housing",
+            "name": "housing",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20108",
+                    "roleName": "A0_pag_provider_of_housing",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20109",
+                    "roleName": "A1_ppt_entity_housed",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20110",
+                    "roleName": "A2_gol_location",
+                    "entity": "odin:Entities/00021"
+                }
+            ],
+            "wd_node": "wd:Q1247867",
+            "wd_label": "housing",
+            "wd_description": "construction and assignment of houses or buildings for sheltering people",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10066",
+            "description": "use of force by a State over foreign territory",
+            "name": "military_intervention",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20111",
+                    "roleName": "A0_pag_nosy_individual",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20112",
+                    "roleName": "A1_ppt_intervene_in",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20113",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20114",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00000"
+                }
+            ],
+            "wd_node": "wd:Q5919191",
+            "wd_label": "military_intervention",
+            "wd_description": "None",
+            "outlinks": [
+                "odin:Events/10057"
+            ]
+        },
+        {
+            "@id": "odin:Events/10067",
+            "description": "Purchase weapons",
+            "name": "arms_trade",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20115",
+                    "roleName": "A0_pag_agent_purchaser",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20116",
+                    "roleName": "A1_ppt_theme_thing_purchased",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20117",
+                    "roleName": "A4_gol_benefactive",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20118",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q2538907",
+            "wd_label": "arms_trade",
+            "wd_description": "trade involving weapons being bought and sold",
+            "outlinks": [
+                "odin:Events/10068"
+            ]
+        },
+        {
+            "@id": "odin:Events/10068",
+            "description": "Transport weapons for support",
+            "name": "transport",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20119",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20120",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20121",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "odin:Entities/00024"
+                },
+                {
+                    "@id": "odin:Participants/20122",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10069",
+            "description": "International economic sanctions",
+            "name": "economic_sanctions",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20123",
+                    "roleName": "A0_pag_applier_of_penalty",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20124",
+                    "roleName": "A1_ppt_entity_penalized",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20125",
+                    "roleName": "A2_prd_thing_penalized_for",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20126",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00000"
+                }
+            ],
+            "wd_node": "wd:Q1248258",
+            "wd_label": "economic_sanctions",
+            "wd_description": "financial penalties applied by nations to persons, nations or companies to affect political change",
+            "outlinks": [
+                "odin:Events/10057",
+                "odin:Events/10070"
+            ]
+        },
+        {
+            "@id": "odin:Events/10070",
+            "description": "domestic and international financial crisis",
+            "name": "financial_crisis",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20127",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "odin:Entities/00000"
+                }
+            ],
+            "wd_node": "wd:Q114380",
+            "wd_label": "financial_crisis",
+            "wd_description": "situation in which financial assets suddenly lose a large part of their nominal value",
+            "outlinks": [
+                "odin:Events/10057"
+            ]
+        },
+        {
+            "@id": "odin:Events/10071",
+            "description": "act of voluntarily abstaining from using, buying, or dealing with a person, organization, or country",
+            "name": "boycott",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20128",
+                    "roleName": "A0_pag_boycotter",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20129",
+                    "roleName": "A1_ppt_unpleasant_thing",
+                    "entity": "odin:Entities/00030"
+                }
+            ],
+            "wd_node": "wd:Q179366",
+            "wd_label": "boycott",
+            "wd_description": "act of voluntarily abstaining from using, buying, or dealing with a person, organization, or country",
+            "outlinks": [
+                "odin:Events/10057"
+            ]
+        },
+        {
+            "@id": "odin:Events/10072",
+            "description": "File a case for war crime",
+            "name": "filing",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20130",
+                    "roleName": "A0_pag_filer",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20131",
+                    "roleName": "A1_ppt_file",
+                    "entity": "odin:Entities/00049"
+                },
+                {
+                    "@id": "odin:Participants/20132",
+                    "roleName": "A2_gol_filed-with",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20133",
+                    "roleName": "A3_gol_filed_against",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20134",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q17146064",
+            "wd_label": "filing",
+            "wd_description": "legal filing",
+            "outlinks": [
+                "odin:Events/10057"
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00049",
+                    "name": "lawsuit",
+                    "wd_label": "lawsuit",
+                    "wd_node": "wd:Q697327",
+                    "wd_description": "civil action brought in a court of law"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10049",
+            "description": "Resource scarcity",
+            "name": "scarcity",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20135",
+                    "roleName": "A2_gol_recipient_",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20136",
+                    "roleName": "A1_ppt_theme_",
+                    "entity": "odin:Entities/00037"
+                },
+                {
+                    "@id": "odin:Participants/20137",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q815758",
+            "wd_label": "scarcity",
+            "wd_description": "fundamental problem of economics where there are limited resources to fulfill society's unlimited wants",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00037",
+                    "name": "goods",
+                    "wd_label": "good",
+                    "wd_node": "wd:Q28877",
+                    "wd_description": "tangible and intangible thing, except labor tied services, that satisfies human wants and provides utility"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10050",
+            "description": "business cycle contraction; general slowdown in economic activity",
+            "name": "recession",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20138",
+                    "roleName": "A1_ppt_entity_suffering_a_recession",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q176494",
+            "wd_label": "recession",
+            "wd_description": "business cycle contraction; general slowdown in economic activity",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10051",
+            "description": "abrupt instability in the banking industry",
+            "name": "banking_crisis",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20139",
+                    "roleName": "A1_ppt_nature_of_the_crisis",
+                    "entity": "odin:Entities/00039"
+                },
+                {
+                    "@id": "odin:Participants/20140",
+                    "roleName": "A2_gol_experiencer_of_crisis",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q806729",
+            "wd_label": "banking_crisis",
+            "wd_description": "abrupt instability in the banking industry",
+            "outlinks": [
+                "odin:Events/12031"
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00039",
+                    "name": "banking industry",
+                    "wd_label": "banking_industry",
+                    "wd_node": "wd:Q806718",
+                    "wd_description": "industry for financial institutions such as banks and credit unions"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10052",
+            "description": "a company ceasing operations following its inability to make a profit or to bring in enough revenue to cover its expenses",
+            "name": "business_failure",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20141",
+                    "roleName": "A1_pag_agent_thing_failing",
+                    "entity": "odin:Entities/00038"
+                },
+                {
+                    "@id": "odin:Participants/20142",
+                    "roleName": "A2_ppt_task",
+                    "entity": "odin:Entities/00040"
+                }
+            ],
+            "wd_node": "wd:Q5001874",
+            "wd_label": "business_failure",
+            "wd_description": "a company ceasing operations following its inability to make a profit or to bring in enough revenue to cover its expenses",
+            "outlinks": [
+                "odin:Events/10053",
+                "odin:Events/10054"
+            ]
+        },
+        {
+            "@id": "odin:Events/10053",
+            "description": "legal process through which people or other entities who cannot repay debts to creditors may seek relief from some or all of their debts",
+            "name": "bankruptcy",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20143",
+                    "roleName": "A0_pag_causer",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20144",
+                    "roleName": "A1_ppt_person_bankrupt",
+                    "entity": "odin:Entities/00040"
+                },
+                {
+                    "@id": "odin:Participants/20145",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q152074",
+            "wd_label": "bankruptcy",
+            "wd_description": "legal process through which people or other entities who cannot repay debts to creditors may seek relief from some or all of their debts",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10054",
+            "description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "name": "temporarily_closed",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20146",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": "odin:Entities/00040"
+                },
+                {
+                    "@id": "odin:Participants/20147",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q55653430",
+            "wd_label": "temporarily_closed",
+            "wd_description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10055",
+            "description": "sudden dramatic decline of stock prices across a significant cross-section of a stock market",
+            "name": "stock market crash",
+            "optional": true,
+            "participants": [
+                {
+                    "@id": "odin:Participants/20148",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": "odin:Entities/00041"
+                },
+                {
+                    "@id": "odin:Participants/20149",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00042"
+                }
+            ],
+            "wd_node": "wd:Q1020018",
+            "wd_label": "stock_market_crash",
+            "wd_description": "sudden dramatic decline of stock prices acros a significant cross-section of a stock market",
+            "outlinks": [
+                "odin:Events/10051"
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00041",
+                    "name": "stock market",
+                    "wd_label": "stock_market",
+                    "wd_node": "wd:Q475000",
+                    "wd_description": "public entity for the trading of company stocks and shares"
+                },
+                {
+                    "@id": "odin:Entities/00042",
+                    "name": "world",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10041",
+            "description": "collective action by people in favor of a cause",
+            "name": "demonstration",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20150",
+                    "roleName": "A0_pag_agent_protester",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20151",
+                    "roleName": "A1_ppt_theme_objectionable_thing",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20152",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00016"
+                }
+            ],
+            "wd_node": "wd:Q175331",
+            "wd_label": "demonstration",
+            "wd_description": "collective action by people in favor of a cause",
+            "outlinks": [
+                "odin:Events/10042"
+            ]
+        },
+        {
+            "@id": "odin:Events/10042",
+            "description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "name": "arrest",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20153",
+                    "roleName": "A0_pag__police",
+                    "entity": "odin:Entities/00016"
+                },
+                {
+                    "@id": "odin:Participants/20154",
+                    "roleName": "A1_ppt__criminal",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20155",
+                    "roleName": "A2_cau__crime",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20156",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00016"
+                }
+            ],
+            "wd_node": "wd:Q1403016",
+            "wd_label": "arrest",
+            "wd_description": "detention of a person and taking it into custody, usually because it has been suspected of committing or planning a crime",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10043",
+            "children": [
+                "odin:Events/10079",
+                "odin:Events/10080",
+                "odin:Events/10081",
+                "odin:Events/10082"
+            ],
+            "children_gate": "or",
+            "description": "human-directed movement of things or people between locations",
+            "name": "transport",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20157",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20158",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20159",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "odin:Entities/00002"
+                },
+                {
+                    "@id": "odin:Participants/20160",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "odin:Entities/00018"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10079",
+            "description": "Seek shelter for bombing",
+            "name": "housing",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20161",
+                    "roleName": "A0_pag_provider_of_housing",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20162",
+                    "roleName": "A1_ppt_entity_housed",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20163",
+                    "roleName": "A2_gol_location",
+                    "entity": "odin:Entities/00021"
+                }
+            ],
+            "wd_node": "wd:Q1247867",
+            "wd_label": "housing",
+            "wd_description": "construction and assignment of houses or buildings for sheltering people",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10080",
+            "description": "Evacuate Refugee",
+            "name": "medical_evacuation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20164",
+                    "roleName": "A0_pag_causer_of_emptiness",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20165",
+                    "roleName": "A1_dir_enclosure",
+                    "entity": "odin:Entities/00002"
+                },
+                {
+                    "@id": "odin:Participants/20166",
+                    "roleName": "A2_ppt_people",
+                    "entity": "odin:Entities/00019"
+                }
+            ],
+            "wd_node": "wd:Q655177",
+            "wd_label": "medical_evacuation",
+            "wd_description": "emergency evacuation for medical reasons",
+            "outlinks": [
+                "odin:Events/10081"
+            ]
+        },
+        {
+            "@id": "odin:Events/10081",
+            "description": "seek asylum",
+            "name": "emergency_evacuation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20167",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20168",
+                    "roleName": "A1_ppt_thing_transported",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20169",
+                    "roleName": "A2_dir_initial_location_source",
+                    "entity": "odin:Entities/00002"
+                },
+                {
+                    "@id": "odin:Participants/20170",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "odin:Entities/00018"
+                }
+            ],
+            "wd_node": "wd:Q606332",
+            "wd_label": "emergency_evacuation",
+            "wd_description": "urgent movement of people away from the threat or actual occurrence of a hazard",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10082",
+            "description": "flee",
+            "name": "escape",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20171",
+                    "roleName": "A0_ppt_entity_escaping",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20172",
+                    "roleName": "A1_loc_place_or_thing_escaped",
+                    "entity": "odin:Entities/00002"
+                }
+            ],
+            "wd_node": "wd:Q50388354",
+            "wd_label": "escape",
+            "wd_description": "break free from confinement or control",
+            "outlinks": [
+                "odin:Events/10081"
+            ]
+        },
+        {
+            "@id": "odin:Events/10044",
+            "description": "allocation of resources among possible uses",
+            "name": "resource_allocation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20173",
+                    "roleName": "A0_pag_agent_granter",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20174",
+                    "roleName": "A1_ppt_theme_thing_granted",
+                    "entity": "odin:Entities/00022"
+                },
+                {
+                    "@id": "odin:Participants/20175",
+                    "roleName": "A2_gol_goal_benefactive",
+                    "entity": "odin:Entities/00019"
+                }
+            ],
+            "wd_node": "wd:Q287260",
+            "wd_label": "resource_allocation",
+            "wd_description": "allocation of resources among possible uses",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10045",
+            "description": "process of gathering voluntary contributions of money or other resources",
+            "name": "fundraising",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20176",
+                    "roleName": "A0_pag_raiser_of_funds",
+                    "entity": "odin:Entities/00020"
+                },
+                {
+                    "@id": "odin:Participants/20177",
+                    "roleName": "A1_ppt_amount_raised",
+                    "entity": "odin:Entities/00023"
+                },
+                {
+                    "@id": "odin:Participants/20178",
+                    "roleName": "A2_gol_beneficiary",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20179",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q1161355",
+            "wd_label": "fundraising",
+            "wd_description": "process of gathering voluntary contributions of money or other resources",
+            "outlinks": [
+                "odin:Events/10044",
+                "odin:Events/10046"
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00023",
+                    "name": "economic value",
+                    "wd_label": "economic_value",
+                    "wd_node": "wd:Q868257",
+                    "wd_description": "measure of the benefit provided by a good or service to an economic agent"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10047",
+            "description": "first and immediate assistance given to any person suffering from either a minor or serious illness or injury",
+            "name": "first_aid",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20180",
+                    "roleName": "A0_pag_doctor",
+                    "entity": "odin:Entities/00025"
+                },
+                {
+                    "@id": "odin:Participants/20181",
+                    "roleName": "A1_ppt_patient",
+                    "entity": "odin:Entities/00012"
+                },
+                {
+                    "@id": "odin:Participants/20182",
+                    "roleName": "A2_ppt_illness_or_injury",
+                    "entity": "odin:Entities/00026"
+                },
+                {
+                    "@id": "odin:Participants/20183",
+                    "roleName": "A3_mnr_instrument",
+                    "entity": "odin:Entities/00027"
+                },
+                {
+                    "@id": "odin:Participants/20184",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00002"
+                }
+            ],
+            "wd_node": "wd:Q133981",
+            "wd_label": "first_aid",
+            "wd_description": "first and immediate assistance given to any person suffering from either a minor or serious illness or injury",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00012",
+                    "name": "victim",
+                    "wd_label": "victim",
+                    "wd_node": "wd:Q1851760",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                },
+                {
+                    "@id": "odin:Entities/00025",
+                    "name": "physician",
+                    "wd_label": "physician",
+                    "wd_node": "wd:Q39631",
+                    "wd_description": "professional who practices medicine"
+                },
+                {
+                    "@id": "odin:Entities/00026",
+                    "name": "health problem",
+                    "wd_label": "health_problem",
+                    "wd_node": "wd:Q2057971",
+                    "wd_description": "condition negatively affecting the health of an organism"
+                },
+                {
+                    "@id": "odin:Entities/00027",
+                    "name": "medical equipment",
+                    "wd_label": "tool",
+                    "wd_node": "wd:Q39546",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10048",
+            "description": "compulsory enlistment into national or military service",
+            "name": "conscription",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20185",
+                    "roleName": "A0_pag_entity_doing_the_choosing",
+                    "entity": "odin:Entities/00028"
+                },
+                {
+                    "@id": "odin:Participants/20186",
+                    "roleName": "A1_ppt_entity_chosen",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20187",
+                    "roleName": "A2_prd_job_or_service_to_be_performed",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20188",
+                    "roleName": "A3_dir_source",
+                    "entity": "odin:Entities/00018"
+                },
+                {
+                    "@id": "odin:Participants/20189",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00002"
+                }
+            ],
+            "wd_node": "wd:Q580750",
+            "wd_label": "conscription",
+            "wd_description": "compulsory enlistment into national or military service",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10046",
+            "description": "Re-build infrastructure",
+            "name": "reconstruction",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20190",
+                    "roleName": "A0_pag_agent_builder",
+                    "entity": "odin:Entities/00010"
+                },
+                {
+                    "@id": "odin:Participants/20191",
+                    "roleName": "A1_prd_result_construction",
+                    "entity": "odin:Entities/00031"
+                },
+                {
+                    "@id": "odin:Participants/20192",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00032"
+                }
+            ],
+            "wd_node": "wd:Q2478058",
+            "wd_label": "reconstruction",
+            "wd_description": "rebuilding or reassembling of a destroyed infrastructure",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00032",
+                    "name": "war ruins",
+                    "wd_label": "geographic_location",
+                    "wd_node": "wd:Q2221906",
+                    "wd_description": "point or an area on the Earth's surface or elsewhere"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10024",
+            "description": "accusation or complaint against a person or group",
+            "name": "accusation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20193",
+                    "roleName": "A0_pag_agent_speaker",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20194",
+                    "roleName": "A1_ppt_theme_subject",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20195",
+                    "roleName": "A2_prd_attribute_grounds",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20196",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q1189956",
+            "wd_label": "denunciation",
+            "wd_description": "accusation or complaint against a person or group",
+            "outlinks": [
+                "odin:Events/10025"
+            ]
+        },
+        {
+            "@id": "odin:Events/10025",
+            "description": "announcement of war",
+            "name": "announcement",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20197",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20198",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20199",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "odin:Entities/00044"
+                },
+                {
+                    "@id": "odin:Participants/20200",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10026",
+            "description": "practice of suppressing speech or other public communication",
+            "name": "censorship",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20201",
+                    "roleName": "A0_pag__censor",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20202",
+                    "roleName": "A1_ppt__entity_censored",
+                    "entity": "odin:Entities/00006"
+                },
+                {
+                    "@id": "odin:Participants/20203",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q543",
+            "wd_label": "censorship",
+            "wd_description": "practice of suppressing speech or other public communication",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10027",
+            "description": "any crime that involves a computer and a network",
+            "name": "Cyber attack",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20204",
+                    "roleName": "A0_pag__criminal",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20205",
+                    "roleName": "A2_gol__antibenefactive",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20206",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q29137",
+            "wd_label": "cybercrime",
+            "wd_description": "any crime that involves a computer and a network",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10028",
+            "description": "form of communication intended to sway the audience through presenting only one side of the argument",
+            "name": "Propaganda",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20207",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20208",
+                    "roleName": "A2_com_co_agent_other_communicator",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20209",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q7281",
+            "wd_label": "propaganda",
+            "wd_description": "form of communication intended to sway the audience through presenting only one side of the argument",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10029",
+            "description": "one person's statement that they intend to harm another, or another's property",
+            "name": "Nuclear_threat",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20210",
+                    "roleName": "A0_pag_agent",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20211",
+                    "roleName": "A1_ppt_threat",
+                    "entity": "odin:Entities/00052"
+                },
+                {
+                    "@id": "odin:Participants/20212",
+                    "roleName": "A2_gol_entity_threatened",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20213",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q707125",
+            "wd_label": "threat",
+            "wd_description": "one person's statement that they intend to harm another, or another's property",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00052",
+                    "name": "nuclear hazard",
+                    "wd_label": "nuclear_hazard",
+                    "wd_node": "wd:Q87412590",
+                    "wd_description": "health and security hazards related to nuclear materials"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10030",
+            "children": [
+                "odin:Events/10083",
+                "odin:Events/10084",
+                "odin:Events/10085",
+                "odin:Events/10086",
+                "odin:Events/10087"
+            ],
+            "children_gate": "or",
+            "description": "assembling and readying troops and supplies for war",
+            "name": "Military Mobilization",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20214",
+                    "roleName": "A0_pag_agent_mobilizer",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20215",
+                    "roleName": "A1_ppt_patient_thing_mobilized",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20216",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q242412",
+            "wd_label": "mobilization",
+            "wd_description": "assembling and readying troops and supplies for war",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10083",
+            "description": "compulsory enlistment into national or military service",
+            "name": "conscription",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20217",
+                    "roleName": "A0_pag_agent_signer",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20218",
+                    "roleName": "A1_ppt_theme_impelled_agent",
+                    "entity": "odin:Entities/00019"
+                },
+                {
+                    "@id": "odin:Participants/20219",
+                    "roleName": "A2_prd_attribute_impelled_action",
+                    "entity": "odin:Entities/00030"
+                },
+                {
+                    "@id": "odin:Participants/20220",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q580750",
+            "wd_label": "conscription",
+            "wd_description": "compulsory enlistment into national or military service",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10084",
+            "description": "Assemble army",
+            "name": "convocation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20221",
+                    "roleName": "A0_pag_agent_entity_causing_some_grouping",
+                    "entity": "odin:Entities/00043"
+                },
+                {
+                    "@id": "odin:Participants/20222",
+                    "roleName": "A1_ppt_theme_thing_being_included_in_some_group",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20223",
+                    "roleName": "A2_prd__group",
+                    "entity": "odin:Entities/00028"
+                },
+                {
+                    "@id": "odin:Participants/20224",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q3765035",
+            "wd_label": "convocation",
+            "wd_description": "a group of people formally assembled for a special purpose, mostly ecclesiastical or academic",
+            "outlinks": [
+                "odin:Events/10085",
+                "odin:Events/10086"
+            ]
+        },
+        {
+            "@id": "odin:Events/10085",
+            "description": "Transport troops",
+            "name": "transport",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20225",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20226",
+                    "roleName": "A1_ppt_theme_thing_transported",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20227",
+                    "roleName": "A2_dir_source_initial_location",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20228",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q7590",
+            "wd_label": "transport",
+            "wd_description": "human-directed movement of things or people between locations",
+            "outlinks": [
+                "odin:Events/10087"
+            ]
+        },
+        {
+            "@id": "odin:Events/10086",
+            "description": "Deploy troops",
+            "name": "military_deployment",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20229",
+                    "roleName": "A0_pag_deployer",
+                    "entity": "odin:Entities/00028"
+                },
+                {
+                    "@id": "odin:Participants/20230",
+                    "roleName": "A1_ppt_deployed",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20231",
+                    "roleName": "A2_loc_deployed_where",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q2423459",
+            "wd_label": "military_deployment",
+            "wd_description": "movement of armed forces and their logistical support infrastructure around the world",
+            "outlinks": [
+                "odin:Events/10087"
+            ]
+        },
+        {
+            "@id": "odin:Events/10087",
+            "description": "Invasion / enter terrority",
+            "name": "invasion",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20232",
+                    "roleName": "A0_pag_invader",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20233",
+                    "roleName": "A1_ppt_place_invaded",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q467011",
+            "wd_label": "invasion",
+            "wd_description": "type of military offensive where armed forces of one polity forcibly enter another",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10031",
+            "description": "Facility shutdown",
+            "name": "temporarily_closed",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20234",
+                    "roleName": "A1_ppt_action_or_object_being_stopped",
+                    "entity": "odin:Entities/00031"
+                },
+                {
+                    "@id": "odin:Participants/20235",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q55653430",
+            "wd_label": "temporarily_closed",
+            "wd_description": "state that indicates that a building, installation, park, etc. is not accessible because it is closed",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10032",
+            "description": "warfare and military operations conducted by, amongst, and against aircraft and other aerial systems",
+            "name": "aerial warfare",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20236",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20237",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20238",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20239",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q471145",
+            "wd_label": "aerial_warfare",
+            "wd_description": "warfare and military operations conducted by, amongst, and against aircraft and other aerial systems",
+            "outlinks": [
+                "odin:Events/10033"
+            ]
+        },
+        {
+            "@id": "odin:Events/10034",
+            "description": "military mission utilizing aircraft to combat enemy forces on land or at sea",
+            "name": "air-to-surface warfare",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20240",
+                    "roleName": "A0_pag_warmonger",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20241",
+                    "roleName": "A1_com_war_against/with",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20242",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "odin:Entities/00015"
+                },
+                {
+                    "@id": "odin:Participants/20243",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q76370269",
+            "wd_label": "air-to-surface_warfare",
+            "wd_description": "military mission utilizing aircraft to combat enemy forces on land or at sea",
+            "outlinks": [
+                "odin:Events/10033"
+            ]
+        },
+        {
+            "@id": "odin:Events/10035",
+            "description": "shooting down of a civilian or military aircraft",
+            "name": "aircraft_shootdown",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20244",
+                    "roleName": "A0_pag_shooter",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20245",
+                    "roleName": "A1_ppt_planes",
+                    "entity": "odin:Entities/00053"
+                },
+                {
+                    "@id": "odin:Participants/20246",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20247",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q6539177",
+            "wd_label": "aircraft_shootdown",
+            "wd_description": "shooting down of a civilian or military aircraft",
+            "outlinks": [
+                "odin:Events/10033"
+            ],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00053",
+                    "name": "aircraft",
+                    "wd_label": "aircraft",
+                    "wd_node": "wd:Q11436",
+                    "wd_description": "machine that is able to fly by gaining support from the air"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10036",
+            "children": [
+                "odin:Events/10088",
+                "odin:Events/10089"
+            ],
+            "children_gate": "or",
+            "description": "Different methods of bombardment.",
+            "name": "Bombardment",
+            "outlinks": [
+                "odin:Events/10033"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10088",
+            "description": "attack by artillery fire or by dropping bombs from aircraft",
+            "name": "bombing",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20248",
+                    "roleName": "A0_pag_agent_violent_hitter",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20249",
+                    "roleName": "A1_ppt_patient_thing_hit",
+                    "entity": "odin:Entities/00031"
+                },
+                {
+                    "@id": "odin:Participants/20250",
+                    "roleName": "A2_gol_instrument_instrument",
+                    "entity": "odin:Entities/00003"
+                },
+                {
+                    "@id": "odin:Participants/20251",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q678146",
+            "wd_label": "bombardment",
+            "wd_description": "attack by artillery fire or by dropping bombs from aircraft",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10089",
+            "description": "conventional combat mission on an individual or small-scale basis",
+            "name": "drone strike",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20252",
+                    "roleName": "A0_pag_agent_violent_hitter",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20253",
+                    "roleName": "A1_ppt_patient_thing_hit",
+                    "entity": "odin:Entities/00031"
+                },
+                {
+                    "@id": "odin:Participants/20254",
+                    "roleName": "A2_gol_instrument_instrument",
+                    "entity": "odin:Entities/00054"
+                },
+                {
+                    "@id": "odin:Participants/20255",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q6857862",
+            "wd_label": "military_strike",
+            "wd_description": "conventional combat mission on an individual or small-scale basis",
+            "outlinks": [],
+            "entities": [
+                {
+                    "@id": "odin:Entities/00054",
+                    "name": "unmanned aerial vehicle",
+                    "wd_label": "unmanned_aerial_vehicle",
+                    "wd_node": "wd:Q484000",
+                    "wd_description": "aircraft without a human pilot aboard"
+                }
+            ]
+        },
+        {
+            "@id": "odin:Events/10037",
+            "description": "type of military action",
+            "name": "Landing operation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20256",
+                    "roleName": "A0_pag_agent_pilot",
+                    "entity": "odin:Entities/00005"
+                },
+                {
+                    "@id": "odin:Participants/20257",
+                    "roleName": "A1_ppt_theme_thing_landing",
+                    "entity": "odin:Entities/00003"
+                },
+                {
+                    "@id": "odin:Participants/20258",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q646740",
+            "wd_label": "landing_operation",
+            "wd_description": "type of military action",
+            "outlinks": [
+                "odin:Events/10038",
+                "odin:Events/10039"
+            ]
+        },
+        {
+            "@id": "odin:Events/10038",
+            "description": "protection from attack in military operations",
+            "name": "defense",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20259",
+                    "roleName": "A0_pag_agent_defender",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20260",
+                    "roleName": "A1_ppt_theme_defended",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20261",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20262",
+                    "roleName": "A3_gol_entity_defended_against",
+                    "entity": "odin:Entities/00008"
+                }
+            ],
+            "wd_node": "wd:Q1985622",
+            "wd_label": "defense",
+            "wd_description": "protection from attack in military operations",
+            "outlinks": []
+        },
+        {
+          "@id": "odin:Events/12028",
+          "name": "defeat",
+          "description": "One side is victorious and the other side is defeated.",
+          "wd_node": "Q50000",
+          "wd_label": "victory",
+          "wd_description": "success in a competition",
+          "isSchema": false,
+          "repeatable": false,
+          "optional":true,
+          "outlinks": [],
+          "participants": [
+            {
+              "@id": "odin:Participants/22280",
+              "roleName": "A0_pag_the_victor",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22281",
+              "roleName": "A1_vsp_the_loser",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22282",
+              "roleName": "A2_ppt_the_competition",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22283",
+              "roleName": "A3_ext_spoils/margin_of_victory",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22284",
+              "roleName": "AM_loc",
+              "entity": ""
+            }
+          ],
+          "entities": [],
+          "relations": []
+        },
+        {
+            "@id": "odin:Events/10033",
+            "children": [
+                "odin:Events/10090",
+                "odin:Events/10091",
+                "odin:Events/10092",
+                "odin:Events/10093"
+            ],
+            "children_gate": "or",
+            "description": "Possible results of the attack.",
+            "name": "Result of Attack",
+            "outlinks": [
+                "odin:Events/12028"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10090",
+            "description": "damage to an object, system or an idea",
+            "name": "destruction",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20263",
+                    "roleName": "A0_pag_agent_destroyer",
+                    "entity": "odin:Entities/00028"
+                },
+                {
+                    "@id": "odin:Participants/20264",
+                    "roleName": "A1_ppt_patient_thing_destroyed",
+                    "entity": "odin:Entities/00031"
+                },
+                {
+                    "@id": "odin:Participants/20265",
+                    "roleName": "A2_mnr_instrument_instrument_of_destruction",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20266",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q17781833",
+            "wd_label": "destruction",
+            "wd_description": "concept of damage to an object, system or an idea",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10091",
+            "description": "large and destructive fire that threatens human life, animal life, health, and/or property",
+            "name": "conflagration",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20267",
+                    "roleName": "A0_pag_ignitor",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20268",
+                    "roleName": "A1_ppt_thing_ignited",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20269",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q168983",
+            "wd_label": "conflagration",
+            "wd_description": "large and destructive fire that threatens human life, animal life, health, and/or property",
+            "outlinks": [
+                "odin:Events/10090",
+                "odin:Events/10092",
+                "odin:Events/10093"
+            ]
+        },
+        {
+            "@id": "odin:Events/10092",
+            "description": "permanent cessation of vital functions",
+            "name": "die",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20270",
+                    "roleName": "A1_ppt_patient_the_deceased",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20271",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q4",
+            "wd_label": "death",
+            "wd_description": "permanent cessation of vital functions",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10093",
+            "description": "physiological wound caused by an external source",
+            "name": "injure",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20272",
+                    "roleName": "A0_pag_agent",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20273",
+                    "roleName": "A1_ppt_injured_entity",
+                    "entity": "odin:Entities/00000"
+                },
+                {
+                    "@id": "odin:Participants/20274",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "odin:Entities/00048"
+                },
+                {
+                    "@id": "odin:Participants/20275",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q193078",
+            "wd_label": "injury",
+            "wd_description": "physiological wound caused by an external source",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10039",
+            "children": [
+                "odin:Events/10094"
+            ],
+            "children_gate": "or",
+            "description": "military blockade of a city or fortress",
+            "name": "Besiege",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20276",
+                    "roleName": "A0_pag_causer",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20277",
+                    "roleName": "A1_gol_entity_besieged",
+                    "entity": "odin:Entities/00055"
+                },
+                {
+                    "@id": "odin:Participants/20278",
+                    "roleName": "A2_ppt_entity_besieged_with",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20279",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q188055",
+            "wd_label": "siege",
+            "wd_description": "military blockade of a city or fortress",
+            "outlinks": [
+                "odin:Events/10038",
+                "odin:Events/10040"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10094",
+            "description": "effort to cut off supplies from a particular area by force",
+            "name": "blockade",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20280",
+                    "roleName": "A0_pag_agent_impeder",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20281",
+                    "roleName": "A1_gol_destination_impeded",
+                    "entity": "odin:Entities/00055"
+                },
+                {
+                    "@id": "odin:Participants/20282",
+                    "roleName": "A2_mnr_instrument",
+                    "entity": "odin:Entities/00029"
+                },
+                {
+                    "@id": "odin:Participants/20283",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q273976",
+            "wd_label": "blockade",
+            "wd_description": "effort to cut off supplies from a particular area by force",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10040",
+            "description": "effective provisional control of a certain power over a territory",
+            "name": "military occupation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20284",
+                    "roleName": "A0_pag_occupier",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20285",
+                    "roleName": "A1_ppt_occupied",
+                    "entity": "odin:Entities/00055"
+                },
+                {
+                    "@id": "odin:Participants/20286",
+                    "roleName": "AM_loc",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q188686",
+            "wd_label": "military_occupation",
+            "wd_description": "effective provisional control of a certain power over a territory",
+            "outlinks": [
+                "odin:Events/10038"
+            ]
+        },
+        {
+            "@id": "odin:Events/10095",
+            "name": "voluntary military service",
+            "description": "performing the service in the armed forces of a state voluntarily",
+            "wd_node": "wd:Q22249282",
+            "wd_label": "voluntary military service",
+            "wd_description": "",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": false,
+            "children_gate": "or",
+            "participants": [],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": [],
+            "outlinks": []
+        },
+        {
+          "@id": "odin:Events/12029",
+          "name": "oil price rise",
+          "description": "The price of oil rises",
+          "wd_node": "Q35865",
+          "wd_label": "inflation",
+          "wd_description": "increase in the general price level of goods and services in an economy over a period of time",
+          "isSchema": false,
+          "repeatable": false,
+          "optional": true,
+          "outlinks": [
+            "odin:Events/10055"
+          ],
+          "participants": [
+            {
+              "@id": "odin:Participants/22290",
+              "roleName": "A0_pag_causer_of_expansion",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22291",
+              "roleName": "A1_ppt_thing_grown",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22292",
+              "roleName": "A2_ext_amount_increased_by",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22293",
+              "roleName": "A3_dir_start_point",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22294",
+              "roleName": "A4_gol_end_point",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22295",
+              "roleName": "AM_loc",
+              "entity": ""
+            }
+          ],
+          "entities": [],
+          "relations": []
+        },
+        {
+          "@id": "odin:Events/12031",
+          "name": "interest rates rise",
+          "description": "Interest rates rise",
+          "wd_node": "Q9073584",
+          "wd_label": "increase",
+          "wd_description": "enlargement or increase of an entity; increase in size, number, value, or strength; an amount by which a quantity is increased",
+          "isSchema": false,
+          "repeatable": false,
+          "outlinks": [
+            "odin:Events/10050",
+            "odin:Events/12032"
+          ],
+          "participants": [
+            {
+              "@id": "odin:Participants/22310",
+              "roleName": "A0_pag_causer_of_increase",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22311",
+              "roleName": "A1_ppt_thing_increasing",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22312",
+              "roleName": "A2_ext_amount_increased_by",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22313",
+              "roleName": "A3_dir_start_point",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22314",
+              "roleName": "A4_gol_end_point",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22315",
+              "roleName": "AM_loc",
+              "entity": ""
+            }
+          ],
+          "entities": [],
+          "relations": []
+        },
+        {
+          "@id": "odin:Events/12032",
+          "name": "unemployment",
+          "description": "Unemployment increases",
+          "wd_node": "Q41171",
+          "wd_label": "unemployment",
+          "wd_description": "people without work and actively seeking work",
+          "isSchema": false,
+          "repeatable": false,
+          "outlinks": [],
+          "participants": [],
+          "entities": [],
+          "relations": []
+        },
+        {
+          "@id": "odin:Events/12004",
+          "name": "civilian life impact",
+          "description": "civilians of the war-torn countries react to the war.",
+          "wd_node": "Q79871",
+          "wd_label": "anger",
+          "wd_description": "intense emotional state that sometimes results in combative and destructive actions",
+          "isSchema": true,
+          "repeatable": false,
+          "outlinks": [],
+          "participants": [
+            {
+              "@id": "odin:Participants/22040",
+              "roleName": "A0_pag_cause_of_anger",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22041",
+              "roleName": "A1_ppt_experiencer",
+              "entity": ""
+            },
+            {
+              "@id": "odin:Participants/22042",
+              "roleName": "AM_loc",
+              "entity": ""
+            }
+          ],
+          "children": [
+            "odin:Events/12018",
+            "odin:Events/12019",
+            "odin:Events/12020",
+            "odin:Events/12021",
+            "odin:Events/12022",
+            "odin:Events/12023"
+          ],
+          "children_gate": "or",
+          "entities": [],
+          "relations": []
+        },
+        {
+      "@id": "odin:Events/12018",
+      "name": "Protest",
+      "description": "Protests against the war",
+      "wd_node": "Q175331",
+      "wd_label": "demonstration",
+      "wd_description": "collective action by people in favor of a cause",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12019"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/22180",
+          "roleName": "A0_pag_agent_protester",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22181",
+          "roleName": "A1_ppt_theme_objectionable_thing",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22182",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12019",
+      "name": "Riots and Looting",
+      "description": "Riots and looting",
+      "wd_node": "Q124757",
+      "wd_label": "riot",
+      "wd_description": "form of civil disorder",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12020"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/22190",
+          "roleName": "A0_pag__rioter",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22191",
+          "roleName": "A1_cau__who/what_the_riot_is_against",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22192",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12020",
+      "name": "Casualties",
+      "description": "Civilian casualties",
+      "wd_node": "",
+      "wd_label": "",
+      "wd_description": "",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12021"
+      ],
+      "participants": [],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12021",
+      "name": "Infrastructure Destruction",
+      "description": "Destruction of infrastructure",
+      "wd_node": "Q481609",
+      "wd_label": "damage",
+      "wd_description": "changes introduced into a system that adversely affect its current or future performance",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/22210",
+          "roleName": "A0_pag_agent_agent_causer",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22211",
+          "roleName": "A1_ppt_patient_entity_damaged",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22212",
+          "roleName": "A2_mnr_instrument_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22213",
+          "roleName": "AM_loc__location",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12022",
+      "name": "Food and Water Shortages",
+      "description": "Food and water shortages",
+      "wd_node": "Q843478",
+      "wd_label": "rationing",
+      "wd_description": "controlled distribution of scarce resources, goods, or services",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12021",
+        "odin:Events/12023"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/22220",
+          "roleName": "A0_pag_distributor",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22221",
+          "roleName": "A1_ppt_thing_distributed",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22222",
+          "roleName": "A2_ext_ratio",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22223",
+          "roleName": "A3_gol_recipient",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22224",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12023",
+      "name": "disease outbreaks",
+      "description": "Disease outbreaks",
+      "wd_node": "Q44512",
+      "wd_label": "epidemic",
+      "wd_description": "rapid spread of infectious disease to a large number of people in a given population within a short period of time",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/22230",
+          "roleName": "A1_ppt_disease",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22231",
+          "roleName": "A2_gol_affected",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22232",
+          "roleName": "A3_vsp_casualties/injuries",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22233",
+          "roleName": "A4_vsp_damages/cost",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22234",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12009",
+      "name": "recovery",
+      "description": "the two nations recover from the war.",
+      "wd_node": "Q2891405",
+      "wd_label": "truce",
+      "wd_description": "type of ceasefire",
+      "isSchema": true,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/22090",
+          "roleName": "A0_pag_implementer_of_cease-fire",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22091",
+          "roleName": "A1_ppt_cease-fire_with_or_between_who?",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22092",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/12036",
+        "odin:Events/12037",
+        "odin:Events/12038",
+        "odin:Events/12039"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12036",
+      "name": "treaty",
+      "description": "A formal treaty is signed between the two nations, officially ending the war",
+      "wd_node": "Q131569",
+      "wd_label": "treaty",
+      "wd_description": "express agreement under international law entered into by actors in international law",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12037"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/22360",
+          "roleName": "A0_pag_first_party_in_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22361",
+          "roleName": "A1_ppt_subject_of_promise",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22362",
+          "roleName": "A2_com_second_party_in_agreement",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22363",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/12040",
+        "odin:Events/12041",
+        "odin:Events/12042",
+        "odin:Events/12043",
+        "odin:Events/12044"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12037",
+      "name": "reconstruction",
+      "description": "The nations begin to rebuild their economies and infrastructure that was destroyed during the war.",
+      "wd_node": "Q1370468",
+      "wd_label": "reconstruction",
+      "wd_description": "repair of an existing architecural object",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12038"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/22370",
+          "roleName": "A0_pag_rebuilder",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22371",
+          "roleName": "A1_ppt_former_ruins",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22372",
+          "roleName": "A2_vsp_material",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22373",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/12045",
+        "odin:Events/12046",
+        "odin:Events/12047",
+        "odin:Events/12048",
+        "odin:Events/12049"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12038",
+      "name": "rebuild Military",
+      "description": "The nations begin to rebuild their military forces.",
+      "wd_node": "Q17991228",
+      "wd_label": "national_defence",
+      "wd_description": "None",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [
+        "odin:Events/12039",
+        "odin:Events/12044",
+        "odin:Events/12046",
+        "odin:Events/12048"
+      ],
+      "participants": [
+        {
+          "@id": "odin:Participants/22380",
+          "roleName": "A0_pag_defender",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22381",
+          "roleName": "A1_ppt_defended",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22382",
+          "roleName": "A2_mnr_instrument",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22383",
+          "roleName": "A3_gol_entity_defended_against",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22384",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "children": [
+        "odin:Events/12051",
+        "odin:Events/12052",
+        "odin:Events/12053"
+      ],
+      "children_gate": "or",
+      "entities": [],
+      "relations": []
+    },
+    {
+      "@id": "odin:Events/12039",
+      "name": "international Diplomacy",
+      "description": "The nations begin to establish diplomatic relations with each other.",
+      "wd_node": "Q21075777",
+      "wd_label": "contact",
+      "wd_description": "subclass of physical contact",
+      "isSchema": false,
+      "repeatable": false,
+      "outlinks": [],
+      "participants": [
+        {
+          "@id": "odin:Participants/22390",
+          "roleName": "A0_pag_contactor",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22391",
+          "roleName": "A1_ppt_entity_contacted",
+          "entity": ""
+        },
+        {
+          "@id": "odin:Participants/22392",
+          "roleName": "AM_loc",
+          "entity": ""
+        }
+      ],
+      "entities": [],
+      "relations": []
+    },
+    {
+            "@id": "odin:Events/10016",
+            "description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "name": "remote_communication",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20046",
+                    "roleName": "A0_pag_agent_first_communicator",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20047",
+                    "roleName": "A2_com_co_agent_other_communicator",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20048",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00051"
+                },
+                {
+                    "@id": "odin:Participants/20049",
+                    "roleName": "A1_ppt_topic_message",
+                    "entity": "odin:Entities/00046"
+                },
+                {
+                    "@id": "odin:Participants/20050",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q1472062",
+            "wd_label": "remote_communication",
+            "wd_description": "communication between two parties in remote locations, either concurrent or non-concurrent; correspondence and telecommunication",
+            "outlinks": [
+                "odin:Events/10017"
+            ]
+        },
+        {
+            "@id": "odin:Events/10017",
+            "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "name": "negotiation",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20051",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20052",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20053",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                },
+                {
+                    "@id": "odin:Participants/20054",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": "odin:Entities/00046"
+                }
+            ],
+            "wd_node": "wd:Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "outlinks": [
+                "odin:Events/10018"
+            ]
+        },
+        {
+            "@id": "odin:Events/10018",
+            "name": "negotiation_outcome",
+            "description": "outcome of the negotiation",
+            "wd_label": "result",
+            "wd_descripton": "final consequence or product of a sequence of actions or events",
+            "wd_node": "wd:Q2995644",
+            "children": [
+                "odin:Events/10073",
+                "odin:Events/10074"
+            ],
+            "children_gate": "xor",
+            "outlinks": [
+                "odin:Events/10019",
+                "odin:Events/10020"
+            ],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10073",
+            "children": [
+                "odin:Events/10075",
+                "odin:Events/10076",
+                "odin:Events/10077",
+                "odin:Events/10078"
+            ],
+            "children_gate": "or",
+            "description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "name": "agreement",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20055",
+                    "roleName": "A0_pag_agent_agreer",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20056",
+                    "roleName": "A2_com_co_agent_other_entity_agreeing",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20057",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q321839",
+            "wd_label": "agreement",
+            "wd_description": "understanding, agreement between two or more contracting persons, parties or entities",
+            "outlinks": [],
+            "isSchema": true
+        },
+        {
+            "@id": "odin:Events/10075",
+            "description": "signing of a treaty, decree, law, etc.",
+            "name": "signature",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20058",
+                    "roleName": "A0_pag_agent_signer_agreer",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20059",
+                    "roleName": "A2_com__co-signer",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20060",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q50384157",
+            "wd_label": "signature",
+            "wd_description": "signing of a treaty, decree, law, etc.",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10076",
+            "description": "printed, spoken, or published statement or notice of an event or other news",
+            "name": "announcement",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20061",
+                    "roleName": "A0_pag_agent_announcer",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20062",
+                    "roleName": "A1_ppt_topic_utterance",
+                    "entity": "odin:Entities/00046"
+                },
+                {
+                    "@id": "odin:Participants/20063",
+                    "roleName": "A2_gol_recipient_hearer",
+                    "entity": "odin:Entities/00044"
+                },
+                {
+                    "@id": "odin:Participants/20064",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "odin:Entities/00051"
+                },
+                {
+                    "@id": "odin:Participants/20065",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q567303",
+            "wd_label": "announcement",
+            "wd_description": "printed, spoken, or published statement or notice of an event or other news",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10077",
+            "description": "military operation",
+            "name": "withdrawal",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20066",
+                    "roleName": "A0_pag_entity_in_motion",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20067",
+                    "roleName": "A1_dir_location_vacated",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20068",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q1760704",
+            "wd_label": "withdrawal",
+            "wd_description": "military operation",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10078",
+            "description": "temporary stoppage of war",
+            "name": "ceasefire",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20069",
+                    "roleName": "A0_pag__implementer_of_cease-fire",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20070",
+                    "roleName": "A1_ppt__cease-fire_with_or_between_who",
+                    "entity": "odin:Entities/00038"
+                },
+                {
+                    "@id": "odin:Participants/20071",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q208383",
+            "wd_label": "ceasefire",
+            "wd_description": "temporary stoppage of war",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10074",
+            "description": "act of declining to accept an item for approval, consideration, marking etc.",
+            "name": "rejection",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20072",
+                    "roleName": "A0_pag_agent_entity_refusing",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20073",
+                    "roleName": "A2_gol_theme_anti_benefactive",
+                    "entity": "odin:Entities/00014"
+                },
+                {
+                    "@id": "odin:Participants/20074",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                }
+            ],
+            "wd_node": "wd:Q98398200",
+            "wd_label": "rejection",
+            "wd_description": "act of declining to accept an item for approval, consideration, marking etc.",
+            "outlinks": [
+                "odin:Events/10012"
+            ]
+        },
+        {
+            "@id": "odin:Events/10019",
+            "description": "in law, any of various forms of termination, as of a company, marriage, partnership, or adoption.",
+            "name": "dissolution",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20075",
+                    "roleName": "A0_pag_causer",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20076",
+                    "roleName": "A1_ppt_thing_dissolving",
+                    "entity": "odin:Entities/00014"
+                }
+            ],
+            "wd_node": "wd:Q5282797",
+            "wd_label": "dissolution",
+            "wd_description": "in law, any of various forms of termination, as of a company, marriage, partnership, or adoption",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10020",
+            "description": "termination of employment decided unilaterally by employer",
+            "name": "dismissal",
+            "participants": [
+                {
+                    "@id": "odin:Participants/20077",
+                    "roleName": "A1_ppt_theme_ex_employee",
+                    "entity": "odin:Entities/00043"
+                },
+                {
+                    "@id": "odin:Participants/20078",
+                    "roleName": "A2_dir_source_job",
+                    "entity": "odin:Entities/00010"
+                },
+                {
+                    "@id": "odin:Participants/20079",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00038"
+                }
+            ],
+            "wd_node": "wd:Q17052147",
+            "wd_label": "dismissal",
+            "wd_description": "termination of employment decided unilaterally by employer",
+            "outlinks": []
+        },
+        {
+            "@id": "odin:Events/10003",
+            "name": "negotiation",
+            "description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "wd_node": "wd:Q202875",
+            "wd_label": "negotiation",
+            "wd_description": "dialogue between two or more people or parties intended to reach a beneficial outcome",
+            "isSchema": true,
+            "repeatable": true,
+            "optional": true,
+            "children_gate": "or",
+            "outlinks": [
+                "odin:Events/12009"
+            ],
+            "participants": [
+                {
+                    "@id": "odin:Participants/20004",
+                    "roleName": "A0_pag_agent_negotiator",
+                    "entity": "odin:Entities/00047"
+                },
+                {
+                    "@id": "odin:Participants/20005",
+                    "roleName": "A1_com_co_agent_explicit_other_party",
+                    "entity": "odin:Entities/00008"
+                },
+                {
+                    "@id": "odin:Participants/20006",
+                    "roleName": "AM_loc__location",
+                    "entity": "odin:Entities/00024"
+                },
+                {
+                    "@id": "odin:Participants/20007",
+                    "roleName": "A2_ppt_theme_agreement",
+                    "entity": "odin:Entities/00046"
+                }
+            ],
+            "children": [
+                "odin:Events/10016",
+                "odin:Events/10017",
+                "odin:Events/10018",
+                "odin:Events/10019",
+                "odin:Events/10020"
+            ],
+            "modality": [],
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        }
+    ]
+}

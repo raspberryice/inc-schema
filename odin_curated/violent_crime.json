@@ -1,0 +1,1227 @@
+{
+    "@id": "odin:Schemas/crime",
+    "sdfVersion": "3.0",
+    "version": "odin:Phase2b",
+    "events": [
+        {
+            "@id": "odin:Events/10000/Root_crime",
+            "name": "Root_Crime",
+            "description": "Violent crime news story.",
+            "wd_node": "",
+            "wd_label": "event node",
+            "wd_description": "event node",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/10000/Prevention",
+                "Events/10001/Motivations",
+                "Events/10002/Planning",
+                "Events/10003/Crime",
+                "Events/10004/Witness",
+                "Events/10005/Aftermath"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10000/Prevention",
+            "name": "Prevention",
+            "description": "Collective efforts to reduce chances of crimes and associated consequences",
+            "wd_node": "wd:Q855848",
+            "wd_label": "crime prevention",
+            "wd_description": "activities with the primary goal of preventing crime in the context of law enforcement and criminal justice",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10003/Crime",
+                "Events/10001/Motivations"
+            ],
+            "participants": [],
+            "children": [
+                "Events/10006/Civilian_defense",
+                "Events/10007/Authority_defense",
+                "Events/10008/Reform"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10001/Motivations",
+            "name": "Motivations",
+            "description": "Contributory factors leading to criminal behavior",
+            "wd_node": "wd:Q644302",
+            "wd_label": "motivation",
+            "wd_description": "psychological feature or underlying reason for people's actions, willingness and goals",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10002/Planning",
+                "Events/10003/Crime"
+            ],
+            "participants": [],
+            "children": [
+                "Events/10009/Financial_need",
+                "Events/10010/Revenge",
+                "Events/10026/Personal_motivation"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10002/Planning",
+            "name": "Planning",
+            "description": "Steps taken by criminal to increase chances of success in crime",
+            "wd_node": "wd:Q309100",
+            "wd_label": "planning",
+            "wd_description": "process of determining the activities required to achieve a desired goal",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10003/Crime"
+            ],
+            "participants": [],
+            "children": [
+                "Events/10013/Purchase",
+                "Events/10014/Travel",
+                "Events/10015/Create",
+                "Events/10030/Planning_surveillance"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10003/Crime",
+            "name": "Crime",
+            "description": "Central elements of criminal event",
+            "wd_node": "wd:Q83267",
+            "wd_label": "crime",
+            "wd_description": "unlawful act forbidden and punishable by criminal law",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10004/Witness",
+                "Events/10005/Aftermath"
+            ],
+            "participants": [],
+            "children": [
+                "Events/10017/Threaten_crime",
+                "Events/10018/Commit_crime",
+                "Events/10019/Crime_getaway"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10004/Witness",
+            "name": "Witness",
+            "description": "Observing or obtaining knowledge about criminal offense",
+            "wd_node": "wd:Q196939",
+            "wd_label": "witness",
+            "wd_description": "person who can attest to the reality of a fact",
+            "isSchema": true,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10005/Aftermath"
+            ],
+            "participants": [],
+            "children": [
+                "Events/10020/Knowledge_of_crime",
+                "Events/10021/Observe_crime",
+                "Events/10022/Witness_report_crime"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10005/Aftermath",
+            "name": "Aftermath",
+            "description": "Consequences of criminal behavior",
+            "wd_node": "wd:Q2995644",
+            "wd_label": "result",
+            "wd_description": "final consequence or product of a sequence of actions or events",
+            "isSchema": true,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [],
+            "children": [
+                "Events/10023/Authority_response",
+                "Events/10024/Victim_response",
+                "Events/10025/Social_response",
+                "Events/10028/Personal_consequences",
+                "Events/10029/Legal_consequences",
+                "Events/10027/Benefit_crime"
+            ],
+            "children_gate": "or",
+            "entities": [],
+            "relations": [],
+            "importance": [],
+            "likelihood": []
+        },
+        {
+            "@id": "Events/10006/Civilian_defense",
+            "name": "Civilian defense",
+            "description": "Community efforts to prevent crime including education, job security, and rehabilitation.",
+            "wd_node": "wd:Q29688905",
+            "wd_label": "defense",
+            "wd_description": "protecting of oneself or others from attack, danger, or injury",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10008/Reform",
+                "Events/10003/Crime"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20000/",
+                    "roleName": "A0_pag_defender",
+                    "entity": "Entities/20000/Community"
+                },
+                {
+                    "@id": "Participants/20001/",
+                    "roleName": "A1_ppt_defended",
+                    "entity": "Entities/20000/Community"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20000/Community",
+                    "name": "community",
+                    "aka": [],
+                    "wd_node": "wd:Q177634",
+                    "wd_label": "community",
+                    "wd_description": "social unit of human organisms who share common values"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10007/Authority_defense",
+            "name": "Authority defense",
+            "description": "Legal efforts to prevent crime",
+            "wd_node": "wd:Q29688905",
+            "wd_label": "defense",
+            "wd_description": "protecting of oneself or others from attack, danger, or injury",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10008/Reform"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20002/",
+                    "roleName": "A0_pag_defender",
+                    "entity": "Entities/20001/Government"
+                },
+                {
+                    "@id": "Participants/20003/",
+                    "roleName": "A1_ppt_defended",
+                    "entity": "Entities/20000/Community"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20001/Government",
+                    "name": "government",
+                    "aka": [],
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "Entities/20000/Community",
+                    "name": "community",
+                    "aka": [],
+                    "wd_node": "wd:Q177634",
+                    "wd_label": "community",
+                    "wd_description": "social unit of human organisms who share common values"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10008/Reform",
+            "name": "Reform system",
+            "description": "Changes to societal system to reduce chances of crime and to mitigate consequences of criminal behaviors",
+            "wd_node": "wd:Q900406",
+            "wd_label": "reform",
+            "wd_description": "large improvement of what is wrong, corrupt, unsatisfactory",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10001/Motivations"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20004/",
+                    "roleName": "A0_pag_reformer",
+                    "entity": "Entities/20001/Government"
+                },
+                {
+                    "@id": "Participants/20005/",
+                    "roleName": "A1_ppt_thing_changed",
+                    "entity": "Entities/20000/Community"
+                }  
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20001/Government",
+                    "name": "government",
+                    "aka": [],
+                    "wd_node": "wd:Q7188",
+                    "wd_label": "government",
+                    "wd_description": "system or group of people governing an organized community, often a state"
+                },
+                {
+                    "@id": "Entities/20000/Community",
+                    "name": "community",
+                    "aka": [],
+                    "wd_node": "wd:Q177634",
+                    "wd_label": "community",
+                    "wd_description": "social unit of human organisms who share common values"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10009/Financial_need",
+            "name": "Financial need",
+            "description": "Personal need for financing as motivating factor in crime",
+            "wd_node": "wd:Q19862406",
+            "wd_label": "business",
+            "wd_description": "economic activity done by a businessperson",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20006/",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20007/",
+                    "roleName": "A0_pag_agent",
+                    "entity": "Entities/20003/Accessory"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20003/Accessory",
+                    "name": "accessory",
+                    "aka": [
+                        "co-conspirator"
+                    ],
+                    "wd_node": "wd:Q706848",
+                    "wd_label": "accessory",
+                    "wd_description": "person who assists in the commission of a crime, but who does not actually participate in the commission of the crime as a joint principal"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10010/Revenge",
+            "name": "Revenge",
+            "description": "Responding to earlier offense with current criminal behavior; Retribution.",
+            "wd_node": "wd:Q1712140",
+            "wd_label": "revenge",
+            "wd_description": "harmful action in response to a grievance",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20008/",
+                    "roleName": "A0_pag_vengeant_one",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20009/",
+                    "roleName": "A1_gol_one_paid_back",
+                    "entity": "Entities/20005/Victim"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20005/Victim",
+                    "name": "victim",
+                    "aka": [],
+                    "wd_node": "wd:Q1851760",
+                    "wd_label": "victim",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10013/Purchase",
+            "name": "Purchase",
+            "description": "Buying equipment needed for crime",
+            "wd_node": "wd:Q1369832",
+            "wd_label": "purchasing",
+            "wd_description": "acquisition of goods or services by fiduciary exchange",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10014/Travel",
+                "Events/10015/Create"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20010/",
+                    "roleName": "A0_pag_purchaser",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20012/",
+                    "roleName": "A1_ppt_thing_purchased",
+                    "entity": "Entities/20003/Accessory"
+                },
+                {
+                    "@id": "Participants/20013/",
+                    "roleName": "A3_vsp_price_paid",
+                    "entity": "Entities/20008/Expense"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20003/Accessory",
+                    "name": "accessory",
+                    "aka": [
+                        "co-conspirator"
+                    ],
+                    "wd_node": "wd:Q706848",
+                    "wd_label": "accessory",
+                    "wd_description": "person who assists in the commission of a crime, but who does not actually participate in the commission of the crime as a joint principal"
+                },
+                {
+                    "@id": "Entities/20008/Expense",
+                    "name": "expense of crime to criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q13516686",
+                    "wd_label": "expense",
+                    "wd_description": "use or service to be provided to achieve a certain benefit"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10014/Travel",
+            "name": "Travel",
+            "description": "Travel to crime scene for surveillance or criminal act",
+            "wd_node": "wd:Q61509",
+            "wd_label": "travel",
+            "wd_description": "movement of people between geographical locations",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10030/Planning_surveillance"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20014/",
+                    "roleName": "A0_pag_agent_transporter",
+                    "entity":  "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20016/",
+                    "roleName": "A3_gol_destination_destination",
+                    "entity": "Entities/20007/Crime_scene"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20007/Crime_scene",
+                    "name": "crime scene",
+                    "aka": [],
+                    "wd_node": "wd:Q1360677",
+                    "wd_label": "crime scene",
+                    "wd_description": "location that may be associated with a committed crime"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10015/Create",
+            "name": "Creation",
+            "description": "Making equipment needed for crime",
+            "wd_node": "wd:Q11398090",
+            "wd_label": "creation",
+            "wd_description": "process during which something comes into being and gains its characteristics",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20017/",
+                    "roleName": "A0_pag_agent_creator",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20019/",
+                    "roleName": "A1_ppt_result_thing_created",
+                    "entity": "Entities/20004/Instrument"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20004/Instrument",
+                    "name": "instrument of crime",
+                    "aka": [
+                        "substance, device, instrument, or article"
+                    ],
+                    "wd_node": "wd:Q39546",
+                    "wd_label": "tool",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10017/Threaten_crime",
+            "name": "Threaten",
+            "description": "Warning victim or other people of future crime",
+            "wd_node": "wd:Q707125",
+            "wd_label": "threat",
+            "wd_description": "one person's statement that they intend to harm another, or another's property",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10018/Commit_crime"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20022/",
+                    "roleName": "A0_pag_agent_persuasive_entity",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20024/",
+                    "roleName": "A1_ppt_patient_impelled_person",
+                    "entity": "Entities/20005/Victim"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20005/Victim",
+                    "name": "victim",
+                    "aka": [],
+                    "wd_node": "wd:Q1851760",
+                    "wd_label": "victim",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10018/Commit_crime",
+            "name": "Commit crime",
+            "description": "Carrying out the crime, subjecting victim to criminal behavior",
+            "wd_node": "wd:Q83267",
+            "wd_label": "crime",
+            "wd_description": "unlawful act forbidden and punishable by criminal law",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10019/Crime_getaway"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20026/",
+                    "roleName": "A0_pag__perp",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20027/",
+                    "roleName": "AM_mnr_instrument_instrument",
+                    "entity": "Entities/20004/Instrument"
+                },
+                {
+                    "@id": "Participants/20028/",
+                    "roleName": "A2_gol__victim",
+                    "entity": "Entities/20005/Victim"
+                },
+                {
+                    "@id": "Participants/20029/",
+                    "roleName": "AM_loc__location",
+                    "entity": "Entities/20007/Crime_scene"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20004/Instrument",
+                    "name": "instrument of crime",
+                    "aka": [
+                        "substance, device, instrument, or article"
+                    ],
+                    "wd_node": "wd:Q39546",
+                    "wd_label": "tool",
+                    "wd_description": "physical item that can be used to achieve a goal"
+                },
+                {
+                    "@id": "Entities/20005/Victim",
+                    "name": "victim",
+                    "aka": [],
+                    "wd_node": "wd:Q1851760",
+                    "wd_label": "victim",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                },
+                {
+                    "@id": "Entities/20007/Crime_scene",
+                    "name": "crime scene",
+                    "aka": [],
+                    "wd_node": "wd:Q1360677",
+                    "wd_label": "crime scene",
+                    "wd_description": "location that may be associated with a committed crime"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10019/Crime_getaway",
+            "name": "Getaway",
+            "description": "Escape by the criminal from the crime scene to avoid detection",
+            "wd_node": "wd:Q1430466",
+            "wd_label": "escape",
+            "wd_description": "response to distress",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20030/",
+                    "roleName": "A0_ppt_entity_escaping",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20032/",
+                    "roleName": "A1_loc_place_or_thing_escaped",
+                    "entity": "Entities/20007/Crime_scene"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20007/Crime_scene",
+                    "name": "crime scene",
+                    "aka": [],
+                    "wd_node": "wd:Q1360677",
+                    "wd_label": "crime scene",
+                    "wd_description": "location that may be associated with a committed crime"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10020/Knowledge_of_crime",
+            "name": "Knowledge",
+            "description": "Knowledge of criminal behavior by witness, collaborator, or associate, or through technology",
+            "wd_node": "wd:Q9081",
+            "wd_label": "knowledge",
+            "wd_description": "mental possession of information or skills, contributing to understanding",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10022/Witness_report_crime"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20033/",
+                    "roleName": "A0_pag_knower",
+                    "entity": "Entities/20006/Witness"
+                },
+                {
+                    "@id": "Participants/20037/",
+                    "roleName": "A1_ppt_fact_that_is_known",
+                    "entity": "Events/10018/Commit_crime"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20006/Witness",
+                    "name": "Witness",
+                    "aka": [],
+                    "wd_node": "wd:Q196939",
+                    "wd_label": "Witness",
+                    "wd_description": "person who can attest to the reality of a fact"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10021/Observe_crime",
+            "name": "Observe",
+            "description": "Direct observation of crime",
+            "wd_node": "wd:Q193181",
+            "wd_label": "observation",
+            "wd_description": "active acquisition of information from a primary source",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10020/Knowledge_of_crime"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20038/",
+                    "roleName": "A0_pag_experiencer_observer",
+                    "entity": "Entities/20006/Witness"
+                },
+                {
+                    "@id": "Participants/20040/",
+                    "roleName": "A1_ppt_stimulus_thing_looked_at",
+                    "entity": "Events/10018/Commit_crime"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20006/Witness",
+                    "name": "Witness",
+                    "aka": [],
+                    "wd_node": "wd:Q196939",
+                    "wd_label": "Witness",
+                    "wd_description": "person who can attest to the reality of a fact"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10016/Victim_report_crime",
+            "name": "Victim report",
+            "description": "Victim informing other people that a crime has occurred",
+            "wd_node": "wd:Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10023/Authority_response",
+                "Events/10025/Social_response"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20041/",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "Entities/20005/Victim"
+                },
+                {
+                    "@id": "Participants/20043/",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "Events/10018/Commit_crime"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20005/Victim",
+                    "name": "Victim",
+                    "aka": [],
+                    "wd_node": "wd:Q1851760",
+                    "wd_label": "Victim",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10022/Witness_report_crime",
+            "name": "Witness report",
+            "description": "Informing other people or authorities that a crime has occurred",
+            "wd_node": "wd:Q60050485",
+            "wd_label": "reporting",
+            "wd_description": "producing a report (oral or written)",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20041/",
+                    "roleName": "A0_pag_Reporter",
+                    "entity": "Entities/20006/Witness"
+                },
+                {
+                    "@id": "Participants/20043/",
+                    "roleName": "A1_ppt_thing_reported",
+                    "entity": "Events/10018/Commit_crime"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20006/Witness",
+                    "name": "Witness",
+                    "aka": [],
+                    "wd_node": "wd:Q196939",
+                    "wd_label": "Witness",
+                    "wd_description": "person who can attest to the reality of a fact"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10023/Authority_response",
+            "name": "Authority response",
+            "description": "Authorities respond to the crime through legal means",
+            "wd_node": "wd:Q1665268",
+            "wd_label": "command",
+            "wd_description": "message conveying a requirement to perform a certain action",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10028/Personal_consequences",
+                "Events/10029/Legal_consequences"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20044/",
+                    "roleName": "A0_pag_agent_commander",
+                    "entity": "Entities/20014/Legal_authorities"
+                },
+                {
+                    "@id": "Participants/20046/",
+                    "roleName": "AM_mnr__manner",
+                    "entity": "Entities/20012/Forensic_science"
+                },
+                {
+                    "@id": "Participants/20047/",
+                    "roleName": "A2_ppt_topic_impelled_action",
+                    "entity": "Entities/20011/Evidence"
+                },
+                {
+                    "@id": "Participants/20048/",
+                    "roleName": "AM_cau__cause",
+                    "entity": "Entities/20015/Law"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20014/Legal_authorities",
+                    "name": "authorities",
+                    "aka": [],
+                    "wd_node": "wd:Q512442",
+                    "wd_label": "legal authority",
+                    "wd_description": "type of authority"
+                },
+                {
+                    "@id": "Entities/20012/Forensic_science",
+                    "name": "forensic science",
+                    "aka": [],
+                    "wd_node": "wd:Q495304",
+                    "wd_label": "forensic science",
+                    "wd_description": "application of science to criminal and civil laws"
+                },
+                {
+                    "@id": "Entities/20011/Evidence",
+                    "name": "evidence",
+                    "aka": [],
+                    "wd_node": "wd:Q176763",
+                    "wd_label": "evidence",
+                    "wd_description": "body of facts in a legal proceding"
+                },
+                {
+                    "@id": "Entities/20015/Law",
+                    "name": "law",
+                    "aka": [],
+                    "wd_node": "wd:Q7748",
+                    "wd_label": "law",
+                    "wd_description": "system of rules and guidelines, generally backed by governmental authority"
+                }
+            ],
+            "relations": [
+                {
+                    "@id": "Relations/30000/",
+                    "name": "used for",
+                    "relationSubject": "Entities/20012/Forensic_science",
+                    "relationObject": "Entities/20011/Evidence",
+                    "wd_node": "wd:P6436",
+                    "wd_label": "has use",
+                    "wd_description": "main use of the subject (includes current and former usage)"
+                }
+            ]
+        },
+        {
+            "@id": "Events/10024/Victim_response",
+            "name": "Victim response",
+            "description": "Victim response to the crime including self-defense and other retaliation",
+            "wd_node": "wd:Q1851760",
+            "wd_label": "victim",
+            "wd_description": "person who suffers as a result of a crime or other event",
+            "isSchema": false,
+            "repeatable": false,
+            "optional": true,
+            "outlinks": [
+                "Events/10016/Victim_report_crime",
+                "Events/10025/Social_response",
+                "Events/10028/Personal_consequences"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20049/",
+                    "roleName": "A0_pag__",
+                    "entity": "Entities/20005/Victim"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20005/Victim",
+                    "name": "victim",
+                    "aka": [],
+                    "wd_node": "wd:Q1851760",
+                    "wd_label": "victim",
+                    "wd_description": "person who suffers as a result of a crime or other event"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10025/Social_response",
+            "name": "Social response",
+            "description": "Community response to the crime including increased awareness and security",
+            "wd_node": "wd:Q8425",
+            "wd_label": "society",
+            "wd_description": "group of people related to each other through persistent relations",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+                "Events/10023/Authority_response",
+                "Events/10028/Personal_consequences",
+                "Events/10029/Legal_consequences"
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20050/",
+                    "roleName": "A0_pag__",
+                    "entity": "Entities/20000/Community"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20000/Community",
+                    "name": "community",
+                    "aka": [],
+                    "wd_node": "wd:Q177634",
+                    "wd_label": "community",
+                    "wd_description": "social unit of human organisms who share common values"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10026/Personal_motivation",
+            "name": "Personal motivation",
+            "description": "Mental or character trait that predisposes to criminal behavior",
+            "wd_node": "wd:Q190258",
+            "wd_label": "character structure",
+            "wd_description": "relatively permanent traits of an individual relates to various kinds of stimuli, and to the environment",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20051/",
+                    "roleName": "A1_ppt__",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20099/",
+                    "roleName": "A0_pag__",
+                    "entity": "Entities/20009/Benefit"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20009/Benefit",
+                    "name": "benefit of crime to criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q868257",
+                    "wd_label": "economic value",
+                    "wd_description": "measure of the benefit provided by a good or service to an economic agent"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10027/Benefit_crime",
+            "name": "Benefit",
+            "description": "What the criminal wants, whether financial, societal, personal, or other",
+            "wd_node": "wd:Q868257",
+            "wd_label": "economic value",
+            "wd_description": "measure of the benefit provided by a good or service to an economic agent",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20052/",
+                    "roleName": "A1_ppt__",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20053/",
+                    "roleName": "A0_pag__",
+                    "entity": "Entities/20009/Benefit"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20009/Benefit",
+                    "name": "benefit of crime to criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q868257",
+                    "wd_label": "economic value",
+                    "wd_description": "measure of the benefit provided by a good or service to an economic agent"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10028/Personal_consequences",
+            "name": "Personal consequences",
+            "description": "Collective physical, mental, and personal effects on criminal of choice to engage in criminal behavior",
+            "wd_node": "wd:Q926230",
+            "wd_label": "effect",
+            "wd_description": "phenomenon which results from a cause",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [],
+            "participants": [
+                {
+                    "@id": "Participants/20054/",
+                    "roleName": "A1_ppt__",
+                    "entity": "Entities/20002/Criminal"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10029/Legal_consequences",
+            "name": "Legal consequences",
+            "description": "Legal consequences including criminal and civil cases",
+            "wd_node": "wd:Q2334719",
+            "wd_label": "legal case",
+            "wd_description": "dispute between opposing parties resolved by a court",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20056/",
+                    "roleName": "A0_pag_first",
+                    "entity": "Entities/20014/Legal_authorities"
+                },
+                {
+                    "@id": "Participants/20057/",
+                    "roleName": "A1_com_second_arguer",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20058/",
+                    "roleName": "A2_ppt_topic",
+                    "entity": "Entities/20011/Evidence"
+                },
+                {
+                    "@id": "Participants/20059/",
+                    "roleName": "AM_cau__cause",
+                    "entity": "Entities/20015/Law"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20014/Legal_authorities",
+                    "name": "authorities",
+                    "aka": [],
+                    "wd_node": "wd:Q512442",
+                    "wd_label": "legal authority",
+                    "wd_description": "type of authority"
+                },
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20011/Evidence",
+                    "name": "evidence",
+                    "aka": [],
+                    "wd_node": "wd:Q176763",
+                    "wd_label": "evidence",
+                    "wd_description": "body of facts in a legal proceding"
+                },
+                {
+                    "@id": "Entities/20015/Law",
+                    "name": "law",
+                    "aka": [],
+                    "wd_node": "wd:Q7748",
+                    "wd_label": "law",
+                    "wd_description": "system of rules and guidelines, generally backed by governmental authority"
+                }
+            ],
+            "relations": []
+        },
+        {
+            "@id": "Events/10030/Planning_surveillance",
+            "name": "Surveillance",
+            "description": "Observation by criminal of victim and crime scene",
+            "wd_node": "wd:Q334401",
+            "wd_label": "surveillance",
+            "wd_description": "monitoring of behavior, activities, or other changing information, for the purpose of influencing, managing or directing",
+            "isSchema": false,
+            "repeatable": false,
+            "outlinks": [
+            ],
+            "participants": [
+                {
+                    "@id": "Participants/20060/",
+                    "roleName": "A0_pag_observer",
+                    "entity": "Entities/20002/Criminal"
+                },
+                {
+                    "@id": "Participants/20062/",
+                    "roleName": "A1_loc_thing_looked_at",
+                    "entity": "Entities/20007/Crime_scene"
+                }
+            ],
+            "entities": [
+                {
+                    "@id": "Entities/20002/Criminal",
+                    "name": "criminal",
+                    "aka": [],
+                    "wd_node": "wd:Q2159907",
+                    "wd_label": "criminal",
+                    "wd_description": "person who has committed a crime"
+                },
+                {
+                    "@id": "Entities/20007/Crime_scene",
+                    "name": "crime scene",
+                    "aka": [],
+                    "wd_node": "wd:Q1360677",
+                    "wd_label": "crime scene",
+                    "wd_description": "location that may be associated with a committed crime"
+                }
+            ],
+            "relations": []
+        }
+    ]
+}
