@@ -1,0 +1,37 @@
+{
+    "scenario": "violent crime",
+    "scenario_id": 3,
+    "chapters": [
+        {
+            "name": "background",
+            "description": "reasons that lead to the crime.",
+            "idx": 0
+        },
+        {
+            "name": "planning",
+            "description":"the perpetrator plans for the crime.",
+            "idx": 1
+        },
+        {
+            "name": "crime",
+            "description": "The crime is committed.",
+            "idx": 2
+        },
+        {
+            "name": "investigation and justice",
+            "description": "investigation about the crime and prosecution of the perpetrator.",
+            "idx": 3
+        },
+        {
+            "name": "public response",
+            "description": "The public reacts to reports of the crime.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}

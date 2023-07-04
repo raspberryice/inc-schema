@@ -1,0 +1,51 @@
+{
+    "scenario": "chemical warfare",
+    "scenario_id": 16,
+    "chapters":[
+        {
+            "name": "preparations",
+            "description": "Preparations for the chemical warfare.",
+            "idx": 0
+        },
+        {
+            "name": "attack",
+            "description": "Attack by the country with the chemical weapons.",
+            "idx":1
+        },
+        {
+            "name": "victims",
+            "description": "People's lives are affected by the chemical warfare.",
+            "idx": 2
+        },
+        {
+            "name": "government response",
+            "description": "The government responds to the chemical warfare.",
+            "idx": 3
+        },
+        {
+            "name": "civilian response",
+            "description": "Civilian response to the chemical warfare.",
+            "idx": 4
+        },
+        {
+            "name": "international response",
+            "description": "People from other countries react to the chemical warfare.",
+            "idx": 5
+        },
+        {
+            "name": "Outcome",
+            "description": "The chemical warfare ends and may leave long-term effects.",
+            "idx": 6
+        }
+
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [2, 4],
+        [2, 5],
+        [3, 6],
+        [4, 6]
+    ]
+}

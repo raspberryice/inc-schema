@@ -1,0 +1,37 @@
+{
+    "scenario": "health care",
+    "scenario_id": 13,
+    "chapters": [
+        {
+            "name": "Patient Medical History",
+            "description": "the medical history of the patient, including previous medications and treatments before the assault.",
+            "idx": 0
+        },
+        {
+            "name": "Infection",
+            "description": "The initial infection that causes the need for health care.",
+            "idx": 1
+        },
+        {
+            "name": "Medical Inspection",
+            "description": "The patient receives medical tests to help diagnose the disease.",
+            "idx": 2
+        },
+        {
+            "name": "Medical Treatment",
+            "description": "The patient receives treatment for the disease, including medication, physical therapy and surgery.",
+            "idx": 3
+        },
+        {
+            "name": "Recovery",
+            "description": "The patient recovers and gets back to normal life.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}

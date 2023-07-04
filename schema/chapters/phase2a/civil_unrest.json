@@ -1,0 +1,40 @@
+{
+    "scenario": "protest",
+    "scenario_id": 6,
+    "chapters": [
+        {
+            "name": "contributing factor",
+            "description": "The social-political background that caused the protest.",
+            "idx": 0
+        },
+        {
+            "name": "peaceful protest",
+            "description": "a demonstration is held by a group of people.",
+            "idx": 1
+        },
+        {
+            "name": "riot",
+            "description": "a conflict breaks out between the protestors and the police.",
+            "idx": 2
+        },
+        {
+            "name": "civil justice",
+            "description": "the protestors are arrested and face legal charges.",
+            "idx": 3
+        },
+        {
+            "name": "response",
+            "description": "the society responds to the protests and demonstrations.",
+            "idx": 4 
+         }
+
+    ],
+    "order":
+    [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [1, 4],
+        [2, 4]
+    ]
+}

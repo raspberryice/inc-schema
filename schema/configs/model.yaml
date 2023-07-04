@@ -1,0 +1,12 @@
+---
+chapter_dir: "schema/data"
+index_dir: "indexes"
+schema_dir: "outputs/schema"
+gpt_cache_dir: "cache"
+ontology_path: "schema/constant/xpo_v5.1a.json"
+grounding_nli_model: "facebook/bart-large-mnli"
+
+use_chapter: true
+use_cache: true 
+decompose: true 
+calibrate: true 

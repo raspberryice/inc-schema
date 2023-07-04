@@ -1,0 +1,38 @@
+{
+    "scenario": "medical procedure",
+    "scenario_id": 8,
+    "chapters": [
+        {
+            "name": "Propaedeutic procedures",
+            "description": "Basic medical inspections and measurements of the patient.",
+            "idx": 0
+        },
+        {
+            "name": "Diagnostic procedures",
+            "description": "Procedures that can be used to help diagnose the illness of the patient.",
+            "idx": 1
+        },
+        {
+            "name": "Therapeutic procedures",
+            "description": "Procedures that are used to treat the illness.",
+            "idx": 2
+        },
+        {
+            "name": "Surgical procedures",
+            "description": "Surgery procedures on the patient.",
+            "idx": 3
+        },
+        {
+            "name": "Anesthesia procedures",
+            "description": "Treating the patient with global or local anesthesia to enable painless performance of procedures.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [1, 4],
+        [4, 3],
+        [3, 2]
+    ]
+}

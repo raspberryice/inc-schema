@@ -1,0 +1,49 @@
+{
+    "scenario": "kidnapping",
+    "chapters": [
+        {
+            "name": "Contributory Factors",
+            "description": "Motives and background of the kidnapping.",
+            "idx": 0
+        },
+        {
+            "name": "Planning",
+            "description": "The perpetrator plans for the kidnapping.",
+            "idx": 1
+        },
+        {
+            "name": "Scrutiny",
+            "description":"The perpetrator collects information and communicates with accomplices.",
+            "idx": 2
+        },
+        {
+            "name": "Commiting crime",
+            "description": "The perpetrator commits the crime of kidnapping.",
+            "idx": 3
+        },
+        {
+            "name": "Authority Response",
+            "description": "Authorities responds to the kidnapping.",
+            "idx": 4
+        },
+        {
+            "name": "Public Response",
+            "description": "The public responds to the kidnapping",
+            "idx": 5
+        },
+        {
+            "name": "Criminal Investigation",
+            "description": "Investigation on the cause of the kidnapping and prosecution of the perpetrator.",
+            "idx": 6
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4],
+        [3, 5],
+        [4, 6],
+        [5, 6]
+    ]
+}

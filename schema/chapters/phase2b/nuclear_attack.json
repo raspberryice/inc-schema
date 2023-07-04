@@ -1,0 +1,59 @@
+{
+    "scenario": "nuclear attack",
+    "scenario_id": 17,
+    "chapters":[
+        {
+            "name": "preparations",
+            "description": "Preparations for the nuclear attack.",
+            "idx": 0
+        },
+        {
+            "name": "attack",
+            "description": "The nuclear attack occurs.",
+            "idx":1
+        },
+        {
+            "name": "nuclear damage",
+            "description": "The nuclear attack causes damage in the target country.",
+            "idx": 2
+        },
+        {
+            "name": "nuclear causality",
+            "description": "The nuclear attack causes deaths and injuries in the target country.",
+            "idx": 3
+        },
+        {
+            "name": "government response",
+            "description": "The government responds to the nuclear attack.",
+            "idx": 4
+        },
+        {
+            "name": "civilian response",
+            "description": "Civilian response to the nuclear attack and take shelter.",
+            "idx": 5
+        },
+        {
+            "name": "international response",
+            "description": "People from other countries react to the ongoing conflict.",
+            "idx": 6
+        },
+        {
+            "name": "outcome",
+            "description": "The nuclear attack leds to victory or failure of the warfare.",
+            "idx": 7
+        }
+
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [1, 3],
+        [3, 4],
+        [3, 5],
+        [3, 6],
+        [2, 4],
+        [2, 5],
+        [2, 6],
+        [1, 7]
+    ]
+}

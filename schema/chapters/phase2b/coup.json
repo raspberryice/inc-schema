@@ -1,0 +1,49 @@
+{
+    "scenario": "coup",
+    "scenario_id": 1,
+    "chapters": [
+        {
+            "name": "background",
+            "description": "political, social, or economic conflict that leads to the coup.",
+            "idx": 0
+        },
+        {
+            "name":"conflict escalation",
+            "description": "conflicts escalate between the ruling government and the party to attempt the coup.",
+            "idx": 1
+        },
+        {
+            "name": "coup",
+            "description": "the coup occurs.",
+            "idx": 2
+        },
+        {
+            "name": "government deposition",
+            "description": "the ruling party is overturned.",
+            "idx": 3
+        },
+        {
+            "name": "new government action",
+            "description": "the new government implements its agenda.",
+            "idx": 4
+        },
+        {
+            "name": "civilian reaction",
+            "description": "civilians react to the coup.",
+            "idx": 5
+        },
+        {
+            "name": "international response",
+            "description": "people from other countries react to the ongoing coup.",
+            "idx": 6
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4],
+        [2, 5],
+        [2, 6]
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "scenario": "election",
+    "chapters": [
+        {
+            "name": "Nomination",
+            "description": "People declare candidacy and involve in the campaign for party nomination.",
+            "idx": 0
+        },
+        {
+            "name": "Official Campaign",
+            "description": "The party nominees participate in a compaign before voting.",
+            "idx": 1
+        },
+        {
+            "name": "Voting",
+            "description": "Voters vote for the candidate they support and determine the winner of the election.",
+            "idx": 2
+        },
+        {
+            "name": "Conclusion",
+            "description": "The winner and losers react to the results of the election.",
+            "idx": 3
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3]
+    ]
+}

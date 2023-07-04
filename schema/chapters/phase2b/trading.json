@@ -1,0 +1,37 @@
+{
+    "scenario": "trading",
+    "scenario_id": 5,
+    "chapters": [
+        {
+            "name": "Negotiations",
+            "description": "negotiations about the trade agreement between countries.",
+            "idx": 0
+        },
+        {
+            "name": "Signatures and ratifications",
+            "description": "Countries sign and ratify the trade agreement.",
+            "idx": 1
+        },
+        {
+            "name": "Treaty execution",
+            "description": "The trade agreement takes effect.",
+            "idx": 2
+        },
+        {
+            "name": "Criticism",
+            "description": "Opponents criticize the creation of the treaty.",
+            "idx": 3
+        },
+        {
+            "name": "Protests",
+            "description": "People protest against the trade agreement.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}

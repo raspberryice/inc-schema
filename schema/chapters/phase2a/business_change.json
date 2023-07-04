@@ -1,0 +1,72 @@
+{
+    "scenario": "business change",
+    "chapters": [
+        {
+            "name": "Early Stages",
+            "description": "Events that happen in the early stages of a business.",
+            "idx": 0
+        },
+        {
+            "name": "Corruption",
+            "description": "Some form of corruption happens amongst people in the company.",
+            "idx": 1
+        },
+        {
+            "name": "Fraud",
+            "description": "The business conducts fraud.",
+            "idx" : 2
+        },
+        {
+            "name": "Audit",
+            "description": "Audits are conducted to ensure that financial statements are in accordance with regulations.",
+            "idx": 3
+        },
+        {
+            "name": "Criminal Investigation",
+            "description": "Financial records could not be validated so a criminal investigation is opened.",
+            "idx": 4
+        },
+        {
+            "name": "Market Shift",
+            "description": "The market undergoes changes, so the business suffers economically.",
+            "idx": 5
+        },
+        {
+            "name": "Restructure",
+            "description": "The company restructures to avoid bankruptcy.",
+            "idx": 6
+        },
+        {
+            "name": "Mergers and Acquisitions",
+            "description": "The company participates in mergers and acquisitions.",
+            "idx": 7
+        },
+        {
+            "name": "Bankruptcy",
+            "description": "The company files bankruptcy.",
+            "idx": 8
+        },
+        {
+            "name": "Reorganization",
+            "description": "Legal process after M&A or filling bankruptcy.",
+            "idx": 9
+        },
+        {
+            "name": "Antitrust Investigation",
+            "description": "The business gets investigated by the government as it is suspected of monopoly.",
+            "idx": 10
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4],
+        [3, 5],
+        [5, 6],
+        [6, 7],
+        [6, 8],
+        [7, 9],
+        [9, 10]
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "scenario": "international aggression",
+    "scenario_id": 24, 
+    "chapters": [
+        {
+            "name": "Background",
+            "description": "History of the conflict between countries.",
+            "idx": 0
+        },
+        {
+            "name": "Crisis",
+            "description": "One country shows aggression towards another country, causing international tension.",
+            "idx": 1
+        },
+        {
+            "name": "International Response",
+            "description": "Other countries respond to the international crisis.",
+            "idx": 2
+        },
+        {
+            "name": "Aftermath",
+            "description": "The outcome of the international crisis.",
+            "idx": 3
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3]
+    ]
+}

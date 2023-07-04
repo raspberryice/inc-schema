@@ -1,0 +1,24 @@
+{
+    "scenario": "sports",
+    "chapters": [
+        {
+            "name": "Preparation",
+            "description": "The host and the teams prepare for the sports event.",
+            "idx": 0
+        },
+        {
+            "name": "Sports Event",
+            "description": "The sports event starts and the teams compete.",
+            "idx": 1
+        },
+        {
+            "name": "Social Response",
+            "description": "The public responds to the outcomes of the sports event.",
+            "idx": 2
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2]
+    ]
+}

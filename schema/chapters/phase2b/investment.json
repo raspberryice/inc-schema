@@ -1,0 +1,38 @@
+{
+    "scenario": "investment",
+    "scenario_id": 20,
+    "chapters": [
+        {
+            "name": "Research and Prepare",
+            "description": "Research on which industry and company to invest in.",
+            "idx": 0
+        },
+        {
+            "name": "Invest",
+            "description": "Make the investment in some legal-binding process.",
+            "idx": 1
+        },
+        {
+            "name": "Government Reaction",
+            "description": "The government will regulate or subsidy the investment.",
+            "idx": 2
+        },
+        {
+            "name": "Withdraw Investment",
+            "description": "If the investment is unsuccessful, the investor will withdraw.",
+            "idx": 3
+        },
+        {
+            "name": "Followup Investment",
+            "description": "If the investment is successful, the investor will continue to invest.",
+            "idx": 4
+        }
+      
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [2, 4]
+    ]
+}

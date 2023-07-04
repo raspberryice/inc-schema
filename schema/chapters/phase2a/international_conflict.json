@@ -1,0 +1,24 @@
+{
+    "scenario": "international conflict",
+    "chapters": [
+        {
+            "name": "Background",
+            "description": "The trigger of the international conflict.",
+            "idx": 0
+        },
+        {
+            "name": "War",
+            "description": "One nation declares war against another nation and initiates military action.",
+            "idx": 1
+        },
+        {
+            "name": "Negotiation",
+            "description": "The two nations in war negotiate peace.",
+            "idx": 2
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2]
+    ]
+}

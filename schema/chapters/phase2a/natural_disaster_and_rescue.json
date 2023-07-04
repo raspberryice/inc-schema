@@ -1,0 +1,18 @@
+{
+    "scenario": "natural disaster",
+    "chapters": [
+        {
+            "name": "Disaster",
+            "description": "The natural disaster occurs.",
+            "idx": 0
+        },
+        {
+            "name": "Rescue",
+            "description": "Rescue efforts for the natural disaster.",
+            "idx": 1
+        }
+    ],
+    "order": [
+        [0, 1]
+    ]
+}

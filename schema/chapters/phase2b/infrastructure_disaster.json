@@ -1,0 +1,37 @@
+{
+    "scenario": "infrastructure disaster",
+    "scenario_id": 21, 
+    "chapters": [
+        {
+            "name": "Incident",
+            "description": "The infrastructure disaster occurs.",
+            "idx": 0
+        },
+        {
+            "name": "Rescue",
+            "description": "Rescue efforts for the disaster.",
+            "idx": 1
+        },
+        {
+            "name": "Response",
+            "description": "Authorities and the public responds to the infrastructure disaster.",
+            "idx": 2
+        },
+        {
+            "name": "Recovery",
+            "description": "Reconstruction and rebuilding after the infrastructure disaster.",
+            "idx": 3
+        },
+        {
+            "name": "Investigation",
+            "description": "Investigation on why the incident happened.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [2, 4]
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "scenario": "terrorist attack",
+    "chapters": [
+        {
+            "name": "motivation",
+            "description": "reasons that motivated the attack.",
+            "idx": 0
+        },
+        {
+            "name": "preparation",
+            "description":"the perpetrator prepares for the crime.",
+            "idx": 1
+        },
+        {
+            "name": "conduct attack",
+            "description": "the perpetrator conducts the terrorist attack.",
+            "idx": 2
+        },
+        {
+            "name": "society response",
+            "description": "The society reacts to reports of the terrorist attack.",
+            "idx": 3
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3]
+    ]
+}

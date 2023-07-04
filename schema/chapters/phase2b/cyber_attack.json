@@ -1,0 +1,31 @@
+{
+    "scenario": "cyber attack",
+    "scenario_id": 12,
+    "chapters": [
+        {
+            "name": "attack",
+            "description": "the attacker performs the cyber attack.",
+            "idx": 0
+        },
+        {
+            "name": "impact",
+            "description": "the cyber attack impacts organizations and personal devices.",
+            "idx": 1
+        },
+        {
+            "name": "response",
+            "description": "authorities and the public respond to the cyber attack.",
+            "idx": 2
+        },
+        {
+            "name": "investigation and justice",
+            "description": "investigation on the source of the cyber attack and possible lawsuit related to the cyber attack.",
+            "idx": 3
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3]
+    ]
+}

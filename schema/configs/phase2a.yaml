@@ -1,0 +1,21 @@
+---
+chapter_dir: "schema/chapters/phase2a"
+scenario_name: "all"
+run_name: "phase2a"
+index_dir: "phase2a_indexes"
+corpus_file: "phase2a_corpus.jsonl"
+schema_dir: "outputs/schema"
+gpt_cache_dir: "cache"
+ontology_path: "schema/constant/xpo_v5.1a.json"
+grounding_nli_model: "facebook/bart-large-mnli"
+
+use_chapter: true
+decompose: true 
+require_relevance: true
+
+use_retrieval: true
+use_cache: true
+
+edge_threshold: 0.2
+parent_threshold: 0.7
+duration_threshold: 0.6

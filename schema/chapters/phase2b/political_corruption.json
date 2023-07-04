@@ -1,0 +1,37 @@
+{
+    "scenario": "political corruption",
+    "scenario_id": 18,
+    "chapters": [
+        {
+            "name": "corruption",
+            "description":"The political corruption took place.",
+            "idx": 0
+        },
+        {
+            "name": "exposure",
+            "description": "The political corruption was exposed to public.",
+            "idx": 1
+        },
+        {
+            "name": "public response",
+            "description": "The public responds to the political corruption.",
+            "idx": 2
+        },
+        {
+            "name": "investigation",
+            "description": "An investigation is ordered to uncover the details of the political corruption.",
+            "idx": 3
+        },
+        {
+            "name": "resignation and punishment",
+            "description": "The officials involved in the corruption resign and receive punishment for their actions.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}

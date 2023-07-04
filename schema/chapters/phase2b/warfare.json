@@ -1,0 +1,32 @@
+{
+    "scenario": "warfare",
+    "scenario_id": 2,
+    "chapters": [
+        {
+            "name": "government action",
+            "description": "the government participates in war.",
+            "idx": 0
+        },
+        {
+            "name": "civilian reaction",
+            "description": "civilians of the war-torn countries react to the war.",
+            "idx": 1
+        },
+        {
+            "name": "international response",
+            "description": "people from other countries react to the ongoing war.",
+            "idx": 2
+        },
+        {
+            "name": "battle",
+            "description": "two nations engage in battle.",
+            "idx": 3
+        },
+        {
+            "name": "economic impact",
+            "description": "the war impacts the global economy.",
+            "idx": 4
+        }
+    ],
+    "order": []
+}

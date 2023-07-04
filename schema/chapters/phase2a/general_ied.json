@@ -1,0 +1,36 @@
+{
+    "scenario": "general IED bombing",
+    "chapters": [
+        {
+            "name": "Contributory Factors",
+            "description": "Motives and background of the bombing.",
+            "idx": 0
+        },
+        {
+            "name": "Planning",
+            "description": "The attacker plans for the bombing.",
+            "idx": 1
+        },
+        {
+            "name": "Execution",
+            "description": "The attacker carries out the plan and performs the bombing.",
+            "idx": 2
+        },
+        {
+            "name": "Response",
+            "description": "Authorities and the public responds to the bombing.",
+            "idx": 3
+        },
+        {
+            "name": "Criminal Investigation",
+            "description": "Investigation on the cause of the bombing and prosecution of the attacker.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}

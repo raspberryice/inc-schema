@@ -1,0 +1,54 @@
+{
+    "scenario": "disease outbreak",
+    "chapters":[
+        {
+            "name": "Outbreak preconditions",
+            "description": "Reasons why the disease has appeared, including social factors and environmental factors.",
+            "idx": 0
+        },
+        {
+            "name": "Outbreak",
+            "description": "Emergence of the pathogen and spread of the disease.", 
+            "idx": 1
+        },
+        {
+            "name": "Medical Response",
+            "description": "Treatment of patients and medical procedures to help contain the disease.",
+            "idx": 2
+        },
+        {
+            "name": "Research Response",
+            "description": "Research is being conducted on the disease.",
+            "idx": 3 
+        },
+        {
+            "name": "Authority Response",
+            "description": "Government agencies respond to the disease outbreak.",
+            "idx": 4
+        },
+        {
+            "name": "Society Response",
+            "description": "The media and civilians respond to the disease outbreak, including giving recommendations to the public.",
+            "idx": 5 
+        },
+        {
+            "name": "Investigation",
+            "description": "Investigation of the cause of the outbreak.",
+            "idx": 6 
+        },
+        {
+            "name": "Civil justice",
+            "description": "Civil lawsuit related to the disease outbreak.",
+            "idx": 7
+        }
+    ],
+    "order":[
+        [0, 1],
+        [1, 2],
+        [1, 3],
+        [1, 4],
+        [1, 5],
+        [4, 6],
+        [6, 7]
+    ]
+}

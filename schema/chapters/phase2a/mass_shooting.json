@@ -1,0 +1,36 @@
+{
+    "scenario": "mass shooting",
+    "chapters": [
+        {
+            "name": "Motives",
+            "description": "Motives of the mass shooting.",
+            "idx": 0
+        },
+        {
+            "name": "Planning",
+            "description": "The attacker plans for the mass shooting.",
+            "idx": 1
+        },
+        {
+            "name": "Attack",
+            "description": "The mass shooting event happens.",
+            "idx": 2
+        },
+        {
+            "name": "Response",
+            "description": "Authorities and the public responds to the mass shooting.",
+            "idx": 3
+        },
+        {
+            "name": "Criminal Investigation",
+            "description": "Investigation on the cause of the mass shooting and prosecution of the attacker.",
+            "idx": 4
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}

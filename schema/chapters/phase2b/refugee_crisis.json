@@ -1,0 +1,31 @@
+{
+    "scenario": "refugee crisis",
+    "scenario_id": 22, 
+    "chapters": [
+        {
+            "name": "Background",
+            "description": "Cause of the increased number of refugees.",
+            "idx": 0
+        },
+        {
+            "name": "Refugee Movement",
+            "description": "Refugees move from their origin country to other countries.",
+            "idx": 1
+        },
+        {
+            "name": "Government Action",
+            "description": "Governments take action to settle refugees and control borders.",
+            "idx": 2
+        },
+        {
+            "name": "Public Response",
+            "description": "Public opinion on the refugee crisis.",
+            "idx": 3
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3]
+    ]
+}

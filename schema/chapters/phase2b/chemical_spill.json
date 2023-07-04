@@ -1,0 +1,49 @@
+{
+    "scenario": "chemical spills",
+    "scenario_id": 29,
+    "chapters": [
+        {
+            "name": "Background",
+            "description": "Background of the site of the chemical spill.",
+            "idx": 0
+        },
+        {
+            "name": "Chemical spill",
+            "description": "Chemicals are spilled into the environment.",
+            "idx": 1
+        },
+        {
+            "name": "Hazards",
+            "description": "The spill causes other hazards such as fire.",
+            "idx": 2
+        },
+        {
+            "name": "Investigation",
+            "description": "The cause of the spill is investigated.",
+            "idx": 3
+        },
+        {
+            "name": "Recovery",
+            "description":"The area of the spill recovers to normal.",
+            "idx": 4
+        },
+        {
+            "name": "Consequences",
+            "description": "The chemical spill leds to changes in regulations and legislation.",
+            "idx": 5
+        },
+        {
+            "name": "Public response",
+            "description": "The public responds to reports of the chemical spill.",
+            "idx": 6
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [2, 4],
+        [3, 5],
+        [2, 6]
+    ]
+}

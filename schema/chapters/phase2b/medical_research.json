@@ -1,0 +1,101 @@
+{
+    "scenario": "Medical research",
+    "scenario_id": 27,
+    "chapters": [
+        {
+            "name": "background",
+            "description": "the background of the research project, including the qualifications and background of the researchers.",
+            "idx": 0
+        },
+        {
+            "name": "initiation",
+            "description": "the project is initiated, including defining the goals of the research.",
+            "idx": 1
+        },
+        {
+            "name": "plan",
+            "description": "the research is planned, including defining the various study components and determining which participants will be included in the study.",
+            "idx": 2
+        },
+        {
+            "name": "review",
+            "description": "the study is reviewed, including ensuring that all study components are as planned.",
+            "idx": 3
+        },
+        {
+            "name": "implementation",
+            "description": "the study is implemented, including the recruitment and retention of participants.",
+            "idx": 4
+        },
+        {
+            "name": "analysis",
+            "description": "the data is analyzed and analyzed to determine the results of the study.",
+            "idx": 5
+        },
+        {
+            "name": "clinical trial",
+            "description": "clinical trials of the research.",
+            "idx": 6
+        },
+        {
+            "name": "public response",
+            "description": "the general public responds to the advancement of medications.",
+            "idx": 7
+        },
+        {
+            "name": "authority evaluation",
+            "description": "the authority evaluate the effects and potential side-effect of the medication.",
+            "idx": 8
+        },
+        {
+            "name": "release to public",
+            "description": "the new technology becomes publicly available.",
+            "idx": 9
+        }
+    ],
+    "order": [
+        [
+            0,
+            1
+        ],
+        [
+            1,
+            2
+        ],
+        [
+            2,
+            3
+        ],
+        [
+            3,
+            4
+        ],
+        [
+            4,
+            5
+        ],
+        [
+            4,
+            6
+        ],
+        [   6, 
+            5
+        ],
+        [
+            5,
+            8
+        ],
+        [
+            6,
+            8
+        ],
+        [
+            8,
+            9
+        ],
+        [
+            9,
+            7
+        ]
+    ]
+}

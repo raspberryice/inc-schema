@@ -1,0 +1,43 @@
+{
+    "scenario": "transport accident",
+    "scenario_id": 7,
+    "chapters": [
+        {
+            "name": "accident",
+            "description": "The transportation accident happened.",
+            "idx": 0
+        },
+        {
+            "name": "rescue",
+            "description": "People are being rescued from the site of the accident.",
+            "idx": 1
+        },
+        {
+            "name": "damage",
+            "description": "The accident caused damage.",
+            "idx":2 
+        },
+        {
+            "name": "investigation",
+            "description": "The cause of the accident is investigated.",
+            "idx": 3
+        },
+        {
+            "name": "public response",
+            "description": "The public reacts to reports of the accident.",
+            "idx": 4
+        },
+        {
+            "name": "aftermath",
+            "description": "Lawsuits related to the accident and new legislations made to prevent the accident from happening again.",
+            "idx": 5
+        }
+    ],
+    "order": [
+        [0, 1],
+        [0, 2],
+        [0, 3],
+        [0, 4],
+        [3, 5]
+    ]
+}

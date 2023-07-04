@@ -1,0 +1,37 @@
+{
+    "scenario": "recession",
+    "scenario_id": 23, 
+    "chapters": [
+        {
+            "name": "Background",
+            "description": "Cause of the recession.",
+            "idx": 0
+        },
+        {
+            "name": "Market Crash",
+            "description": "A sudden stock market drop which is the major sign of the recession.",
+            "idx" :1 
+        },
+        {
+            "name": "Business Decline",
+            "description": "Businesses shutdown and job loss increases in the impact of the recession.",
+            "idx": 2
+        },
+        {
+            "name": "Government Response",
+            "description": "Governments announce stimulus plans to counter the recession.",
+            "idx": 3 
+        },
+        {
+            "name": "Recovery",
+            "description": "The market gradually recovers from the recession.",
+            "idx": 4 
+        }
+    ],
+    "order": [
+        [0, 1],
+        [1, 2],
+        [2, 3],
+        [3, 4]
+    ]
+}
